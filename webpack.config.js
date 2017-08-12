@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     main: './js/index',
     list: './js/list',
+    search: './js/search',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -90,6 +91,16 @@ module.exports = {
       filename: 'list.html',
       template: './list.html',
       chunks: ['list'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'search.html',
+      template: './search.html',
+      chunks: ['search'],
       inject: ['body', 'head'],
       /*minify: {
        removeComments: true,
