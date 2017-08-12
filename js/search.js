@@ -1,7 +1,12 @@
 import '../scss/search.scss';
+import './common';
+import 'swiper';
 
-$('body').css({
-  backgroundColor: '#f5f5f5'
+new Swiper('.recommend-house', {
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  autoplay: 4000,
+  loop: true,
 });
 
 //alert('test');
