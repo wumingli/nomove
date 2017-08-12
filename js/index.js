@@ -19,6 +19,7 @@ let logic = {
     const swiper = new Swiper('.swiper-container', {
       pagination: '.swiper-pagination',
       paginationClickable: true,
+      autoplayDisableOnInteraction: false,
       autoplay: 2000,
       loop: true,
    });
@@ -27,8 +28,21 @@ let logic = {
 //事件绑定
 let Event = {
   init() {
-    console.log('事件绑定');
+    //console.log('事件绑定');
+    //Event.hostHouseAnimate();
   },
+  //新房热卖动画
+  hostHouseAnimate() {
+    $(".house-introduce").hover(() => {
+      console.log("鼠标移进");
+      $(".house-introduce").css("height","150px");
+      $(".house-introduce").addClass('animated');
+    },() => {
+      console.log("鼠标移出");
+      $(".house-introduce").css("height","39px");
+      $(".house-introduce").addClass('animated');
+    });
+  }
 };
 
 
