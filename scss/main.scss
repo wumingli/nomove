@@ -1,12 +1,15 @@
 @import url('swiper.scss');
-
+@import url('animate.css');
 body {
   -webkit-overflow-scrolling : touch;
+  height:100000px;
+  background: #f5f5f5;
 }
 .wrapper {
   width: 100%;
   overflow: hidden;
   position: relative;
+  //顶部导航
   &-top-nav {
     position: absolute;
     z-index: 2;
@@ -17,6 +20,9 @@ body {
     width: 1200px;
     height: 70px;
     background: rgba(0, 0, 0, .3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
   }
   &-logo{
@@ -30,6 +36,9 @@ body {
     }
   }
   &-nav-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     height: 30px;
     padding: 20px 0;
@@ -57,6 +66,166 @@ body {
     span{
       display: table-cell;
       vertical-align: middle;
+    }
+  }
+  //中间内容
+  &-content {
+    width: 100%;
+    padding-top: 40px;
+    .content-title {
+      margin: 0 auto;
+      width: 1100px;
+      height: 40px;
+      padding-bottom: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      .title-middle {
+        width: 198px;
+        height: 38px;
+        border: 1px solid #999999;
+        text-align: center;
+        line-height: 38px;
+        background: #33a7d8;
+        color: #fff;
+      }
+      .title-line {
+        width: 450px;
+        height: 1px;
+        background: #999999;
+        margin-top: 19.5px;
+      }
+    }
+  }
+  //热销新房
+  .new-house-list {
+    width: 100%;
+    background: #cee5ef;
+    ul {
+      margin: 0 auto;
+      width: 1078px;
+      border: 1px solid #999999;
+      //border-top: 1px solid #ebf5f9;
+      height: 278px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      padding: 10px;
+      background: #ebf5f9;
+      li {
+        margin-right:41px;
+        position: relative;
+        overflow: hidden;
+        .house-introduce {
+          //height: 150px;
+          height: 39px;
+          padding: 15px 0px;
+          width: 100%;
+          overflow: hidden;
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          background: rgba(0,0,0,.6);
+          color: #fff;
+          span {
+            display: block;
+            height: 24px;
+            line-height: 24px;
+          }
+        }
+        .house-introduce:hover {
+          height: 150px;
+        }
+        .introduce-title {
+          margin: 0px 15px;
+          padding-bottom: 6px;
+          font-size: 16.4px;
+          border-bottom: 1px solid #fff;
+        }
+        .introduce-text {
+          font-size: 16px;
+          padding: 0px 15px 0px 15px;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      li.last{
+        margin-right:0px;
+      }
+    }
+  }
+  //置业学院
+  .college-list {
+    width: 1100px;
+    margin:0px auto;
+    ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      li {
+        width: 90px;
+        height: 90px;
+        background: #33a7d8;
+        border-radius: 100%;
+        margin-right: 55px;
+        display: table;
+        text-align: center;
+        a {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+      li:hover {
+        background: #ff9900;
+      }
+      li.last {
+        margin-right: 0px;
+      }
+    }
+  }
+  //二手房源
+  .old-house-list {
+    width: 100%;
+    background: #cee5ef;
+    .old-house-swiper {
+      margin:0px auto;
+      width: 1098px;
+      height: 428px;
+      border: 1px solid #999999;
+      li {
+        padding: 10px 10px 0px 10px;
+        width: 1080px;
+        height: 430px;
+      }
+      .old-house-left {
+        //border: 1px solid #999999;
+        width: 520px;
+        height: 377px;
+        overflow: hidden;
+        float: left;
+      }
+      .old-house-right {
+        width:520px;
+        height: 378px;
+        float: right;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+      }
+      .old-house-right-item {
+        margin: 0px 30px 10px 0px;
+      }
+      .old-house-right-item:nth-child(2n) {
+        margin-right: 0px;
+      }
     }
   }
 }
