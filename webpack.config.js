@@ -7,13 +7,16 @@ const CleanPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './js/index'
+    main: './js/index',
+    list: './js/list',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash].js',
+    //filename: '[name].[hash].js',
+    filename: '[name].js',
+    //library: '[name]_[chunkhash]',
   },
-  //externals: ['$'],
+  externals: ['$', 'jquery'],
   resolve: {
     extensions: ['.config.js', '.js', '.json', '.jsx'],
     /*root: [
@@ -54,24 +57,41 @@ module.exports = {
     }),
     new WebpackMd5Hash(),
 
-    new webpack.optimize.CommonsChunkPlugin({
-      name:"chunk",
-      filename:"chunk.js"//忽略则以name为输出文件的名字，否则以此为输出文件名字
+    /*new webpack.optimize.CommonsChunkPlugin({
+      name: "vendor",
+      filename: "main.js"//忽略则以name为输出文件的名字，否则以此为输出文件名字
     }),
 
+    new webpack.DllPlugin({
+      path: 'manifest.json',
+      name: '[name]_[chunkhash]',
+      context: __dirname,
+    }),*/
+
     new ExtractTextPlugin({
-      filename: '[name].[hash].css',
+      filename: '[name].css',
       allChunks: false
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './index.html',
       inject: ['body', 'head'],
+      chunks: ['main'],
       /*minify: {
         removeComments: true,
         collapseWhitespace: true
       }*/
-    })
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'list.html',
+      template: './list.html',
+      chunks: ['list'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
   ],
   devServer: {
     disableHostCheck: true
