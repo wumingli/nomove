@@ -20,7 +20,7 @@ let logic = {
       pagination: '.swiper-pagination',
       paginationClickable: true,
       autoplayDisableOnInteraction: false,
-      autoplay: 2000,
+      autoplay: 4000,
       loop: true,
    });
   },
