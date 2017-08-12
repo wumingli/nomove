@@ -187,6 +187,47 @@ body {
       }
     }
   }
+  //二手房源
+  .old-house-list {
+    width: 100%;
+    background: #cee5ef;
+    .old-house-swiper {
+      margin:0px auto;
+      width: 1098px;
+      height: 428px;
+      border: 1px solid #999999;
+      li {
+        padding: 10px 10px 0px 10px;
+        width: 1080px;
+        height: 430px;
+      }
+      .old-house-left {
+        //border: 1px solid #999999;
+        width: 520px;
+        height: 377px;
+        overflow: hidden;
+        float: left;
+      }
+      .old-house-right {
+        width:520px;
+        height: 378px;
+        float: right;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+      }
+      .old-house-right-item {
+        margin: 0px 30px 10px 0px;
+      }
+      .old-house-right-item:nth-child(2n) {
+        margin-right: 0px;
+      }
+    }
+  }
 }
 //轮播图样式
 .swiper-container {

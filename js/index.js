@@ -23,6 +23,14 @@ let logic = {
       autoplay: 4000,
       loop: true,
    });
+   //二手房源轮播
+  //  const oldHouseSwiper = new Swiper('.old-house-swiper-container',{
+  //    pagination: '.old-swiper-pagination',
+  //    paginationClickable: true,
+  //    autoplayDisableOnInteraction: false,
+  //    autoplay: 4000,
+  //    loop: true,
+  //  })
   },
 };
 //事件绑定
