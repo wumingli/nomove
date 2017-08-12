@@ -26,6 +26,10 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.(png)|(jpg)|(webp)$/,
+        loader: ['file-loader?limit=1000&name=[md5:hash:base64:10].[ext]']
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',

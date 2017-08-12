@@ -19,7 +19,7 @@ let logic = {
     const swiper = new Swiper('.swiper-container', {
       pagination: '.swiper-pagination',
       paginationClickable: true,
-      autoplay: 2000,
+      autoplay: 4000,
       loop: true,
    });
   },
