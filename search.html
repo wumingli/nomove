@@ -9,7 +9,48 @@
     <!--<link rel="icon" href="favicon.ico">-->
 </head>
 <body>
-  #include('./banner.html')
+<div class="wrapper list-banner search-banner">
+  <div class="wrapper-top-nav">
+    <div class="wrapper-logo">
+      <span>
+        <img src="./images/index/big-logo.png" alt="LOGO">
+      </span>
+    </div>
+    <ul class="wrapper-nav-list">
+      <li>
+        <a href="index.html">首页</a>
+      </li>
+      <li>
+        <a href="#">关于动不动</a>
+      </li>
+      <li>
+        <a href="#">热销新房</a>
+      </li>
+      <li>
+        <a class="nav-active" href="#">二手房源</a>
+      </li>
+      <li>
+        <a href="#">置业学院</a>
+      </li>
+      <li>
+        <a href="#">新闻动态</a>
+      </li>
+      <li>
+        <a href="#">联系我们</a>
+      </li>
+    </ul>
+    <div class="wrapper-call-tel">
+      <span>
+        <img src="./images/index/tel-call.png" alt="">
+      </span>
+    </div>
+  </div>
+  <section class="search">
+    <form action="">
+      <input type="text" autocomplete="off" name="keywords" placeholder="请输入房产关键字" />
+    </form>
+  </section>
+</div>
   <div class="search-wrapper">
     <div class="search-slider">
       <div class="center-title">
@@ -266,8 +307,8 @@
         #include('./search-condition.html')
         <div class="house-list">
           <dl class="h-active">
-            <dt>
-              <img src="http://www.movenomove.com/data/upload/5593a4462a55a.jpg">
+            <dt style="background-image: url(http://www.movenomove.com/data/upload/5593a4462a55a.jpg)">
+              <a href="">伦敦 温布尔登名宅官邸最后一席</a>
             </dt>
             <dd>
               <div class="h-title">
@@ -288,8 +329,8 @@
             </dd>
           </dl>
           <dl>
-            <dt>
-              <img src="http://www.movenomove.com/data/upload/5593a4462a55a.jpg">
+            <dt style="background-image: url(http://www.movenomove.com/data/upload/5593a4462a55a.jpg)">
+              <a href="">伦敦 温布尔登名宅官邸最后一席</a>
             </dt>
             <dd>
               <div class="h-title">
@@ -310,8 +351,8 @@
             </dd>
           </dl>
           <dl>
-            <dt>
-              <img src="http://www.movenomove.com/data/upload/5593a4462a55a.jpg">
+            <dt style="background-image: url(http://www.movenomove.com/data/upload/5593a4462a55a.jpg)">
+              <a href="">伦敦 温布尔登名宅官邸最后一席</a>
             </dt>
             <dd>
               <div class="h-title">
@@ -332,8 +373,8 @@
             </dd>
           </dl>
           <dl>
-            <dt>
-              <img src="http://www.movenomove.com/data/upload/5593a4462a55a.jpg">
+            <dt style="background-image: url(http://www.movenomove.com/data/upload/5593a4462a55a.jpg)">
+              <a href="">伦敦 温布尔登名宅官邸最后一席</a>
             </dt>
             <dd>
               <div class="h-title">
@@ -354,8 +395,8 @@
             </dd>
           </dl>
           <dl>
-            <dt>
-              <img src="http://www.movenomove.com/data/upload/5593a4462a55a.jpg">
+            <dt style="background-image: url(http://www.movenomove.com/data/upload/5593a4462a55a.jpg)">
+              <a href="">伦敦 温布尔登名宅官邸最后一席</a>
             </dt>
             <dd>
               <div class="h-title">
@@ -376,8 +417,8 @@
             </dd>
           </dl>
           <dl>
-            <dt>
-              <img src="http://www.movenomove.com/data/upload/5593a4462a55a.jpg">
+            <dt style="background-image: url(http://www.movenomove.com/data/upload/5593a4462a55a.jpg)">
+              <a href="">伦敦 温布尔登名宅官邸最后一席</a>
             </dt>
             <dd>
               <div class="h-title">
@@ -398,8 +439,8 @@
             </dd>
           </dl>
           <dl>
-            <dt>
-              <img src="http://www.movenomove.com/data/upload/5593a4462a55a.jpg">
+            <dt style="background-image: url(http://www.movenomove.com/data/upload/5593a4462a55a.jpg)">
+              <a href="">伦敦 温布尔登名宅官邸最后一席</a>
             </dt>
             <dd>
               <div class="h-title">
@@ -420,8 +461,8 @@
             </dd>
           </dl>
           <dl>
-            <dt>
-              <img src="http://www.movenomove.com/data/upload/5593a4462a55a.jpg">
+            <dt style="background-image: url(http://www.movenomove.com/data/upload/5593a4462a55a.jpg)">
+              <a href="">伦敦 温布尔登名宅官邸最后一席</a>
             </dt>
             <dd>
               <div class="h-title">
@@ -464,7 +505,125 @@
         </div>
       </div>
       <div class="search-right-col">
-
+        <div class="calculator-box">
+          <div class="calculator-title">
+            <span>目标国汇率计算器</span>
+          </div>
+          <div class="count-form">
+            <dl>
+              <dt>持有货币：</dt>
+              <dd class="slide-down">
+                <select id="i-have" title="">
+                  <option value="CNY">人民币</option>
+                  <option value="GBP">英镑</option>
+                  <option value="USD">美元</option>
+                  <option value="AUD">澳币</option>
+                  <option value="CAD">加元</option>
+                  <option value="NZD">纽币</option>
+                </select>
+              </dd>
+            </dl>
+            <dl>
+              <dt>兑换货币：</dt>
+              <dd class="slide-down">
+                <select id="i-want" title="">
+                  <option value="GBP">英镑</option>
+                  <option value="USD">美元</option>
+                  <option value="AUD">澳币</option>
+                  <option value="CAD">加元</option>
+                  <option value="NZD">纽币</option>
+                </select>
+              </dd>
+            </dl>
+            <dl>
+              <dt>持有金额：</dt>
+              <dd class="sum-have">
+                <input title="" type="number" value="100" />
+                <span class="sum-have-type">人民币</span>
+              </dd>
+            </dl>
+            <dl class="count-btns">
+              <dd>
+                <button id="huilv-btn" class="submit">计算</button>
+                <button id="huilv-reset" class="reset">重置</button>
+              </dd>
+            </dl>
+            <dl class="count-result">
+              <dt>兑换金额：</dt>
+              <dd class="sum-have sum-cash">
+                <input title="" type="text" value="">
+                <span class="sum-cash-type">美元</span>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="calculator-box calculator-country-box">
+          <div class="calculator-title">
+            <span>海外房贷计算器</span>
+          </div>
+          <div class="count-form">
+            <dl>
+              <dt>贷款总额：</dt>
+              <dd class="sum-have">
+                <input placeholder="输入贷款总额" type="number" />
+                <span class="sum-have-type">万元</span>
+              </dd>
+            </dl>
+            <dl>
+              <dt>贷款期限：</dt>
+              <dd class="sum-have">
+                <input placeholder="输入贷款期限" type="number" />
+                <span class="sum-have-type">月</span>
+              </dd>
+            </dl>
+            <dl>
+              <dt>国家：</dt>
+              <dd>
+                <select id="hwfd-country" title="">
+                  <option>请选择国家</option>
+                  <option value="英国">英国</option>
+                  <option value="美国">美国</option>
+                  <option value="加拿大">加拿大</option>
+                  <option value="澳洲">澳洲</option>
+                  <option value="新西兰">新西兰</option>
+                </select>
+              </dd>
+            </dl>
+            <dl>
+              <dt>银行：</dt>
+              <dd>
+                <select id="hwfd-bank" title="">
+                  <option>请选择银行</option>
+                </select>
+              </dd>
+            </dl>
+            <dl>
+              <dt>年利率：</dt>
+              <dd class="sum-have">
+                <input title="" id="loadYearRate" type="text" class="market-ipt" value=""/>
+                <span class="percent">%</span>
+              </dd>
+            </dl>
+            <dl class="count-btns">
+              <dd>
+                <button id="fd-btn" class="submit">计算</button>
+                <button id="fd-reset" class="reset">重置</button>
+              </dd>
+            </dl>
+            <dl>
+              <dt>月均还款：</dt>
+              <dd>
+                <span class="sum" id="monthPayMoney"></span><span>元</span>
+              </dd>
+            </dl>
+            <dl>
+              <dt>支付利息：</dt>
+              <dd>
+                <span class="sum" id="totalRateMoney"></span><span>元</span>
+              </dd>
+            </dl>
+          </div>
+        </div>
       </div>
     </div>
   </div>
