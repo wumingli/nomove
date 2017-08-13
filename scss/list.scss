@@ -76,6 +76,7 @@
             display: inline-block;
             margin-right: 10px;
             &.icon1 {
+              text-decoration: underline;
               &:before {
                 display: inline-block;
                 vertical-align: -3px;
@@ -83,6 +84,19 @@
                 height: 21px;
                 content: '';
                 background: url("../images/list/list-icon2.png") 0 0 no-repeat;
+                margin-right: 3px;
+              }
+            }
+            &.icon2 {
+              text-decoration: underline;
+              &:before {
+                display: inline-block;
+                vertical-align: -6px;
+                width: 26px;
+                height: 26px;
+                content: '';
+                background: url("../images/list/list-icon1.png") 0 0 no-repeat;
+                margin-right: 3px;
               }
             }
           }

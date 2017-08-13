@@ -37,7 +37,7 @@ module.exports = {
     loaders: [
       {
         test: /\.(png)|(jpg)|(webp)$/,
-        loader: [`file-loader?limit=1000&name=${isDev ? '' : 'images/'}[md5:hash:base64:10].[ext]`]
+        loader: [`file-loader?limit=4192&name=${isDev ? '' : 'images/'}[md5:hash:base64:10].[ext]`]
       },
       {
         test: /\.js$/,
