@@ -4,6 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const CleanPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const isDev = process.env.NODE_ENV === 'dev';
 
 module.exports = {
   entry: {
@@ -13,14 +16,20 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    //filename: '[name].[hash].js',
     filename: '[name].js',
+    //filename: '[name].[hash].js',
+    //filename: 'static/js/[name].js',
+    //filename: `${isDev ? '' : 'js/'}[name].js`,
     //library: '[name]_[chunkhash]',
+    //publicPath: `${isDev ? '' : './'}`,
   },
   externals: ['$', 'jquery'],
   resolve: {
     extensions: ['.config.js', '.js', '.json', '.jsx'],
-    /*root: [
+    /*alias: {
+      assets: path.resolve('images/'),
+    }
+    root: [
       path.resolve('./components')
     ]*/
   },
@@ -28,7 +37,7 @@ module.exports = {
     loaders: [
       {
         test: /\.(png)|(jpg)|(webp)$/,
-        loader: ['file-loader?limit=1000&name=[md5:hash:base64:10].[ext]']
+        loader: [`file-loader?limit=1000&name=${isDev ? '' : 'images/'}[md5:hash:base64:10].[ext]`]
       },
       {
         test: /\.js$/,
@@ -42,6 +51,10 @@ module.exports = {
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader', 'postcss-loader']
         }),
+      },
+      {
+        test: /\.(html)$/i,
+        loader: 'html-withimg-loader',
       }
     ]
   },
@@ -74,9 +87,16 @@ module.exports = {
     }),*/
 
     new ExtractTextPlugin({
+      //filename: `${isDev ? '' : 'css/'}[name].css`,
       filename: '[name].css',
       allChunks: false
     }),
+    CopyWebpackPlugin([
+      {
+        from: 'libs/',
+        to: 'libs/'
+      }
+    ]),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './index.html',

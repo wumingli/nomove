@@ -12,88 +12,7 @@
   width: 1100px;
   margin: 50px auto 0;
   overflow: hidden;
-  .search-condition {
-    @include borderAndBg;
-    height: 148px;
-    margin-bottom: 20px;
-    dl {
-      margin: 11px 0 0 22px;
-      clear: both;
-      dt {
-        float: left;
-        width: 87px;
-        padding-bottom: 7px;
-      }
-      dd {
-        clear: right;
-        width: 980px;
-        padding-bottom: 7px;
-        ul {
-          li {
-            display: inline-block;
-            width: 128px;
-            a {
-              &.active {
-                background-color: #f90;
-                color: #fff;
-                padding: 4px 10px;
-              }
-            }
-          }
-          &.price {
-            li {
-              width: auto;
-              padding-right: 40px;
-            }
-          }
-        }
-      }
-      &.order-by {
-        border-top: 1px solid #ccc;
-        margin-left: 0;
-        margin-top: 5px;
-        padding-left: 22px;
-        padding-top: 5px;
-        dd ul li {
-          width: auto;
-          margin-right: 55px;
-          span {
-            margin-right: 1px;
-            display: inline-block;
-            vertical-align: middle;
-          }
-          p.order {
-            display: inline-block;
-            vertical-align: middle;
-            width: 13px;
-            line-height: 0;
-            text-align: center;
-            i {
-              display: inline-block;
-              width: 13px;
-              height: 7px;
-              text-indent: -100px;
-              overflow: hidden;
-              cursor: pointer;
-              margin-top: 1px;
-              background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAHCAYAAADTcMcaAAAAdklEQVQYlYXNMQrCMBSA4U8RC1LxPIKCgyBCoUM7eQOPlBMIgqCD6GE8h7NLAiUE+y+P8PheJiEEhQ4444RvvpwWwBEPtHEuxlCDO6r43uOZwyFqccM8O7TDG3WOOlwLILXFC8uEelz+gNQm/ria4YP1CBhW/QDHzw8PAXieiwAAAABJRU5ErkJggg==") 50% 50% no-repeat;
-              &.order-up {
-                &.active {
-                  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAHCAYAAADTcMcaAAAAd0lEQVQYlYXNMQrCQBBA0aeIAVE8jJWgIKm0kBSmygm8kicQxEIQSQ7hETyHtc0uhGUxvxuGNzNaXd4y7XFGg2+6HGfAAQ9UeGI2hI4BFGEu8UphH1W4Y5oc2qHDPEUn3DIgtkWLRUQ1rn9AbBM+Lif4YD0A+hU/fTAO29EzroMAAAAASUVORK5CYII=");
-                }
-              }
-              &.order-down {
-                &.active {
-                  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAHCAYAAADTcMcaAAAAd0lEQVQYlYXNMQrCQBBA0aeIAVE8jJWgIKm0kBSmygm8kicQxEIQSQ7hETyHtc0uhGUxvxuGNzNaXd4y7XFGg2+6HGfAAQ9UeGI2hI4BFGEu8UphH1W4Y5oc2qHDPEUn3DIgtkWLRUQ1rn9AbBM+Lif4YD0A+hU/fTAO29EzroMAAAAASUVORK5CYII=");
-                }
-                transform: rotate(180deg);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  @import 'search-condition';
   .house-info {
     @include borderAndBg;
     margin-bottom: 30px;
@@ -178,5 +97,6 @@
       }
     }
   }
+  @import "page";
 }
 

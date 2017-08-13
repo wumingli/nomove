@@ -9,112 +9,9 @@
     <!--<link rel="icon" href="favicon.ico">-->
 </head>
 <body>
-  <div class="wrapper list-banner">
-    <div class="wrapper-top-nav">
-      <div class="wrapper-logo">
-      <span>
-        <img src="./images/index/big-logo.png" alt="LOGO">
-      </span>
-      </div>
-      <ul class="wrapper-nav-list">
-          <li>
-              <a class="nav-active" href="index.html">首页</a>
-          </li>
-          <li>
-              <a href="#">关于动不动</a>
-          </li>
-          <li>
-              <a href="#">热销新房</a>
-          </li>
-          <li>
-              <a href="#">二手房源</a>
-          </li>
-          <li>
-              <a href="#">置业学院</a>
-          </li>
-          <li>
-              <a href="#">新闻动态</a>
-          </li>
-          <li>
-              <a href="#">联系我们</a>
-          </li>
-      </ul>
-      <div class="wrapper-call-tel">
-      <span>
-        <img src="./images/index/tel-call.png" alt="">
-      </span>
-      </div>
-    </div>
-    <section class="search">
-      <form action="">
-        <input type="text" name="keywords" placeholder="请输入房产关键字" />
-      </form>
-    </section>
-  </div>
+  #include('./banner.html')
   <div class="list-wrapper">
-    <div class="search-condition">
-      <dl>
-        <dt>国家：</dt>
-        <dd>
-          <ul>
-            <li><a href="" class="active">全部</a></li>
-            <li><a href="">美国</a></li>
-            <li><a href="">加拿大</a></li>
-            <li><a href="">英国</a></li>
-            <li><a href="">澳洲</a></li>
-            <li><a href="">新西兰</a></li>
-          </ul>
-        </dd>
-        <dt>物业类型：</dt>
-        <dd>
-          <ul>
-            <li><a href="" class="active">全部</a></li>
-            <li><a href="">别墅(HOUSE)</a></li>
-            <li><a href="">公寓(CONDO)</a></li>
-          </ul>
-        </dd>
-        <dt>价格：</dt>
-        <dd>
-          <ul class="price">
-            <li><a href="" class="active">全部</a></li>
-            <li><a href="">100万以下</a></li>
-            <li><a href="">100-300万</a></li>
-            <li><a href="">300-500万</a></li>
-            <li><a href="">500-700万</a></li>
-            <li><a href="">700-900万</a></li>
-            <li><a href="">900万以上(人民币)</a></li>
-          </ul>
-        </dd>
-      </dl>
-      <dl class="order-by">
-        <dt>排序：</dt>
-        <dd>
-          <ul>
-            <li>
-              <span>默认排序</span>
-              <p class="order">
-                <i class="order-up active"></i>
-                <i class="order-down"></i>
-              </p>
-            </li>
-            <li>
-              <span>起始价格</span>
-              <p class="order">
-                <i class="order-up">up</i>
-                <i class="order-down active">down</i>
-              </p>
-            </li>
-            <li>
-              <span>交房时间</span>
-              <p class="order">
-                <i class="order-up">up</i>
-                <i class="order-down">down</i>
-              </p>
-            </li>
-          </ul>
-        </dd>
-      </dl>
-    </div>
+    #include('./search-condition.html')
     <!-- 列表开始 -->
     <div class="house-info">
       <dl>
@@ -381,6 +278,7 @@
       </dl>
     </div>
     <!-- 列表结束 -->
+    #include('./page.html')
   </div>
   <footer>
     <ul>
