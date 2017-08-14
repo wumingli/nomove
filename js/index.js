@@ -12,7 +12,6 @@ let model = {
 let logic = {
   init() {
     this.swiper();
-
   },
   //轮播图
   swiper() {
@@ -38,17 +37,16 @@ let Event = {
   init() {
     //console.log('事件绑定');
     //Event.hostHouseAnimate();
+    this.mouseAnimate();
   },
   //新房热卖动画
-  hostHouseAnimate() {
-    $(".house-introduce").hover(() => {
+  mouseAnimate() {
+    $(".new-house-list li").hover(function() {
       console.log("鼠标移进");
-      $(".house-introduce").css("height","150px");
-      $(".house-introduce").addClass('animated');
-    },() => {
+      $(this).find(".house-introduce").animate({"height":"150px"},300);
+    },function() {
       console.log("鼠标移出");
-      $(".house-introduce").css("height","39px");
-      $(".house-introduce").addClass('animated');
+      $(this).find(".house-introduce").animate({"height":"39px"},300);
     });
   }
 };
