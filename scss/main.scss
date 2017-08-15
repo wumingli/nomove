@@ -82,6 +82,126 @@ body {
       vertical-align: middle;
     }
   }
+  //搜索弹窗
+  .float-content{
+    width:1050px;
+    position: absolute;
+    margin: 0px auto;
+    padding-right:50px;
+    left:0px;
+    right:0px;
+    bottom: 46px;
+    height: 280px;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    // -webkit-align-content: space-between;
+    // align-content: space-between;display:
+  }
+  .search-float-content {
+    background: rgba(0, 0, 0, 0.5);
+    width: 425px;
+    height: 216px;
+    form {
+      width: 425px;
+      height: 85px;
+      position: relative;
+      font-size: 16px;
+      color: #666;
+      input {
+        width: 374px;
+        height: 40px;
+        text-indent: 10px;
+        border: 0;
+        margin: 22px 0 0 24px;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-image: url('../images/index/search-btn.png');
+        background-repeat: no-repeat;
+        background-position: 335px 10px;
+      }
+    }
+    //二维码
+    .scan-content {
+      width: 377px;
+      padding: 0px 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      -webkit-align-items: flex-start;
+      align-items: flex-start;
+      .scan-qr-code {
+        width: 105px;
+        height: 105px;
+        img {
+          width: 100%;
+        }
+      }
+      .more-tips {
+        width: 250px;
+        p{
+          width: 250px;
+          color: #fff;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+  .ask-float-content {
+    position: relative;
+    background: url('../images/index/ad-move1.png') no-repeat;
+    background-size: 100%;
+    width: 480px;
+    height: 280px;
+    .ask-btn {
+      position: absolute;
+      width: 130px;
+      height: 28px;
+      border: 1px solid #fff;
+      color: #fff;
+      bottom: 30px;
+      text-align: center;
+      line-height: 28px;
+    }
+    .now-ask-btn {
+      left: 95px;
+      background: #ff9900;
+    }
+    .cancel-btn {
+      right: 95px;
+    }
+    .close-btn {
+      position: absolute;
+      z-index: 3;
+      right: 10px;
+      top: 10px;
+      width: 16px;
+      height: 16px;
+      background: url('../images/index/close-btn.png') no-repeat;
+    }
+  }
+  //固定弹窗
+  .choice-house-popup {
+    width: 776px;
+    height: 500px;
+    position: fixed;
+    z-index: 4;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+    background: #fff;
+  }
   //中间内容
   &-content {
     width: 100%;
