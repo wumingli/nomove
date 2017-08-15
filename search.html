@@ -304,7 +304,73 @@
     </div>
     <div class="search-list">
       <div class="search-left-col">
-        #include('./search-condition.html')
+        <div class="search-condition search-page">
+          <dl class="no-selected">
+            <dt>国家：</dt>
+            <dd>
+              <ul>
+                <li><a href="" class="active">全部</a></li>
+                <li><a href="">美国</a></li>
+                <li><a href="">加拿大</a></li>
+                <li><a href="">英国</a></li>
+                <li><a href="">澳洲</a></li>
+                <li><a href="">新西兰</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl class="no-selected">
+            <dt>物业类型：</dt>
+            <dd>
+              <ul>
+                <li><a href="" class="active">全部</a></li>
+                <li><a href="">别墅(HOUSE)</a></li>
+                <li><a href="">公寓(CONDO)</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl class="no-selected">
+            <dt>价格：</dt>
+            <dd>
+              <ul class="price">
+                <li><a href="" class="active">全部</a></li>
+                <li><a href="">100万以下</a></li>
+                <li><a href="">100-300万</a></li>
+                <li><a href="">300-500万</a></li>
+                <li><a href="">500-800万</a></li>
+                <li><a href="">800万以上(人民币)</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <div class="order-more">
+            <dl>
+              <dt>更多条件：</dt>
+              <dd>
+                <div class="fd-selectbox">
+                  <input class="h_selectbox" value="卧室数量" title="" readonly="readonly" />
+                  <div class="h_selectbox-wrapper">
+                    <ul>
+                      <li><a href="index.html?m=invest&a=index&begroom_num=1&country_id=1">1室</a></li>
+                      <li><a href="index.html?m=invest&a=index&begroom_num=2&country_id=1">2室</a></li>
+                      <li><a href="index.html?m=invest&a=index&begroom_num=3&country_id=1">3室</a></li>
+                      <li><a href="index.html?m=invest&a=index&begroom_num=4&country_id=1">4室</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="fd-selectbox">
+                  <input class="h_selectbox" value="使用面积" title="" readonly="readonly" />
+                  <div class="h_selectbox-wrapper">
+                    <ul>
+                      <li><a href="index.html?m=invest&a=index&begroom_num=1&country_id=2">50-100</a></li>
+                      <li><a href="index.html?m=invest&a=index&begroom_num=2&country_id=2">100-150</a></li>
+                      <li><a href="index.html?m=invest&a=index&begroom_num=3&country_id=3">150-200</a></li>
+                      <li><a href="index.html?m=invest&a=index&begroom_num=4&country_id=4">200-300</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </div>
         <div class="house-list">
           <dl class="h-active">
             <dt style="background-image: url(http://www.movenomove.com/data/upload/5593a4462a55a.jpg)">
@@ -565,20 +631,20 @@
             <dl>
               <dt>贷款总额：</dt>
               <dd class="sum-have">
-                <input placeholder="输入贷款总额" type="number" />
+                <input id="loadMoney" placeholder="输入贷款总额" type="number" />
                 <span class="sum-have-type">万元</span>
               </dd>
             </dl>
             <dl>
               <dt>贷款期限：</dt>
               <dd class="sum-have">
-                <input placeholder="输入贷款期限" type="number" />
+                <input id="loadDate" placeholder="输入贷款期限" type="number" />
                 <span class="sum-have-type">月</span>
               </dd>
             </dl>
             <dl>
               <dt>国家：</dt>
-              <dd>
+              <dd class="slide-down">
                 <select id="hwfd-country" title="">
                   <option>请选择国家</option>
                   <option value="英国">英国</option>
@@ -591,7 +657,7 @@
             </dl>
             <dl>
               <dt>银行：</dt>
-              <dd>
+              <dd class="slide-down">
                 <select id="hwfd-bank" title="">
                   <option>请选择银行</option>
                 </select>
@@ -623,6 +689,21 @@
               </dd>
             </dl>
           </div>
+        </div>
+        <div class="calculator-box calculator-box-ask">
+          <form class="consult-form">
+            <p>快速咨询您感兴趣的房源</p>
+            <input type="text" name="username" placeholder="您的姓名"/>
+            <input type="text" name="phone" placeholder="手机号码"/>
+            <input type="text" name="email" placeholder="您的邮箱"/>
+            <textarea name="buy" placeholder="填写您的购买意向"></textarea>
+            <input type="submit" value="联系经纪人"/>
+          </form>
+        </div>
+        <div class="calculator-box calculator-box-concat">
+          <h3>了解详情致电</h3>
+          <span class="tel">010-88361888</span>
+          <span class="time">工作时间：周一至周五 9:00-18:00</span>
         </div>
       </div>
     </div>
