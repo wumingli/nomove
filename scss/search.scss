@@ -160,9 +160,69 @@
         }
       }
     }
+    .search-sort {
+      width: 100%;
+      clear: both;
+      float: left;
+      padding-bottom: 9px;
+      section {
+        float: left;
+        text-indent: 23px;
+        ul {
+          display: inline-block;
+          li {
+            display: inline-block;
+            text-indent: 0;
+            padding: 3px 12px;
+            background-color: #999;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 100;
+            &:after {
+              content: '';
+              display: inline-block;
+              width: 9px;
+              height: 9px;
+              background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAc0lEQVQYlW3PUQ3DMAxF0VAYhVIIllIIhVEYhVAohVIIhVEYhbOP2ZNV1ZLl6OXaz27oODHQSj5wYKTwwgdbgQ4stNq1UsSzNtXx3S9m1D3/KpS2wqrdQVtYrAD7HbTiyny/Y9c/NC/X5dSZ0LguGpn6+AKw5g1GkAFDrgAAAABJRU5ErkJggg==") 0 0 no-repeat;
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+      .sort-item {
+        float: right;
+        li {
+          display: inline-block;
+          background-color: #fff;
+          border: 1px solid #d6d4d4;
+          font-size: 14px;
+          padding: 3px 11px;
+          cursor: pointer;
+          &:after {
+            content: '';
+            display: inline-block;
+            width: 11px;
+            height: 12px;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMCAYAAAC0qUeeAAAAxUlEQVQokYXRIU4DYRRF4W9aFAFD0i0g0CBwTbBVmFpM5ylkF8ESXjBY/KSyqgk7QLCBceBQJD9m0k6boRx57xH35VWlFH0i4hKJyMyPfjc6EK+xwRSbiLgZlCPiDmtMumiCdZfv5IiYY4Vz+5xh1fXGbds+4hknhhnjvmmar+rwwGOM/ld2VHVdL/GE6ohXsKxKKSLiwd+7f7DIzJft5oiY4RWnPfEb88xsYO/AiLhFgwt8YpaZb9vNA+++6iYtMvO93/0CiHBGlbx/K7oAAAAASUVORK5CYII=")  0 0 no-repeat;
+            margin-left: 5px;
+          }
+          &.active {
+            background-color: #f90;
+            border-color: #f90;
+            a {
+              color: #fff;
+            }
+            &:after {
+              background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMCAYAAAC0qUeeAAAAiklEQVQokY3RIQ7CQBBG4YHDINAg0Fg8lgtUEc6H4jJNaiAVhLQfgkFsw5K+ZDLZ+Z/Y3QnEpFa4Zi+yqbhB60OLbU3e467kkfNCPuLpN8/MI9BgqIhfBjQLxFyWs82ULxExRoQ/NUbE+fvAE16V+74yL77ugH4i9jn/uZQduhS7PFc3GFjjlr3I3gSyYXFPt0zsAAAAAElFTkSuQmCC");
+            }
+          }
+        }
+      }
+    }
     .house-list {
       width: 100%;
       border-top: 2px solid #34b5d0;
+      clear: both;
       dl {
         padding: 25px 0;
         overflow: hidden;
