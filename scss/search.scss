@@ -84,6 +84,15 @@
     /*float: left;*/
     display: inline-block;
     .search-condition {
+      &.search-page {
+        height: auto;
+        border-color: #d6d4d4;
+      }
+      .order-more {
+        /*border-top: 1px solid #d6d4d4;
+        margin-top: 5px;
+        padding: 5px 0;*/
+      }
       dl {
         dd {
           ul {
@@ -98,6 +107,56 @@
               }
             }
           }
+          //搜索框中的下拉列表
+
+          .fd-selectbox {
+            width: 136px;
+            height: 31px;
+            line-height: 31px;
+            position: relative;
+            border: #c7c8dc 1px solid;
+            margin-top: -3px;
+            &:after {
+              display: inline-block;
+              position: absolute;
+              right: 5px;
+              top: 12px;
+              width: 13px;
+              height: 7px;
+              cursor: pointer;
+              content: '';
+              background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAHCAYAAADTcMcaAAAAdklEQVQYlYXNMQrCMBSA4U8RC1LxPIKCgyBCoUM7eQOPlBMIgqCD6GE8h7NLAiUE+y+P8PheJiEEhQ4444RvvpwWwBEPtHEuxlCDO6r43uOZwyFqccM8O7TDG3WOOlwLILXFC8uEelz+gNQm/ria4YP1CBhW/QDHzw8PAXieiwAAAABJRU5ErkJggg==") 50% 50% no-repeat;
+              transform: rotate(180deg);
+            }
+            input {
+              border: 0;
+              height: 100%;
+              width: 100%;
+              cursor: pointer;
+              text-indent: 5px;
+            }
+            .h_selectbox-wrapper {
+              width: 100%;
+              margin-left: -1px;
+            }
+            ul {
+              width: 100%;
+              li {
+                width: 100%;
+                padding-right: 0;
+                box-sizing: border-box;
+                a {
+                  display: block;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+        &.no-selected {
+          margin: 0;
+          padding: 11px 0 2px 22px;
+          border-bottom: 1px solid #d6d4d4;
         }
       }
     }
@@ -234,6 +293,6 @@
     float: right;
     clear: right;
     box-sizing: border-box;
-    @import "sidebox";
   }
+  @import "sidebox";
 }

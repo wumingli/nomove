@@ -3,6 +3,9 @@
   background-color: #fff;
   color: #333;
 }
+.fd-selectbox {
+  display: inline-block;
+}
 .search-condition {
   @include borderAndBg;
   height: 148px;
@@ -37,6 +40,9 @@
             padding-right: 40px;
           }
         }
+      }
+      @at-root .fd-selectbox ul li {
+        width: auto;
       }
     }
     &.order-by {
