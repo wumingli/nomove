@@ -13,6 +13,7 @@ module.exports = {
     main: './js/index',
     list: './js/list',
     search: './js/search',
+    college: './js/college',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -121,6 +122,16 @@ module.exports = {
       filename: 'search.html',
       template: './search.html',
       chunks: ['search'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'college.html',
+      template: './college.html',
+      chunks: ['college'],
       inject: ['body', 'head'],
       /*minify: {
        removeComments: true,
