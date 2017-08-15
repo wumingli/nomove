@@ -48,6 +48,7 @@ let Event = {
       console.log("鼠标移出");
       $(this).find(".house-introduce").animate({"height":"39px"},300);
     });
+
   }
 };
 
