@@ -15,6 +15,7 @@ module.exports = {
     search: './js/search',
     news: './js/news',
     college: './js/college',
+    detail: './js/detail',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -146,6 +147,17 @@ module.exports = {
       filename: 'college.html',
       template: './college.html',
       chunks: ['college'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    //新闻详情页
+    new HtmlWebpackPlugin({
+      filename: 'detail.html',
+      template: './detail.html',
+      chunks: ['detail'],
       inject: ['body', 'head'],
       /*minify: {
        removeComments: true,

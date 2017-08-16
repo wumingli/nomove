@@ -4,8 +4,10 @@
 @import "swiper";
 @import "page";
 
-.wrapper.news-banner {
-  background-image: url("../images/news/news-banner.jpg");
+.wrapper {
+  &.news-banner {
+    background-image: url("../images/news/news-banner.jpg");
+  }
 }
 @mixin hw {
   height: 100%;

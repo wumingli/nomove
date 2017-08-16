@@ -1,0 +1,153 @@
+@import "./common";
+@import "footer";
+@import "banner";
+
+.wrapper {
+  &.news-banner {
+    background-image: url("../images/news/news-banner.jpg");
+  }
+}
+.news-detail-wrapper {
+  width: 1100px;
+  margin: 48px auto 0;
+  overflow: hidden;
+  .article-con {
+    float: left;
+    width: 730px;
+    color: #333;
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      font-weight: normal;
+    }
+    .article-info {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .share {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 11px;
+      height: 20px;
+      margin-bottom: 23px;
+      .bdsharebuttonbox {
+        float: right;
+      }
+    }
+    p {
+      text-indent: 2em;
+      margin-bottom: 15px;
+      line-height: 30px;
+      font-size: 16px;
+    }
+    img {
+      display: block;
+      margin: 44px auto;
+    }
+  }
+  .detail-right-con {
+    width: 320px;
+    float: right;
+    .news-top5, .news-hot-house {
+      width: 320px;
+      height: 372px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      h3 {
+        height: 45px;
+        line-height: 45px;
+        background-color: #33a7d8;
+        font-weight: 200;
+        font-size: 18px;
+        color: #fff;
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 26px;
+          height: 26px;
+          vertical-align: -6px;
+          background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAB8ElEQVRIib2WPWsVQRSGnyzRJCoI3hTBjwtWkZiACiFBE4mCNukitvY2dnb6JyxEUAQLiYX4C4QYv4IBQSIYYiNKBAtTK/HmPha7q8N65242V+4LB3YOM+97ZubsOdOjUoKTwBxwBjgMHAQEvmb2AngCrLRlUWM2o752+1hUp2J8rZx71fsVBEI01dtqf5nQoLq8Q5EQL9X9MaE96rv/IJJjSR3I+Xv8mwwPgCvZ90/gDfCrLFMK2A1MAH3Z+A5wNUyGi0EkDfWE8SQps3F1K+NqqtPhjpaB8SyKNeBY9n0UOFBhR++BTWAdOJT5FoEZ1FOFs10JontY8V7q2brPBf9YAsxWvIedYC4BLnRBaCoBRrogNJwAtS4I1ZIuiACQABtd0NnoBT4A05EJn4C3FQg3I/411BuFnP/YQVXIbb3AeRN1rOBsqBMdiJw1LT0hRvIStARMFo5gFWhk4y3gEWmR/JH59pEWzMukdw2wi/R36Q24FoDzeRTnYjVFnVeH2+xgVH0cWdtUJy30o3uRyXXLj6seWXsrnxNu8RowStpPQswC30uybbCFbwG4/mdUiKxm2hk7xTPbtPLcBtS7/ps520HT9Lj6irxlafq8gshTs4tvZeGbIYbjwCXgNHAEGCJ9QH4DvgCvSB+Qq+1IfgM52N8/ExqdAwAAAABJRU5ErkJggg==") 0 0 no-repeat;
+          margin: 0 17px 0 19px;
+        }
+      }
+      li {
+        margin: 16px 22px 0;
+        padding-bottom: 5px;
+        background-image:url("../images/dashed.png");
+        background-repeat:repeat-x ;
+        background-position:bottom;
+        &:last-child {
+          background: none;
+        }
+        span {
+          float: left;
+          width: 18px;
+          height: 17px;
+          line-height: 17px;
+          font-size: 14px;
+          font-weight: 100;
+          background-color: #999;
+          color: #fff;
+          text-align: center;
+          vertical-align: -3px;
+          &.hot {
+            background-color: #f60;
+          }
+        }
+        a {
+          margin-left: 25px;
+          display: block;
+          position: relative;
+          top: -4px;
+        }
+      }
+    }
+    .news-hot-house {
+      margin-top: 37px;
+      height: auto;
+      h3 {
+        &:before {
+          width: 22px;
+          background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAYAAACzdqxAAAAB3klEQVRIia2VP2gUURCHvzsRMUZOlBgiaiXYik3QRrBIY2P804lICsHWJpWFiGBvoY2IhSBCEgUVKxs7QQQb0VLUSK5JNESieJ/FznKbvd3N7uEPHm/fzLyPx8ww21L5DxoFVrOG9pCgDjADPAeWgacDEepedVbtqKgj6i11St0dNtSWely9q/50o65n4lBBvRrO2YzjbebSkvpR7VquySLwsXC+yTiuVUDyWlTbReC2+lXtqQfCcbQB+E4eqtIGesA80ALOROrfAd9qFvJxkTHtioXYp9OaAi9qQFeA14WeePoWk+L8VcfDdrpmKhbsd9SGHKfrXgRett92azXhn9QjZeBTEfQyY3tWE6z6S50pAm9Tl9Xf6q6wXWkATnVfHcm3ycNwXozzwRqgH+p5dUzdpx5Wx/PgsxH8JGN7XwFdVU/mGAOpQN1hUrA1dTRsNwqA6+oD9VARtAiMOheXz8V5MgPsqjfViTJgFfhCQB7FuW3SHZfU7ZsB09VycNB3gCVgHRiLvbGKBv0K8ArYCUwNAy0DA8zFPl3i31RFqYAkBYskv50J4E9TcNmLuyRTaw9woim0CgzJjIb+jG6kslQA7Ac+A9/ju9cEXPXiL8Bt4EMTYKqqF6fayhDF+weh0xBGkZcRqQAAAABJRU5ErkJggg==");
+        }
+        .more {
+          float: right;
+          color: #fff;
+          font-size: 14px;
+          margin: 0 13px 0 0;
+        }
+        margin-bottom: 20px;
+      }
+      .hot-house-list{
+        a {
+          clear: both;
+          display: block;
+          margin: 0 27px 20px;
+        }
+        dl {
+          dt {
+            width: 122px;
+            height: 92px;
+            float: left;
+            text-indent: -999px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: 50% 50%;
+          }
+          dd {
+            margin-left: 144px;
+            font-size: 14px;
+            height: 22px;
+            line-height: 22px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            span {
+              color: #f60;
+            }
+          }
+        }
+      }
+    }
+  }
+}
