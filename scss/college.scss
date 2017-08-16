@@ -3,6 +3,15 @@
 @import "banner";
 @import "swiper";
 
+@mixin bgColor($color:#fff) {
+  background-color: $color;
+}
+@mixin bgImg($img) {
+  background: url($img) no-repeat;
+  background-position: right center;
+  background-color: #ffffff;
+  background-size:31px 55px ;
+}
 .college-wrapper {
   width: 1100px;
   margin: 59px auto 0;
@@ -19,6 +28,16 @@
       padding: 9px 63px;
       position: relative;
       top: -24px;
+    }
+  }
+  .center-desc{
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    font-size: 16px;
+    color: #666666;
+    b{
+      font-size: 18px;
     }
   }
   .college-tab {
@@ -59,281 +78,218 @@
       margin-right: 0px;
     }
   }
-  @import 'search-condition';
-  .search-left-col {
-    width: 750px;
-    /*float: left;*/
-    display: inline-block;
-    .search-condition {
-      &.search-page {
-        height: auto;
-        border-color: #d6d4d4;
-      }
-      .order-more {
-        /*border-top: 1px solid #d6d4d4;
-        margin-top: 5px;
-        padding: 5px 0;*/
-      }
-      dl {
-        dd {
-          ul {
-            li {
-              width: auto;
-              white-space: nowrap;
-              padding-right: 23px;
-            }
-            &.price {
-              li {
-                padding-right: 10px;
-              }
-            }
-          }
-          //搜索框中的下拉列表
-
-          .fd-selectbox {
-            width: 136px;
-            height: 31px;
-            line-height: 31px;
-            position: relative;
-            border: #c7c8dc 1px solid;
-            margin-top: -3px;
-            &:after {
-              display: inline-block;
-              position: absolute;
-              right: 5px;
-              top: 12px;
-              width: 13px;
-              height: 7px;
-              cursor: pointer;
-              content: '';
-              background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAHCAYAAADTcMcaAAAAdklEQVQYlYXNMQrCMBSA4U8RC1LxPIKCgyBCoUM7eQOPlBMIgqCD6GE8h7NLAiUE+y+P8PheJiEEhQ4444RvvpwWwBEPtHEuxlCDO6r43uOZwyFqccM8O7TDG3WOOlwLILXFC8uEelz+gNQm/ria4YP1CBhW/QDHzw8PAXieiwAAAABJRU5ErkJggg==") 50% 50% no-repeat;
-              transform: rotate(180deg);
-            }
-            input {
-              border: 0;
-              height: 100%;
-              width: 100%;
-              cursor: pointer;
-              text-indent: 5px;
-            }
-            .h_selectbox-wrapper {
-              width: 100%;
-              margin-left: -1px;
-            }
-            ul {
-              width: 100%;
-              li {
-                width: 100%;
-                padding-right: 0;
-                box-sizing: border-box;
-                a {
-                  display: block;
-                  font-size: 16px;
-                }
-              }
-            }
-          }
-        }
-        &.no-selected {
-          margin: 0;
-          padding: 11px 0 2px 22px;
-          border-bottom: 1px solid #d6d4d4;
-        }
-      }
-    }
-    .search-sort {
-      width: 100%;
-      clear: both;
-      float: left;
-      padding-bottom: 9px;
-      section {
-        float: left;
-        text-indent: 23px;
-        ul {
-          display: inline-block;
-          li {
-            display: inline-block;
-            text-indent: 0;
-            padding: 3px 12px;
-            background-color: #999;
-            color: #fff;
-            cursor: pointer;
-            font-weight: 100;
-            &:after {
-              content: '';
-              display: inline-block;
-              width: 9px;
-              height: 9px;
-              background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAc0lEQVQYlW3PUQ3DMAxF0VAYhVIIllIIhVEYhVAohVIIhVEYhbOP2ZNV1ZLl6OXaz27oODHQSj5wYKTwwgdbgQ4stNq1UsSzNtXx3S9m1D3/KpS2wqrdQVtYrAD7HbTiyny/Y9c/NC/X5dSZ0LguGpn6+AKw5g1GkAFDrgAAAABJRU5ErkJggg==") 0 0 no-repeat;
-              margin-left: 12px;
-            }
-          }
-        }
-      }
-      .sort-item {
-        float: right;
-        li {
-          display: inline-block;
-          background-color: #fff;
-          border: 1px solid #d6d4d4;
-          font-size: 14px;
-          padding: 3px 11px;
-          cursor: pointer;
-          &:after {
-            content: '';
-            display: inline-block;
-            width: 11px;
-            height: 12px;
-            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMCAYAAAC0qUeeAAAAxUlEQVQokYXRIU4DYRRF4W9aFAFD0i0g0CBwTbBVmFpM5ylkF8ESXjBY/KSyqgk7QLCBceBQJD9m0k6boRx57xH35VWlFH0i4hKJyMyPfjc6EK+xwRSbiLgZlCPiDmtMumiCdZfv5IiYY4Vz+5xh1fXGbds+4hknhhnjvmmar+rwwGOM/ld2VHVdL/GE6ohXsKxKKSLiwd+7f7DIzJft5oiY4RWnPfEb88xsYO/AiLhFgwt8YpaZb9vNA+++6iYtMvO93/0CiHBGlbx/K7oAAAAASUVORK5CYII=")  0 0 no-repeat;
-            margin-left: 5px;
-          }
-          &.active {
-            background-color: #f90;
-            border-color: #f90;
-            a {
-              color: #fff;
-            }
-            &:after {
-              background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMCAYAAAC0qUeeAAAAiklEQVQokY3RIQ7CQBBG4YHDINAg0Fg8lgtUEc6H4jJNaiAVhLQfgkFsw5K+ZDLZ+Z/Y3QnEpFa4Zi+yqbhB60OLbU3e467kkfNCPuLpN8/MI9BgqIhfBjQLxFyWs82ULxExRoQ/NUbE+fvAE16V+74yL77ugH4i9jn/uZQduhS7PFc3GFjjlr3I3gSyYXFPt0zsAAAAAElFTkSuQmCC");
-            }
-          }
-        }
-      }
-    }
-    .house-list {
-      width: 100%;
-      border-top: 2px solid #34b5d0;
-      clear: both;
-      dl {
-        padding: 25px 0;
-        overflow: hidden;
-        zoom: 1;
-        background-image:url("../images/dashed.png");
-        background-repeat:repeat-x ;
-        background-position:bottom;
-        &:hover {
-          background-color: #fff;
-        }
-        dd {
-          width: 512px;
-          float: left;
-        }
-        dt {
-          float: left;
-          width: 160px;
-          height: 120px;
-          margin-right: 28px;
-          background-position: 50% 50%;
-          background-size: cover;
-          a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            text-indent: -999px;
-            overflow: hidden;
-          }
-        }
-      }
-
-      .h-title {
-        overflow: hidden;
-        zoom: 1;
-        color: #f60;
-        font-size: 18px;
-        font-weight: bold;
-        .rmb {
-          float: right;
-        }
-        a {
-          display: block;
-          width: 380px;
-          color: #666;
-          overflow: hidden;
-          -o-text-overflow: ellipsis;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          word-wrap: normal;
-          word-break: normal;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-      .h-city {
-        overflow: hidden;
-        zoom: 1;
-        color: #666;
-        font-size: 14px;
-        .dollar {
-          float: right;
-        }
-      }
-
-      .city {
-        width: 600px;
-        margin-top: 10px;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        word-wrap: normal;
-        word-break: normal;
-        i, span {
-          display: block;
-          float: left;
-        }
-        span {
-          max-width: 95%;
-          white-space: normal;
-        }
-        i {
-          width: 13px;
-          height: 19px;
-          margin-right: 13px;
-          background: url("../images/icon.png") no-repeat -7px -158px;
-        }
-      }
-
-      .h-info {
-        li {
-          float: left;
-          width: 230px;
-          margin: 10px 10px 0 0;
-          font-size: 14px;
-          color: #333;
-          i, span {
-            display: block;
-            float: left;
-            max-width: 240px;
-          }
-          i {
-            width: 20px;
-            height: 15px;
-            margin: 4px 5px 0 0;
-            background: url("../images/icon.png") no-repeat;
-            &.property {
-              background-position: -4px -199px;
-            }
-            &.area {
-              background-position: -57px -159px;
-            }
-            &.type {
-              background-position: -4px -230px;
-            }
-            &.carport {
-              background-position: -59px -188px;
-            }
-          }
-        }
-      }
-    }
-    @import "page";
-  }
-  .search-right-col {
-    width: 300px;
-    float: right;
-    clear: right;
+  .college-section{
+    background: #ffffff;
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 40px;
     box-sizing: border-box;
   }
-  @import "sidebox";
+  .college-content{
+    .college-section-a{
+      position: relative;
+      .college-section-a-line{
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        background: url("../images/college/line-mid.png") no-repeat center;
+        background-size:23px 1610px ;
+        width: 23px;
+        height: 1610px;
+        overflow: hidden;
+      }
+      .section-box{
+        width: 430px;
+        margin-bottom: 50px;
+      }
+      .section-LR-title{
+        position: relative;
+        width: 412px;
+        height: 48px;
+        box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+        @include bgColor(#0179b5);
+        color: #ffffff;
+        line-height: 48px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 18px;
+        .section-LR-number{
+          font-size: 28px;
+          margin-right: 10px;
+        }
+        .section-LR-icon{
+          position: absolute;
+          width: 31px;
+          height: 55px;
+          right: -20px;
+          top:0;
+          @include bgImg("../images/college/LR-R-icon01.png");
+        }
+      }
+      .section-LR-list{
+        border: solid 1px #cccccc;
+        width: 410px;
+        height:auto;
+        box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+        padding:20px  30px;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 28px;
+        i{
+          color: inherit;
+        }
+        span{
+          color: #666666;
+        }
+      }
+      .college-section-aL{
+        float: left;
+        width: 50%;
+      }
+      .college-section-aR{
+        float: right;
+        width: 50%;
+        padding-top: 36px;
+      }
+      .LR-R-01{
+        float: left;
+        width: 100%;
+        color: #0179b5;
+      }
+      .LR-L-02{
+        float: right;
+        width: auto;
+        color: #118dc1;
+        .section-LR-title{
+          @include bgColor(#118dc1);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon02.png");
+          left: -31px;
+        }
+
+      }
+      .LR-R-03{
+        float: left;
+        width: 100%;
+        color: #33a7d8;
+        .section-LR-title{
+          @include bgColor(#33a7d8);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-R-icon03.png");
+        }
+      }
+      .LR-L-04{
+        float: right;
+        width: auto;
+        color: #11b4cc;
+        .section-LR-title{
+          @include bgColor(#11b4cc);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon04.png");
+          left: -31px;
+        }
+
+      }
+      .LR-R-05{
+        float: left;
+        width: 100%;
+        color: #36b087;
+        .section-LR-title{
+          @include bgColor(#36b087);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-R-icon05.png");
+        }
+      }
+      .LR-L-06{
+        float: right;
+        width: auto;
+        color: #72a73e;
+        .section-LR-title{
+          @include bgColor(#72a73e);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon06.png");
+          left: -31px;
+        }
+
+      }
+      .LR-R-07{
+        float: left;
+        width: 100%;
+        color: #86c114;
+        .section-LR-title{
+          @include bgColor(#86c114);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-R-icon07.png");
+        }
+      }
+      .LR-L-08{
+        float: right;
+        width: auto;
+        color: #d1ba20;
+        .section-LR-title{
+          @include bgColor(#d1ba20);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon08.png");
+          left: -31px;
+        }
+      }
+      .LR-R-09{
+        float: left;
+        width: 100%;
+        color: #e39f35;
+        .section-LR-title{
+          @include bgColor(#e39f35);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-R-icon09.png");
+        }
+      }
+      .LR-L-10{
+        float: right;
+        width: auto;
+        color: #ff9900;
+        .section-LR-title{
+          @include bgColor(#ff9900);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon10.png");
+          left: -31px;
+        }
+      }
+      .LR-R-11{
+        float: left;
+        width: 100%;
+        color: #ff6600;
+        .section-LR-title{
+          @include bgColor(#ff6600);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-R-icon11.png");
+        }
+      }
+      .LR-L-12{
+        float: right;
+        width: auto;
+        color: #cc3300;
+        .section-LR-title{
+          @include bgColor(#cc3300);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon12.png");
+          left: -31px;
+        }
+      }
+    }
+  }
+}
+.none{
+  display: none;
 }
