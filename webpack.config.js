@@ -13,7 +13,8 @@ module.exports = {
     main: './js/index',
     list: './js/list',
     search: './js/search',
-    news: './js/news'
+    news: './js/news',
+    college: './js/college',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -132,6 +133,19 @@ module.exports = {
       filename: 'news.html',
       template: './news.html',
       chunks: ['news'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       filename: 'college.html',
+       template: './college.html',
+       chunks: ['college'],
+       }*/
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'college.html',
+      template: './college.html',
+      chunks: ['college'],
       inject: ['body', 'head'],
       /*minify: {
        removeComments: true,
