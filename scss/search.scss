@@ -35,6 +35,7 @@
           box-sizing: border-box;
           border: 1px solid #ccc;
           margin-right: 40px;
+          background-color: #fff;
           &:last-child {
             margin-right: 0;
           }
@@ -44,7 +45,7 @@
               height: 184px;
               background-position: 50% 50%;
               background-repeat: no-repeat;
-              background-size: auto 100%;
+              background-size: cover;
             }
             dd {
               padding: 10px 0 0 16px;
@@ -170,6 +171,7 @@
         text-indent: 23px;
         ul {
           display: inline-block;
+          text-indent: 0;
           li {
             display: inline-block;
             text-indent: 0;
