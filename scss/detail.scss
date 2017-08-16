@@ -23,6 +23,12 @@
     .article-info {
       text-align: center;
       padding: 20px 0;
+      span {
+        font-size: 14px;
+        &.preview {
+          margin-left: 21px;
+        }
+      }
     }
     .share {
       border-bottom: 1px solid #ccc;
