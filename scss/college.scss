@@ -1,0 +1,372 @@
+@import "./common";
+@import "footer";
+@import "banner";
+@import "swiper";
+
+@mixin bgColor($color:#fff) {
+  background-color: $color;
+}
+@mixin bgImg($img) {
+  background: url($img) no-repeat;
+  background-position: right center;
+  background-color: #ffffff;
+  background-size:31px 55px ;
+}
+.college-wrapper {
+  width: 1100px;
+  margin: 59px auto 0;
+  /*overflow: hidden;*/
+  .center-title {
+    border-top: 1px solid #999;
+    text-align: center;
+    height: 0;
+    h1 {
+      display: inline-block;
+      border: 1px solid #999;
+      background-color: #fff;
+      font-size: 18px;
+      padding: 9px 63px;
+      position: relative;
+      top: -24px;
+    }
+  }
+  .center-desc{
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    font-size: 16px;
+    color: #666666;
+    b{
+      font-size: 18px;
+    }
+  }
+  .college-tab {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 60px;
+    li{
+      float: left;
+      width: 90px;
+      margin-right: 54px;
+      dt{
+        width:91px;
+        height: 91px;
+        border-radius: 45.5px;
+        background: #33a7d8;
+        box-sizing: border-box;
+        padding-top: 18px;
+        img{
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      dd{
+        text-align: center;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        font-size: 16px;
+        color: #333333;
+      }
+    }
+    li.active{
+      dt{
+        background: #ff9900;
+      }
+    }
+    li:last-child{
+      margin-right: 0px;
+    }
+  }
+  .college-section{
+    background: #ffffff;
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  .college-shadow{
+    box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+  }
+  .college-content{
+    .college-section-LR{
+      position: relative;
+      .college-section-a-line{
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        width: 23px;
+        overflow: hidden;
+      }
+      .section-box{
+        width: 430px;
+        margin-bottom: 50px;
+      }
+      .section-LR-title{
+        position: relative;
+        width: 412px;
+        height: 48px;
+        box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+        @include bgColor(#0179b5);
+        color: #ffffff;
+        line-height: 48px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 18px;
+        .section-LR-number{
+          font-size: 28px;
+          margin-right: 10px;
+        }
+        .section-LR-icon{
+          position: absolute;
+          width: 31px;
+          height: 55px;
+          right: -20px;
+          top:0;
+          @include bgImg("../images/college/LR-R-icon01.png");
+        }
+      }
+      .section-LR-list{
+        border: solid 1px #cccccc;
+        width: 410px;
+        height:auto;
+        box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+        padding:20px  30px;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 28px;
+        i{
+          color: inherit;
+        }
+        span{
+          color: #666666;
+        }
+      }
+      .college-section-aL{
+        float: left;
+        width: 50%;
+      }
+      .college-section-aR{
+        float: right;
+        width: 50%;
+      }
+      .LR-R-01{
+        float: left;
+        width: 100%;
+        color: #0179b5;
+      }
+      .LR-L-02{
+        float: right;
+        width: auto;
+        color: #118dc1;
+        .section-LR-title{
+          @include bgColor(#118dc1);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon02.png");
+          left: -31px;
+        }
+
+      }
+      .LR-R-03{
+        float: left;
+        width: 100%;
+        color: #33a7d8;
+        .section-LR-title{
+          @include bgColor(#33a7d8);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-R-icon03.png");
+        }
+      }
+      .LR-L-04{
+        float: right;
+        width: auto;
+        color: #11b4cc;
+        .section-LR-title{
+          @include bgColor(#11b4cc);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon04.png");
+          left: -31px;
+        }
+
+      }
+      .LR-R-05{
+        float: left;
+        width: 100%;
+        color: #36b087;
+        .section-LR-title{
+          @include bgColor(#36b087);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-R-icon05.png");
+        }
+      }
+      .LR-L-06{
+        float: right;
+        width: auto;
+        color: #72a73e;
+        .section-LR-title{
+          @include bgColor(#72a73e);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon06.png");
+          left: -31px;
+        }
+
+      }
+      .LR-R-07{
+        float: left;
+        width: 100%;
+        color: #86c114;
+        .section-LR-title{
+          @include bgColor(#86c114);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-R-icon07.png");
+        }
+      }
+      .LR-L-08{
+        float: right;
+        width: auto;
+        color: #d1ba20;
+        .section-LR-title{
+          @include bgColor(#d1ba20);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon08.png");
+          left: -31px;
+        }
+      }
+      .LR-R-09{
+        float: left;
+        width: 100%;
+        color: #e39f35;
+        .section-LR-title{
+          @include bgColor(#e39f35);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-R-icon09.png");
+        }
+      }
+      .LR-L-10{
+        float: right;
+        width: auto;
+        color: #ff9900;
+        .section-LR-title{
+          @include bgColor(#ff9900);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon10.png");
+          left: -31px;
+        }
+      }
+      .LR-R-11{
+        float: left;
+        width: 100%;
+        color: #ff6600;
+        .section-LR-title{
+          @include bgColor(#ff6600);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-R-icon11.png");
+        }
+      }
+      .LR-L-12{
+        float: right;
+        width: auto;
+        color: #cc3300;
+        .section-LR-title{
+          @include bgColor(#cc3300);
+        }
+        .section-LR-icon{
+          @include bgImg("../images/college/LR-L-icon12.png");
+          left: -31px;
+        }
+      }
+    }
+    .college-section-a{
+      .college-section-a-line{
+        height: 1610px;
+        background: url("../images/college/line-mid.png") no-repeat center;
+        background-size:23px 1610px ;
+      }
+      .college-section-aR{
+        padding-top: 20px;
+      }
+      .LR-R-07,.LR-L-08{
+        margin-top: 40px;
+      }
+      .LR-R-09,.LR-R-11,.LR-L-12{
+        margin-top: 10px;
+      }
+      .LR-L-10{
+        margin-top: 70px;
+      }
+
+    }
+    .college-section-d{
+      .college-section-a-line{
+        height: 642px;
+        background: url("../images/college/line-mid-d.png") no-repeat center;
+        background-size:23px 642px ;
+      }
+      .college-section-aR{
+        padding-top: 60px;
+      }
+      .section-box{
+        margin-bottom: 75px;
+      }
+
+    }
+    .college-section-f{
+      margin-left: 10px ;
+      position: relative;
+      &-desc{
+        text-indent: 2em;
+        color: #666666;
+        font-size: 16px;
+        line-height: 28px;
+        .icon{
+          width: 20px;
+          height: 20px;
+          vertical-align: top;
+          display: inline-block;
+          border-radius: 11px;
+          border: #33a7d8 solid 1px;
+          margin-right: 2px;
+          i{
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            margin: 2px;
+            float: left;
+            text-indent: 0;
+            color: #ffffff;
+            background: #33a7d8;
+            text-align: center;
+            line-height: 17px;
+            font-size: 12px;
+          }
+        }
+      }
+      &-erweima{
+        width: 262px;
+        height:235px;
+        overflow: hidden;
+        position: absolute;
+        right: 50px;
+        bottom:50px;
+        img{
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.none{
+  display: none;
+}
