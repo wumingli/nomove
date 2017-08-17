@@ -11,4 +11,4 @@ $('.college-tab').find('li').on('click', function() {
   $('.college-content').children('section').eq(tabIndex).removeClass('none');
 
 
-});
+}).eq(0).trigger('click');
