@@ -1,0 +1,52 @@
+@import "./common";
+@import "footer";
+@import "banner";
+
+.wrapper {
+  &.about-banner {
+    background-image: url("../images/team/team-banner.jpg");
+    height: 279px;
+  }
+}
+.about-wrapper {
+  width: 1100px;
+  margin: 68px auto 0;
+  .center-title {
+    border-top: 1px solid #999;
+    text-align: center;
+    height: 0;
+    clear: both;
+    margin: 71px auto 39px;
+    h1 {
+      display: inline-block;
+      border: 1px solid #999;
+      background-color: #fff;
+      font-size: 18px;
+      padding: 9px 63px;
+      position: relative;
+      top: -24px;
+    }
+  }
+  .text {
+    font-size: 16px;
+    color: #666;
+    line-height: 28px;
+    p{
+      text-indent: 2em;
+      margin-bottom: 10px;
+    }
+    img {
+      margin-top: 30px;
+    }
+  }
+  .map-con {
+    .map {
+      height: 580px;
+      background: url("../images/usa-map.jpg") no-repeat;
+    }
+    p{
+      padding-top: 15px;
+      text-align: center;
+    }
+  }
+}

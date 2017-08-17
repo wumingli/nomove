@@ -1,0 +1,58 @@
+@import "./common";
+@import "footer";
+@import "banner";
+
+.wrapper {
+  &.concat-banner {
+    background-image: url("../images/concat/concat-banner.jpg");
+    height: 277px;
+  }
+}
+.concat-wrapper {
+  width: 1100px;
+  margin: 68px auto 0;
+  .center-title {
+    border-top: 1px solid #999;
+    text-align: center;
+    height: 0;
+    clear: both;
+    margin: 71px auto 39px;
+    h1 {
+      display: inline-block;
+      border: 1px solid #999;
+      background-color: #fff;
+      font-size: 18px;
+      padding: 9px 63px;
+      position: relative;
+      top: -24px;
+    }
+  }
+  .info {
+    border: 1px solid #999;
+    background-color: #fff;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    height: 409px;
+    box-sizing: border-box;
+    .left-col {
+      float: left;
+      width: 501px;
+      margin: 23px 0 23px 23px;
+    }
+    .right-col {
+      float: right;
+      width: 498px;
+      margin: 23px 23px 23px 0;
+    }
+    img {
+      position: absolute;
+      bottom: 23px;
+    }
+    .msg {
+      li {
+        line-height: 24px;
+      }
+    }
+  }
+}

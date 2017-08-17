@@ -16,6 +16,9 @@ module.exports = {
     news: './js/news',
     college: './js/college',
     detail: './js/detail',
+    concat: './js/concat',
+    team: './js/team',
+    about: './js/about',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -40,7 +43,8 @@ module.exports = {
     loaders: [
       {
         test: /\.(png)|(jpg)|(webp)$/,
-        loader: [`file-loader?limit=4192&name=${isDev ? '' : 'images/'}[md5:hash:base64:10].[ext]`]
+        //loader: [`file-loader?limit=4192&name=${isDev ? '' : 'images/'}[md5:hash:base64:10].[ext]`]
+        loader: [`file-loader?limit=4192&name=${isDev ? '' : 'images/'}[name].[ext]`]
       },
       {
         test: /\.js$/,
@@ -158,6 +162,39 @@ module.exports = {
       filename: 'detail.html',
       template: './detail.html',
       chunks: ['detail'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    //联系我们
+    new HtmlWebpackPlugin({
+      filename: 'concat.html',
+      template: './concat.html',
+      chunks: ['concat'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    //专业团队
+    new HtmlWebpackPlugin({
+      filename: 'team.html',
+      template: './team.html',
+      chunks: ['team'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    //关于我们
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: './about.html',
+      chunks: ['about'],
       inject: ['body', 'head'],
       /*minify: {
        removeComments: true,
