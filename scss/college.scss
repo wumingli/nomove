@@ -86,17 +86,17 @@
     padding: 40px;
     box-sizing: border-box;
   }
+  .college-shadow{
+    box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+  }
   .college-content{
-    .college-section-a{
+    .college-section-LR{
       position: relative;
       .college-section-a-line{
         position: absolute;
         top: 50px;
         left: 50%;
-        background: url("../images/college/line-mid.png") no-repeat center;
-        background-size:23px 1610px ;
         width: 23px;
-        height: 1610px;
         overflow: hidden;
       }
       .section-box{
@@ -150,7 +150,6 @@
       .college-section-aR{
         float: right;
         width: 50%;
-        padding-top: 36px;
       }
       .LR-R-01{
         float: left;
@@ -285,6 +284,84 @@
         .section-LR-icon{
           @include bgImg("../images/college/LR-L-icon12.png");
           left: -31px;
+        }
+      }
+    }
+    .college-section-a{
+      .college-section-a-line{
+        height: 1610px;
+        background: url("../images/college/line-mid.png") no-repeat center;
+        background-size:23px 1610px ;
+      }
+      .college-section-aR{
+        padding-top: 20px;
+      }
+      .LR-R-07,.LR-L-08{
+        margin-top: 40px;
+      }
+      .LR-R-09,.LR-R-11,.LR-L-12{
+        margin-top: 10px;
+      }
+      .LR-L-10{
+        margin-top: 70px;
+      }
+
+    }
+    .college-section-d{
+      .college-section-a-line{
+        height: 642px;
+        background: url("../images/college/line-mid-d.png") no-repeat center;
+        background-size:23px 642px ;
+      }
+      .college-section-aR{
+        padding-top: 60px;
+      }
+      .section-box{
+        margin-bottom: 75px;
+      }
+
+    }
+    .college-section-f{
+      margin-left: 10px ;
+      position: relative;
+      &-desc{
+        text-indent: 2em;
+        color: #666666;
+        font-size: 16px;
+        line-height: 28px;
+        .icon{
+          width: 20px;
+          height: 20px;
+          vertical-align: top;
+          display: inline-block;
+          border-radius: 11px;
+          border: #33a7d8 solid 1px;
+          margin-right: 2px;
+          i{
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            margin: 2px;
+            float: left;
+            text-indent: 0;
+            color: #ffffff;
+            background: #33a7d8;
+            text-align: center;
+            line-height: 17px;
+            font-size: 12px;
+          }
+        }
+      }
+      &-erweima{
+        width: 262px;
+        height:235px;
+        overflow: hidden;
+        position: absolute;
+        right: 50px;
+        bottom:50px;
+        img{
+          display: inline-block;
+          width: 100%;
         }
       }
     }
