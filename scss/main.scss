@@ -13,7 +13,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+*{
+  box-sizing: content-box;
+}
 body {
   -webkit-overflow-scrolling : touch;
   // height:3000px;
@@ -349,6 +351,12 @@ body {
         font-size: 16px;
         text-align: center;
         cursor: pointer;
+      }
+      .prev-btn {
+        float: left;
+      }
+      .next-btn,.submit-btn {
+        float: right;
       }
     }
     .user-info-content {
