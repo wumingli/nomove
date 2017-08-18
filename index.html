@@ -10,13 +10,13 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="wrapper-top-nav">
+    <div class="wrapper-top-nav clearfix">
       <div class="wrapper-logo">
         <span>
           <img src="./images/index/big-logo.png" alt="LOGO">
         </span>
       </div>
-      <ul class="wrapper-nav-list">
+      <ul class="wrapper-nav-list clearfix">
         <li>
           <a class="nav-active" href="#">首页</a>
         </li>
@@ -60,12 +60,12 @@
           <img class="wrapper-scroll-banner-img" src="./images/index/banner4.jpg">
         </div>
       </div>
-      <div class="float-content">
+      <div class="float-content clearfix">
         <div class="search-float-content">
           <form class="" action="index.html" method="post">
             <input type="text" autocomplete="off" name="keywords" placeholder="输入搜索内容">
           </form>
-          <div class="scan-content">
+          <div class="scan-content clearfix">
             <div class="scan-qr-code">
               <img src="./images/index/QR.png" alt="">
             </div>
@@ -91,10 +91,9 @@
       <div class="content-title">
         <div class="title-line"></div>
         <div class="title-middle">热销新房</div>
-        <div class="title-line"></div>
       </div>
       <div class="new-house-list">
-        <ul>
+        <ul class="clearfix">
           <li>
             <a href="#">
               <img src="./images/index/daily-banner1.jpg" alt="">
@@ -170,10 +169,9 @@
       <div class="content-title">
         <div class="title-line"></div>
         <div class="title-middle">置业学院</div>
-        <div class="title-line"></div>
       </div>
       <div class="college-list">
-        <ul>
+        <ul class="clearfix">
           <li>
             <a href="#">
               <img src="./images/index/buy-icon1.png" alt="">
@@ -222,7 +220,6 @@
       <div class="content-title">
         <div class="title-line"></div>
         <div class="title-middle">二手房源</div>
-        <div class="title-line"></div>
       </div>
       <div class="old-house-list">
         <div class="old-house-swiper-container">
@@ -240,7 +237,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="old-house-right">
+                <div class="old-house-right clearfix">
                   <div class="old-house-right-item">
                     <a href="#">
                       <img src="./images/index/old-house1.jpg" alt="">
@@ -289,18 +286,17 @@
       <div class="content-title">
         <div class="title-line"></div>
         <div class="title-middle">七大优势</div>
-        <div class="title-line"></div>
       </div>
       <div class="advantage-content">
-        <ul class="advantage-seven">
-          <li class="up-item">
+        <ul class="advantage-seven clearfix">
+          <li class="up-item clearfix">
             <div class="up-child-item">
               <span class="right-top"></span>
             </div>
             <div class="up-child-item">
               <span class="right-top"></span>
             </div>
-            <div class="up-child-item">
+            <div class="up-child-item last">
               <span class="right-top"></span>
             </div>
           </li>
@@ -313,12 +309,21 @@
           <li class="down-item">
             <span class="right-top"></span>
           </li>
-          <li class="down-item">
+          <li class="down-item last">
             <span class="right-top"></span>
           </li>
         </ul>
         <div class="advantage-video">
-
+          <video id="my-video" class="video-js" controls preload="auto" width="1100" height="450"
+      		  poster="./images/index/banner1.jpg" data-setup="{}">
+      			<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+      			<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+      			<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+      			<p class="vjs-no-js">
+      			  To view this video please enable JavaScript, and consider upgrading to a web browser that
+      			  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      			</p>
+      		</video>
         </div>
       </div>
     </div>
@@ -327,18 +332,33 @@
       <div class="content-title">
         <div class="title-line"></div>
         <div class="title-middle">完善的售前与售后</div>
-        <div class="title-line"></div>
       </div>
       <div class="after-sales-content">
-        <ul class="after-sales-left">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul class="after-sales-left clearfix">
+          <li>
+            <span>在中国开设美国账户</span>
+          </li>
+          <li>
+            <span>在中国开设美国账户</span>
+          </li>
+          <li>
+            <span>在中国开设美国账户</span>
+          </li>
+          <li>
+            <span>在中国开设美国账户</span>
+          </li>
+          <li>
+            <span>在中国开设美国账户</span>
+          </li>
+          <li>
+            <span>在中国开设美国账户</span>
+          </li>
+          <li>
+            <span>在中国开设美国账户</span>
+          </li>
+          <li>
+            <span>在中国开设美国账户</span>
+          </li>
         </ul>
         <div class="after-sales-right">
             <img src="./images/index/after-sales.png" alt="">
@@ -350,7 +370,6 @@
       <div class="content-title">
         <div class="title-line"></div>
         <div class="title-middle">完善的售前与售后</div>
-        <div class="title-line"></div>
       </div>
       <div class="team-content">
         <ul>
@@ -443,7 +462,7 @@
       </div>
     </div>
     <!-- 选择心仪的房产 -->
-    <div class="choice-house-popup">
+    <div class="choice-house-popup" style="display:none;">
       <div class="choice-house-title">
         <div class="title-line"></div>
         <div class="title-middle">选择心仪的房产</div>

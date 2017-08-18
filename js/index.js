@@ -1,5 +1,6 @@
 import $ from '../libs/jquery-3.2.1';
-import '../libs/sideBar.js'
+import '../libs/sideBar.js';
+import 'video.js';
 //const $ = require('../libs/jquery');
 //let Swipe = require('../libs/swipe');
 import 'swiper';
