@@ -12,6 +12,12 @@
   background-color: #ffffff;
   background-size:31px 55px ;
 }
+@mixin bgImg2($img) {
+  background: url($img) no-repeat;
+  background-color: #ffffff;
+  background-size: 40px 75px;
+  background-position: center bottom;
+}
 .college-wrapper {
   width: 1100px;
   margin: 59px auto 0;
@@ -364,6 +370,149 @@
           width: 100%;
         }
       }
+    }
+
+    .college-section-UD{
+      .section-box{
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      .section-UD-title{
+        position: relative;
+        border-radius: 10px;
+        width: inherit;
+        height: 48px;
+        box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+        @include bgColor(#118dc1);
+        color: #ffffff;
+        line-height: 48px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 18px;
+        .skip-to-explain{
+          color: inherit;
+          text-decoration: underline;
+        }
+        .section-UD-number{
+          font-size: 28px;
+          margin-right: 10px;
+        }
+        .section-UD-icon{
+          position: absolute;
+          width: 40px;
+          height: 28px;
+          left: 35px;
+          top: 40px;
+          @include bgImg2("../images/college/UD-D-icon01.png");
+
+        }
+      }
+      .section-UD-list{
+        margin-top: 30px;
+        border: solid 1px #cccccc;
+        width:inherit;
+        height:auto;
+        box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+        padding:25px  20px;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 28px;
+        overflow: hidden;
+        .list-content{
+          float: left;
+          font-size: 16px;
+          color: #666666;
+          width: 49%;
+        }
+        .list-L{
+          border-right: #118dc1 solid 1px;
+        }
+        .list-R{
+          float: right;
+        }
+        i{
+          color: inherit;
+        }
+        span{
+          color: #666666;
+        }
+      }
+      .UD-D-01{
+        float: left;
+        width: 100%;
+        color: #0179b5;
+      }
+      .UD-D-02{
+        float: right;
+        width: auto;
+        color: #33a7d8;
+        .section-UD-title{
+          @include bgColor(#33a7d8);
+        }
+        .section-UD-icon{
+          @include bgImg2("../images/college/UD-D-icon02.png");
+
+        }
+
+      }
+      .UD-D-03{
+        float: left;
+        width: 100%;
+        color: #36b087;
+        .section-UD-title{
+          @include bgColor(#36b087);
+        }
+        .section-UD-icon{
+          @include bgImg2("../images/college/UD-D-icon03.png");
+        }
+      }
+      .UD-D-04{
+        float: right;
+        width: auto;
+        color: #d1ba20;
+        .section-UD-title{
+          @include bgColor(#d1ba20);
+        }
+        .section-UD-icon{
+          @include bgImg2("../images/college/UD-D-icon04.png");
+        }
+
+      }
+      .UD-D-05{
+        float: left;
+        width: 100%;
+        color: #e39f35;
+        .section-UD-title{
+          @include bgColor(#e39f35);
+        }
+        .section-UD-icon{
+          @include bgImg2("../images/college/UD-D-icon05.png");
+        }
+      }
+      .UD-D-06{
+        float: right;
+        width: auto;
+        color: #ff9900;
+        .section-UD-title{
+          @include bgColor(#ff9900);
+        }
+        .section-UD-icon{
+          @include bgImg2("../images/college/UD-D-icon06.png");
+        }
+
+      }
+      .UD-D-07{
+        float: left;
+        width: 100%;
+        color: #ff6600;
+        .section-UD-title{
+          @include bgColor(#ff6600);
+        }
+        .section-UD-icon{
+          @include bgImg2("../images/college/UD-D-icon07.png");
+        }
+      }
+
     }
   }
 }

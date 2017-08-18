@@ -19,6 +19,15 @@ body {
   // height:3000px;
   background: #f5f5f5;
 }
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
 .wrapper {
   width: 100%;
   overflow: hidden;
@@ -191,16 +200,191 @@ body {
   }
   //固定弹窗
   .choice-house-popup {
-    width: 776px;
-    height: 500px;
+    width: 712px;
+    padding: 0px 28px 28px 28px;
+    z-index: 10;
     position: fixed;
-    z-index: 4;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    margin: auto;
+    top: 50%;
+    left: 50%;
     background: #fff;
+    border: 1px solid #999999;
+    -webkit-transform: translate(-50%,-50%);
+       -ms-transform: translate(-50%,-50%);
+           transform: translate(-50%,-50%);
+    .choice-house-title {
+      width: 310px;
+      margin: 30px auto 0px auto;
+      height: 40px;
+      position: relative;
+      .title-line {
+        width: 310px;
+        height: 1px;
+        background: #999999;
+        position: absolute;
+        top: 19.5px;
+      }
+      .title-middle {
+        position: absolute;
+        top: 0px;
+        left: 55px;
+        width: 198px;
+        height: 38px;
+        border: 1px solid #999999;
+        background: #33a7d8;
+        text-align: center;
+        line-height: 38px;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+    .choice-house-help {
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 16px;
+    }
+    .choice-house-nav {
+      width: 708px;
+      height: 33px;
+      border-top: 1px solid #33a7d8;
+      border-bottom: 2px solid  #33a7d8;
+      border-left: 1px solid #33a7d8;
+      border-right: none;
+      li {
+        width: 117px;
+        height: 35px;
+        float: left;
+        border-right: 1px solid #33a7d8;
+        text-align: center;
+        line-height: 35px;
+      }
+      li.active {
+        background: #33a7d8;
+        color: #fff;
+      }
+    }
+    .choice-house-content {
+      width: 710px;
+      position: relative;
+      li {
+        width: 710px;
+        top: 0px;
+        left: 0px;
+        display: none;
+      }
+      li:nth-child(1){
+        display: block;
+      }
+      .question-content {
+        width: 100%;
+        height: 65px;
+        text-align: center;
+        line-height: 65px;
+        font-size: 18px;
+      }
+      .item-content {
+        width: 100%;
+        .house-item {
+          float: left;
+          text-align: center;
+          margin-bottom: 50px;
+          .icon {
+            display: table;
+            width: 120px;
+            height: 120px;
+            border: 5px solid #cecdcc;
+            border-radius: 50%;
+            margin: 0px auto;
+            a {
+              text-align: center;
+              vertical-align: middle;
+              display: table-cell;
+            }
+          }
+          .icon:hover {
+            border: 5px solid #ff9900;
+          }
+          .icon.active {
+            border: 5px solid #ff9900;
+          }
+        }
+      }
+      .two-item {
+        width: 50%;
+        height: 50%;
+        .icon {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .three-item {
+        width: 33.3333333%;
+        height: 33.3333333%;
+        .icon {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .four-item {
+        width: 25%;
+        height: 25%;
+        border-radius: 50%;
+        .icon {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+    .choice-house-result {
+      width: 100%;
+      padding-bottom: 20px;
+      li:nth-child(1){
+        background: #ff9900;
+        color: #fff;
+      }
+      li {
+        float: left;
+        border: 1px solid #ff9900;
+        padding: 3px 10px;
+        margin-right: 7px;
+        font-size: 16px;
+      }
+    }
+    .choice-house-btn {
+      width: 100%;
+      button {
+        border: none;
+        background: #ff9900;
+        color: #fff;
+        font-size: 16px;
+        width: 147px;
+        height: 39px;
+        line-height: 39px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    .user-info-content {
+      width: 100%;
+      padding-bottom: 50px;
+      .user-info-form {
+        width: 358px;
+        margin: 0px auto;
+        span {
+          font-size: 16px;
+          line-height: 24px;
+          padding: 10px 0px 5px 0px;
+          display: block;
+        }
+        input {
+          width: 356px;
+          height: 31px;
+          border: 1px solid #999;
+        }
+      }
+    }
   }
   //中间内容
   &-content {
