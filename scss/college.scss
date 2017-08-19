@@ -815,6 +815,9 @@
         img{
           width: 50%;
         }
+        dt{
+          margin: 0 auto;
+        }
         dd{
           line-height: 17px;
           height:auto;
@@ -826,10 +829,25 @@
 
       }
     }
+
     .college-content .college-section-LR .section-LR-title{
       width: 100%;
     }
-
+    .college-content .college-section-UD .college-section-c-line{
+      display: none;
+    }
+    .college-content .college-section-LR .LR-L-04 {
+      width: 100%;
+    }
+    .college-content .college-section-LR .LR-L-06 {
+      width: 100%;
+    }
+    .college-content .college-section-LR .LR-L-08 {
+      width: 100%;
+    }
+    .college-content .college-section-LR .LR-L-10 {
+      width: 100%;
+    }
     .college-content .college-section-LR .section-LR-list{
       width: 100%;
       padding: 10px;
@@ -859,6 +877,15 @@
       li{
         padding: 5px;
       }
+    }
+    .college-content .college-section-h .UD-D-01 .section-UD-list-desc .section8-img{
+      height: auto;
+    }
+    .college-content .college-section-LR .LR-L-02{
+      width: 100%;
+    }
+    .college-content .college-section-LR .LR-L-12{
+      width: 100%;
     }
     .college-content .college-section-UD.college-section-c .list-R{
       width: 50%;
