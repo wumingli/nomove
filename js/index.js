@@ -77,6 +77,7 @@ var Event = {
     this.mouseAnimate();
     this.prevNextEvent();
     this.submitEvent();
+    this.closeEvent();
   },
   //新房热卖动画
   mouseAnimate:function() {
@@ -86,9 +87,9 @@ var Event = {
       $(this).find(".house-introduce").stop().animate({"height":"39px"},300);
     });
     $(".old-house-left,.old-house-right-item").hover(function(){
-      $(this).find(".old-house-introduce").stop().animate({"height":"96px"});
+      $(this).find(".old-house-introduce").stop().animate({"height":"96px"},300);
     },function(){
-      $(this).find(".old-house-introduce").stop().animate({"height":"37px"});
+      $(this).find(".old-house-introduce").stop().animate({"height":"37px"},300);
     });
   },
   //上一步下一步
@@ -143,6 +144,15 @@ var Event = {
           //do something
         }
       })
+    })
+  },
+  //关闭
+  closeEvent:function(){
+    $(".close-popup-btn").on("click",function(){
+      $(".choice-house-popup").hide();
+    });
+    $(".close-btn").on("click",function(){
+      $(".ask-float-content").hide();
     })
   }
 };

@@ -198,6 +198,16 @@ body {
     -webkit-transform: translate(-50%,-50%);
        -ms-transform: translate(-50%,-50%);
            transform: translate(-50%,-50%);
+    .close-popup-btn {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      background: url("../images/index/close-popup-btn.png") 0 0 no-repeat;
+    }
     .choice-house-title {
       width: 310px;
       margin: 30px auto 0px auto;
@@ -217,10 +227,10 @@ body {
         width: 198px;
         height: 38px;
         border: 1px solid #999999;
-        background: #33a7d8;
         text-align: center;
         line-height: 38px;
         font-size: 18px;
+        background: #33a7d8;
         color: #fff;
       }
     }
@@ -401,8 +411,14 @@ body {
         border: 1px solid #999999;
         text-align: center;
         line-height: 38px;
+      }
+      .title-bule-bg {
         background: #33a7d8;
         color: #fff;
+      }
+      .title-white-bg {
+        background: #fff;
+        color: #999999;
       }
       .title-line {
         position: absolute;
@@ -616,9 +632,47 @@ body {
           font-size: 16px;
           text-align: left;
           line-height: 38px;
-          text-indent: 80px;
           display: inline-block;
         }
+        a {
+          width: 23px;
+          height: 23px;
+          display: inline-block;
+          margin-left: 40px;
+          vertical-align: middle;
+        }
+      }
+      li:nth-child(1) a{
+        background: url("../images/index/icon-num.png") no-repeat;
+        background-position: 0px center;
+      }
+      li:nth-child(2) a{
+        background: url("../images/index/icon-num.png") no-repeat;
+        background-position: -92px center;
+      }
+      li:nth-child(3) a{
+        background: url("../images/index/icon-num.png") no-repeat;
+        background-position: -23px center;
+      }
+      li:nth-child(4) a{
+        background: url("../images/index/icon-num.png") no-repeat;
+        background-position: -115px center;
+      }
+      li:nth-child(5) a{
+        background: url("../images/index/icon-num.png") no-repeat;
+        background-position: -46px center;
+      }
+      li:nth-child(6) a{
+        background: url("../images/index/icon-num.png") no-repeat;
+        background-position: -138px center;
+      }
+      li:nth-child(7) a{
+        background: url("../images/index/icon-num.png") no-repeat;
+        background-position: -69px center;
+      }
+      li:nth-child(8) a{
+        background: url("../images/index/icon-num.png") no-repeat;
+        background-position: -161px center;
       }
     }
     .after-sales-right {
