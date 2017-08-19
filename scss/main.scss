@@ -611,6 +611,10 @@ body {
       height: 450px;
       background: #788723;
       margin-top: 40px;
+      .video-style {
+        width: 1100px;
+        height: 450px;
+      }
     }
   }
   //售前与售后
@@ -786,4 +790,200 @@ body {
 }
 .old-house-silde {
   background: #ebf5f9;
+}
+@media screen and (max-width:1024px){
+  .wrapper{
+    width:100%;
+  }
+  .choice-house-popup {
+    display: none;
+  }
+  .float-content {
+    display: none;
+  }
+  .wrapper-content {
+    width: 100%;
+    .content-title {
+      width: 100%;
+    }
+    .new-house-list {
+      width: 100%;
+      height: auto;
+      ul {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        li {
+          margin: 0px;
+        }
+      }
+    }
+    .college-list {
+      width: 100%;
+      li {
+        margin: 10px auto;
+      }
+    }
+    .old-house-list {
+      width: 100%;
+      height: auto;
+      .old-house-swiper-container {
+        width: 100%;
+        height: auto;
+        .old-house-swiper-wrapper {
+          width: 100%;
+          height: auto;
+        }
+        .old-house-silde {
+          height: auto;
+        }
+        .old-house-item {
+          height: auto;
+          .old-house-right {
+            float: left;
+            width: 100%;
+            height: auto;
+            .old-house-right-item {
+              margin: 0px;
+              width: 50%;
+            }
+          }
+          .old-house-left {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .advantage-content {
+      width: 100%;
+      height: auto;
+      .advantage-seven {
+        width: 100%;
+        height: auto;
+        .up-item {
+          width: 100%;
+          padding:0px;
+          margin: 10px auto;
+          .up-child-item {
+            width: 100%;
+            height: auto;
+            margin: 10px auto;
+            img {
+              width:100%;
+            }
+          }
+        }
+        .down-item {
+          width: 50%;
+          margin: 0px;
+          height: auto;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .advantage-video {
+        width: 100%;
+        height: auto;
+        .video-style {
+          width: 100%;
+        }
+      }
+    }
+    .after-sales-content {
+      width: 100%;
+      height: auto;
+      .after-sales-right {
+        position: relative;
+        width: 100%;
+        height: auto;
+        img {
+          width: 100%;
+        }
+      }
+      .after-sales-left {
+        width: 100%;
+      }
+    }
+    .team-content {
+      width: 100%;
+      ul {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width:750px) {
+  .wrapper {
+    .new-house-list {
+      width: 100%;
+      height: auto;
+      ul {
+        li {
+          width: 50%;
+          float: none;
+          margin: 10px auto;
+        }
+        li.last {
+          margin-right: auto;
+        }
+      }
+    }
+    .after-sales-content {
+      width: 100%;
+      height: auto;
+      .after-sales-left {
+        width: 100%;
+        height: auto;
+        li {
+          float: none;
+          margin: 10px auto;
+        }
+        li.last {
+          margin-right: auto;
+        }
+      }
+    }
+    .team-content {
+      width: 100%;
+      height: auto;
+      ul {
+        width: 100%;
+        height: auto;
+        li {
+          float: none;
+          margin: 10px auto;
+        }
+        li.last {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:375px) {
+    .wrapper {
+      .new-house-list {
+        width: 100%;
+        height: auto;
+        ul {
+          li {
+            width: 100%;
+          }
+        }
+      }
+      .college-list {
+        height: auto;
+        ul {
+          li {
+            float: none;
+            margin: 10px auto;
+          }
+          li.last {
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
 }
