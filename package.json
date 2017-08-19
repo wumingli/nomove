@@ -23,7 +23,8 @@
   "homepage": "https://github.com/wumingli/nomove#readme",
   "dependencies": {
     "classnames": "^2.2.5",
-    "invariant": "^2.2.2"
+    "invariant": "^2.2.2",
+    "video.js": "^6.2.5"
   },
   "devDependencies": {
     "animate.css": "^3.5.2",
