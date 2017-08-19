@@ -14,7 +14,7 @@
 }
 @mixin bgImg2($img) {
   background: url($img) no-repeat;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   background-size: 40px 75px;
   background-position: center bottom;
 }
@@ -293,86 +293,29 @@
         }
       }
     }
-    .college-section-a{
-      .college-section-a-line{
-        height: 1610px;
-        background: url("../images/college/line-mid.png") no-repeat center;
-        background-size:23px 1610px ;
-      }
-      .college-section-aR{
-        padding-top: 20px;
-      }
-      .LR-R-07,.LR-L-08{
-        margin-top: 40px;
-      }
-      .LR-R-09,.LR-R-11,.LR-L-12{
-        margin-top: 10px;
-      }
-      .LR-L-10{
-        margin-top: 70px;
-      }
-
-    }
-    .college-section-d{
-      .college-section-a-line{
-        height: 642px;
-        background: url("../images/college/line-mid-d.png") no-repeat center;
-        background-size:23px 642px ;
-      }
-      .college-section-aR{
-        padding-top: 60px;
-      }
-      .section-box{
-        margin-bottom: 75px;
-      }
-
-    }
-    .college-section-f{
-      margin-left: 10px ;
-      position: relative;
-      &-desc{
-        text-indent: 2em;
-        color: #666666;
-        font-size: 16px;
-        line-height: 28px;
-        .icon{
-          width: 20px;
-          height: 20px;
-          vertical-align: top;
-          display: inline-block;
-          border-radius: 11px;
-          border: #33a7d8 solid 1px;
-          margin-right: 2px;
-          i{
-            width: 16px;
-            height: 16px;
-            border-radius: 8px;
-            margin: 2px;
-            float: left;
-            text-indent: 0;
-            color: #ffffff;
-            background: #33a7d8;
-            text-align: center;
-            line-height: 17px;
-            font-size: 12px;
-          }
-        }
-      }
-      &-erweima{
-        width: 262px;
-        height:235px;
-        overflow: hidden;
-        position: absolute;
-        right: 50px;
-        bottom:50px;
-        img{
-          display: inline-block;
-          width: 100%;
-        }
-      }
-    }
-
     .college-section-UD{
+      background: none;
+      position: relative;
+      .college-section-c-line{
+        position: absolute;
+        top: 0;
+        left: 475px;
+        width: 55px;
+        overflow: hidden;
+        height: 800px;
+        background: url('../images/college/line-mid-c.png') no-repeat center top;
+        background-size: 55px;
+      }
+      .college-section-c-icon{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 70px;
+        overflow: hidden;
+        height: 70px;
+        background: url('../images/college/section3-icon.png') no-repeat center top;
+        background-size: 70px;
+      }
       .section-box{
         width: 100%;
         margin-bottom: 50px;
@@ -407,9 +350,15 @@
 
         }
       }
+      .section-UD-bottom{
+        p{
+          text-indent: 2em;
+        }
+      }
       .section-UD-list{
         margin-top: 30px;
-        border: solid 1px #cccccc;
+        background-color: #fff;
+        border: none;
         width:inherit;
         height:auto;
         box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
@@ -418,14 +367,63 @@
         font-size: 16px;
         line-height: 28px;
         overflow: hidden;
+        position: relative;
+        &-img{
+          float: left;
+          overflow: hidden;
+          width: 219px;
+          img{
+            width: 100%;
+            display: inline-block;
+          }
+        }
+        &-desc{
+          color:#666;
+          margin: 0 30px;
+          float: left;
+          width: 700px;
+          p{
+            text-indent: 2em
+          }
+        }
         .list-content{
           float: left;
           font-size: 16px;
           color: #666666;
           width: 49%;
         }
+        .section2-pic{
+          width: 100%;
+          display: inline-block;
+          height: 80px;
+        }
+        .section2-pic01{
+          background: url("../images/college/section2-pic01.png") no-repeat center bottom;
+          background-size: 460px;
+        }
+        .section2-pic02{
+          background: url("../images/college/section2-pic02.png") no-repeat center bottom;
+          background-size: 460px;
+          height: 200px;
+        }
+        .section2-pic03{
+          background: url("../images/college/section2-pic03.png") no-repeat center bottom;
+          background-size: 460px;
+          height: 100px;
+        }
+        .section2-pic05{
+          background: url("../images/college/section2-pic05.png") no-repeat center bottom;
+          background-size: 460px;
+          height: 350px;
+        }
+        .section2-pic06{
+          background: url("../images/college/section2-pic06.png") no-repeat center bottom;
+          background-size: 460px;
+        }
         .list-L{
           border-right: #118dc1 solid 1px;
+          padding-right: 20px;
+          box-sizing: border-box;
         }
         .list-R{
           float: right;
@@ -437,6 +435,7 @@
           color: #666666;
         }
       }
+
       .UD-D-01{
         float: left;
         width: 100%;
@@ -491,7 +490,7 @@
       }
       .UD-D-06{
         float: right;
-        width: auto;
+        width: 100%;
         color: #ff9900;
         .section-UD-title{
           @include bgColor(#ff9900);
@@ -514,8 +513,445 @@
       }
 
     }
+    .college-section-a{
+      .college-section-a-line{
+        height: 1610px;
+        background: url("../images/college/line-mid.png") no-repeat center;
+        background-size:23px 1610px ;
+      }
+      .college-section-aR{
+        padding-top: 20px;
+      }
+      .LR-R-07,.LR-L-08{
+        margin-top: 40px;
+      }
+      .LR-R-09,.LR-R-11,.LR-L-12{
+        margin-top: 10px;
+      }
+      .LR-L-10{
+        margin-top: 70px;
+      }
+
+    }
+    .college-section-UD.college-section-c{
+      .UD-D-01,.UD-D-06{
+        .section-UD-list{
+          padding: 41px 40px 20px;
+        }
+      }
+      .list-L{
+        border: none;
+        width: 455px;
+        li{
+          padding:10px 40px 20px;
+          margin-bottom: 28px;
+        }
+      }
+      h4{
+        color: #666666;
+        font-size: 18px;
+        font-weight: normal;
+        border-bottom: #bbbbbb solid 2px;
+        display: inline-block;
+        margin-bottom: 8px;
+        b{
+          font-size: 28px;
+          font-weight: normal;
+          padding-right: 10px;
+          color: #33a7d8;
+          font-style: italic;
+        }
+      }
+      .list-R{
+        padding-top: 90px;
+        width: 452px;
+        li{
+          padding: 10px 35px 20px;
+          margin-bottom: 48px;
+        }
+      }
+      li{
+        width:100%;
+        padding: 20px ;
+        margin-bottom: 20px;
+        overflow: hidden;
+        background: #f8f8f8;
+        border: #33a7d8 solid 1px;
+        box-sizing: border-box;
+      }
+      .section3-list-bottom{
+        padding-left: 30px;
+        li{
+          width: 408px;
+          background: #ffffff;
+          padding: 0 30px;
+          line-height: 40px;
+          display: inline-block;
+          vertical-align: top;
+          margin:0 20px 20px;
+          height: 40px;
+          overflow: hidden;
+          box-sizing: border-box;
+          border: #ff9900 solid 1px;
+          .num{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: solid #ff9900 1px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            color: #999999;
+            margin-top: 10px;
+            padding: 1px 0 0 1px;
+            i{
+              width: 16px;
+              color: #ffffff;
+              float: left;
+              height: 16px;
+              background: #ff9900;
+              text-align: center;
+              font-size: 14px;
+              line-height: 16px;
+              border-radius: 8px;
+            }
+          }
+          .desc{
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+    .college-section-d{
+      .college-section-a-line{
+        height: 642px;
+        background: url("../images/college/line-mid-d.png") no-repeat center;
+        background-size:23px 642px ;
+      }
+      .college-section-aR{
+        padding-top: 60px;
+      }
+      .section-box{
+        margin-bottom: 75px;
+      }
+
+    }
+    .college-section-e{
+      .section-UD-list-desc-ul{
+        li{
+          width: 100%;
+          position: relative;
+          .num{
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            width: 20px;
+            height: 20px;
+            border: solid #ff9900 1px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            color: #999999;
+            padding: 1px 0 0 1px;
+            i{
+              width: 16px;
+              color: #ffffff;
+              float: left;
+              height: 16px;
+              background: #ff9900;
+              text-align: center;
+              font-size: 14px;
+              line-height: 16px;
+              border-radius: 8px;
+            }
+          }
+          .desc{
+            padding-left: 30px;
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+
+      }
+      .section-UD-list-desc-ul.ul-red{
+        li{
+          .num{
+            border: solid #ff9900 1px;
+            i{
+              background: #ff9900;
+            }
+          }
+        }
+      }
+      .section-UD-list-desc-ul.ul-blue{
+        li{
+          .num{
+            border: solid #33a7d8 1px;
+            i{
+              background: #33a7d8;
+            }
+          }
+        }
+      }
+    }
+    .college-section-f{
+      margin-left: 10px ;
+      position: relative;
+      &-desc{
+        text-indent: 2em;
+        color: #666666;
+        font-size: 16px;
+        line-height: 28px;
+        .icon{
+          width: 20px;
+          height: 20px;
+          vertical-align: top;
+          display: inline-block;
+          border-radius: 11px;
+          border: #33a7d8 solid 1px;
+          margin-right: 2px;
+          i{
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            margin: 2px;
+            float: left;
+            text-indent: 0;
+            color: #ffffff;
+            background: #33a7d8;
+            text-align: center;
+            line-height: 17px;
+            font-size: 12px;
+          }
+        }
+      }
+      &-erweima{
+        width: 262px;
+        height:235px;
+        overflow: hidden;
+        position: absolute;
+        right: 50px;
+        bottom:50px;
+        img{
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+    .college-section-h{
+      padding: 0px;
+      .section-UD-list{
+        padding: 30px;
+      }
+      .UD-D-01{
+        width: 518px;
+        margin-right: 50px;
+        .section-UD-list-desc{
+          margin: 0;
+          box-sizing: border-box;
+          width: 100%;
+          p{
+            text-indent: 0px;
+          }
+          .section8-img{
+            width: 100%;
+            height: 100px;
+            img{
+              display: block;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+      .UD-D-01:nth-child(2n){
+        margin: 0;
+      }
+      .section-UD-title{
+        border-radius:10px 0 0 10px ;
+      }
+      .section-UD-list{
+        width: 518px;
+        height: 592px;
+      }
+    }
   }
 }
 .none{
   display: none;
 }
+
+@media screen and (max-width: 1025px) {
+  .wrapper-logo {
+    padding-left: 10px;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .college-wrapper {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+    .center-desc{
+      padding:0 10px;
+      box-sizing: border-box;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .college-tab{
+      display: -webkit-flex; /* Safari */
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        flex: 1;
+        width: 40px;
+        margin: 5px 0 ;
+        .college-tab-icon{
+          width: 40px;
+          height: 40px;
+          padding-top: 5px;
+        }
+        img{
+          width: 50%;
+        }
+        dt{
+          margin: 0 auto;
+        }
+        dd{
+          line-height: 17px;
+          height:auto;
+          width: 35px;
+          margin: 0 auto;
+          font-size: 12px;
+
+        }
+
+      }
+    }
+
+    .college-content .college-section-LR .section-LR-title{
+      width: 100%;
+    }
+    .college-content .college-section-UD .college-section-c-line{
+      display: none;
+    }
+    .college-content .college-section-LR .LR-L-04 {
+      width: 100%;
+    }
+    .college-content .college-section-LR .LR-L-06 {
+      width: 100%;
+    }
+    .college-content .college-section-LR .LR-L-08 {
+      width: 100%;
+    }
+    .college-content .college-section-LR .LR-L-10 {
+      width: 100%;
+    }
+    .college-content .college-section-LR .section-LR-list{
+      width: 100%;
+      padding: 10px;
+    }
+    .college-content .college-section-LR .college-section-aL{
+      width: 45%;
+    }
+    .college-content .college-section-LR .college-section-aR{
+      width: 45%;
+    }
+    .college-content .college-section-a .college-section-a-line{
+      display: none;
+    }
+    .college-content .college-section-UD .section-UD-title{
+      overflow: hidden;
+      height: auto;
+      line-height: 30px;
+    }
+    .college-content .college-section-UD .section-UD-title .section-UD-icon{
+      display: none;
+    }
+    .college-content .college-section-UD.college-section-c .list-L{
+      width: 49%;
+      padding: 0;
+      margin: 0;
+      margin-right: 1%;
+      li{
+        padding: 5px;
+      }
+    }
+    .college-content .college-section-h .UD-D-01 .section-UD-list-desc .section8-img{
+      height: auto;
+    }
+    .college-content .college-section-LR .LR-L-02{
+      width: 100%;
+    }
+    .college-content .college-section-LR .LR-L-12{
+      width: 100%;
+    }
+    .college-content .college-section-UD.college-section-c .list-R{
+      width: 50%;
+      padding: 0;
+      margin: 0;
+      li{
+        padding: 5px;
+      }
+    }
+    .college-content .college-section-UD .section-UD-list-desc{
+      width: 100%;
+      margin: 0;
+    }
+    .college-content .college-section-UD.college-section-c .section3-list-bottom {
+      padding: 0;
+      li{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 10px;
+        height: auto;
+      }
+    }
+    .college-content .college-section-d .college-section-a-line{
+      display: none;
+    }
+    .college-content .college-section-f-erweima{
+      position: relative;
+      right: 0px;
+      bottom: 0px;
+    }
+    .college-content .college-section-h .UD-D-01{
+      width: 100%;
+    }
+    .college-content .college-section-h .section-UD-list {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+    .college-content .college-section-h .UD-D-01:nth-child(2n){
+      margin-left: 3%;
+      margin-bottom: 40px;
+    }
+    .college-content .college-section-h .UD-D-01{
+      width: 95%;
+      margin-left: 3%;
+      margin-bottom: 40px;
+    }
+    .college-section{
+      padding: 10px;
+    }
+  }
+  .about-wrapper .map-con .map {
+    background-size: cover;
+    height: 200px;
+  }
+  .list-banner .search {
+    display: none;
+  }
+  .wrapper.about-banner {
+    width: 100%;
+    height: 120px;
+    background-size: 100% 100%;
+  }
+  footer {
+    margin-top: 10px;
+  }
+}
+
+
