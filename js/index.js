@@ -9,28 +9,6 @@ import '../scss/main.scss';
 
 var model = {
   houseData: [],
-  cityList: {
-    usa: [{
-      key: '1',
-      value:'纽约'
-    }],
-    australia: [{
-      key: '2',
-      value: '城市1'
-    }],
-    canada: [{
-      key: '3',
-      value: '加拿大城市'
-    }],
-    england: [{
-      key: '4',
-      value: '伦敦'
-    }],
-    newZealand: [{
-      key: '5',
-      value: '新西兰城市'
-    }]
-  }
 };
 
 //逻辑判断
@@ -68,10 +46,10 @@ var logic = {
           resultStr += `<li>${model.houseData[i]}</li>`;
         }
       }
-      $(".prev-btn").hide();
+      $(".prev-btn").show();
       $(".choice-house-result").html(resultStr);
     }else{
-      $(".prev-btn").show();
+      $(".prev-btn").hide();
       $(".choice-house-result").html();
     }
     if(index == 5) {
@@ -98,13 +76,19 @@ var Event = {
   init() {
     this.mouseAnimate();
     this.prevNextEvent();
+    this.submitEvent();
   },
   //新房热卖动画
   mouseAnimate:function() {
     $(".new-house-list li").hover(function() {
-      $(this).find(".house-introduce").animate({"height":"150px"},300);
+      $(this).find(".house-introduce").stop().animate({"height":"150px"},300);
     },function() {
-      $(this).find(".house-introduce").animate({"height":"39px"},300);
+      $(this).find(".house-introduce").stop().animate({"height":"39px"},300);
+    });
+    $(".old-house-left,.old-house-right-item").hover(function(){
+      $(this).find(".old-house-introduce").stop().animate({"height":"96px"});
+    },function(){
+      $(this).find(".old-house-introduce").stop().animate({"height":"37px"});
     });
   },
   //上一步下一步
@@ -126,7 +110,40 @@ var Event = {
       logic.choiceHouse(index);
       $(this).parents("li").find(".icon").removeClass("active");
       $(this).addClass("active");
+      var type = $(this).data("type");
+      $(".city-content").find(".item-content").eq(type--)
+      .show().siblings(".item-content").hide();
     });
+  },
+  //提交表单
+  submitEvent:function() {
+    $(".submit-btn").on("click",function(){
+      if($("#userName").val() == ""){
+        alert("请填写你的用户名");
+        return false;
+      }
+
+      if($("#userTel").val() == "") {
+        alert("请填写你的联系方式");
+        return false;
+      }
+      var data = {
+        other: nodel.houseData,
+        userName: $("#userName").val(),
+        userTel: $("#userTel").val(),
+      }
+      $.ajax({
+        url:"",
+        type:"post",
+        data:data,
+        success:function(data){
+          //do something
+        },
+        error:function(){
+          //do something
+        }
+      })
+    })
   }
 };
 
