@@ -19,6 +19,7 @@ module.exports = {
     concat: './js/concat',
     team: './js/team',
     about: './js/about',
+    sale: './js/sale',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -198,6 +199,17 @@ module.exports = {
       filename: 'about.html',
       template: './about.html',
       chunks: ['about'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    //热销新房
+    new HtmlWebpackPlugin({
+      filename: 'sale.html',
+      template: './sale.html',
+      chunks: ['sale'],
       inject: ['body', 'head'],
       /*minify: {
        removeComments: true,
