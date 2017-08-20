@@ -283,6 +283,10 @@
     .news-focus {
       width: 100%;
       float: none;
+      .swiper-slide section {
+        height: auto;
+        padding: 15px 10px 10px 15px;
+      }
     }
     .news-top5 {
       float: none;
