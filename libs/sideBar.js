@@ -25,10 +25,12 @@
             <img style=${styles.img} src="../images/index/call.jpg">
           </a>
         </div>
-        <div style="width:70px;height:70px;margin-right:auto;margin-left:auto;border-bottom:1px solid #fff">
+        <div class="wechat-box" style="width:70px;height:70px;margin-right:auto;margin-left:auto;border-bottom:1px solid #fff">
           <a href="#">
             <img style=${styles.img} src="../images/index/wechat.jpg">
           </a>
+          <div class="qr-code">
+          </div>
         </div>
         <div style="width:70px;height:70px;margin-right:auto;margin-left:auto;border-bottom:1px solid #fff" id="goUp">
           <a>
@@ -57,5 +59,6 @@
     var sideBar = document.getElementById("sideBar");
     document.body.removeChild(sideBar);
     logic.createDom();
+    logic.event();
   }
 })();

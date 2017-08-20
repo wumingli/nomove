@@ -68,3 +68,22 @@ input[type=text],textarea {
   top: 10px;
   z-index: 12;
 }
+
+.wechat-box {
+  position: relative;
+  .qr-code {
+    position: absolute;
+    z-index: 12px;
+    left: -110px;
+    top: -16px;
+    width: 105px;
+    height: 105px;
+    background: url("../images/index/QR.png");
+    display: none;
+  }
+}
+.wechat-box:hover {
+  .qr-code {
+    display: block;
+  }
+}

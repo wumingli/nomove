@@ -16,26 +16,29 @@ var logic = {
       prevButton: '.swiper-button-prev',
       pagination : '.swiper-pagination',
       paginationType: 'fraction',
-      loop: true,
+      initialSlide :2,
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
+      initialSlide :2,
       spaceBetween: 10,
       centeredSlides: true,
-      slidesPerView: 'auto',
+      slidesPerView: 5,
       touchRatio: 0.2,
       slideToClickedSlide: true,
+
     });
     var houseGalleryTop = new Swiper('.house-gallery-top', {
+      initialSlide :2,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
       pagination : '.swiper-pagination',
       paginationType: 'fraction',
-      loop: true,
     });
     var houseGalleryThumbs = new Swiper('.house-gallery-thumbs', {
+      initialSlide :2,
       spaceBetween: 10,
       centeredSlides: true,
-      slidesPerView: 'auto',
+      slidesPerView: 5,
       touchRatio: 0.2,
       slideToClickedSlide: true,
     });
