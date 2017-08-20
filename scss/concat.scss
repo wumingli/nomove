@@ -1,6 +1,7 @@
 @import "./common";
 @import "footer";
 @import "banner";
+@import "mob-common";
 
 .wrapper {
   &.concat-banner {
@@ -52,6 +53,50 @@
     .msg {
       li {
         line-height: 24px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1025px) {
+  .wrapper-logo {
+    padding-left: 10px;
+  }
+  .wrapper {
+    width: 100%;
+    &.concat-banner {
+      height: 100px;
+      background-size: 100% 100%;
+    }
+  }
+  .concat-wrapper {
+    width: 100%;
+    .info {
+      height: auto;
+      box-sizing: border-box;
+      padding: 10px;
+      .left-col {
+        float: none;
+        width: auto;
+        margin: 0;
+      }
+      .right-col {
+        float: none;
+        width: auto;
+        margin: 0;
+      }
+      img {
+        position: unset;
+        max-width: 100%;
+        margin: 10px auto;
+      }
+    }
+  }
+
+  footer {
+    margin-top: 10px;
+    ul {
+      li {
+        margin-right: 10px;
       }
     }
   }

@@ -2,6 +2,7 @@
 @import "footer";
 @import "banner";
 @import "swiper";
+@import "mob-common";
 
 .search-wrapper {
   width: 1100px;
@@ -363,8 +364,12 @@
   .wrapper-logo {
     padding-left: 10px;
   }
+
   .wrapper {
     width: 100%;
+    &.search-banner {
+      height: 120px;
+    }
   }
   .search-wrapper {
     width: 100%;
@@ -378,27 +383,65 @@
     .center-title {
       margin-top: 35px;
     }
-    .map-con {
-      .map {
-        ul {
-          display: none;
+
+    .recommend-house {
+      height: 256px;
+      .swiper-slide ul li {
+        width: 100%;
+        dl dd {
+          padding: 5px 0 0 0;
+          text-align: center;
         }
       }
+      .swiper-pagination {
+        bottom: -5px;
+      }
     }
-  }
-  .about-wrapper .map-con .map {
-    background-size: cover;
-    height: 200px;
-  }
-  .list-banner .search {
-    display: none;
-  }
-  .wrapper.about-banner {
-    width: 100%;
-    height: 120px;
-    background-size: 100% 100%;
+    .search-left-col {
+      width: 100%;
+      margin-top: 20px;
+      .search-condition dl dt {
+        float: none;
+      }
+      .search-sort section {
+        float: none;
+        text-indent: 0;
+        ul li {
+          margin-top: 10px;
+        }
+      }
+      .search-sort .sort-item {
+        float: none;
+        margin-top: 10px;
+      }
+      .house-list {
+        .h-info li {
+          width: auto;
+        }
+        dl {
+          dt {
+            width: 100%;
+            height: 200px;
+          }
+          dd {
+            float: none;
+          }
+        }
+      }
+      .pagejump {
+        white-space: unset;
+        line-height: 3;
+        margin-top: 10px;
+      }
+    }
+    .search-right-col {
+      width: 100%;
+    }
   }
   footer {
     margin-top: 10px;
+    ul li {
+      margin-right: 10px;
+    }
   }
 }
