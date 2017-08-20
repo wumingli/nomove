@@ -1,6 +1,7 @@
-@import "./common";
+@import "common";
 @import "footer";
 @import "banner";
+@import "mob-common";
 
 @mixin borderAndBg {
   border: 1px solid #999;
@@ -114,3 +115,84 @@
   @import "page";
 }
 
+
+@media screen and (max-width: 1025px) {
+  .wrapper-logo {
+    padding-left: 10px;
+  }
+
+  .wrapper {
+    width: 100%;
+    &.list-banner {
+      height: 120px;
+      background-size: 100% 100%;
+    }
+  }
+  .search {
+    display: none;
+  }
+  .list-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    .search-condition {
+      height: 100%;
+      dl {
+        dt {
+          float: none;
+        }
+        dd {
+          ul {
+            li {
+              width: auto;
+              padding-right: 10px;
+            }
+            &.price li {
+              padding-right: 10px;
+            }
+          }
+        }
+        &.order-by dd ul li {
+          margin-right: 5px;
+        }
+      }
+    }
+    .house-info {
+      height: auto;
+      dt {
+        width: 100%;
+        height: 200px;
+        float: none;
+      }
+      dd {
+        margin-left: 0;
+        height: auto;
+        .price-all {
+          position: unset;
+          ul {
+            position: unset;
+          }
+          .read-more {
+            float: none;
+            margin-top: 20px;
+            display: block;
+            padding: 6px 0;
+            text-align: center;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .pagejump {
+      white-space: unset;
+      line-height: 3;
+      margin-top: 10px;
+    }
+  }
+  footer {
+    margin-top: 10px;
+    ul li {
+      margin-right: 10px;
+    }
+  }
+}

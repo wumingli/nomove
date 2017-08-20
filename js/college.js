@@ -7,8 +7,6 @@ $('.college-tab').find('li').on('click', function() {
   $('.college-tab').find('.active').removeClass('active');
   $(this).addClass('active');
   var tabIndex = $(this).index();
-  $('.college-content').children('section').addClass('none');
-  $('.college-content').children('section').eq(tabIndex).removeClass('none');
-
-
+  $('.college-content').children('section').addClass('none')
+    .eq(tabIndex).removeClass('none');
 }).eq(0).trigger('click');

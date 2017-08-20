@@ -2,6 +2,8 @@
 @import url('animate.css');
 @import url('footer.scss');
 @import url('video.css');
+@import "mob-common";
+
 @mixin lineclamp($line:1){
     @if $line<=0{
         //一行

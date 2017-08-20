@@ -9,3 +9,8 @@ $('.search form').on('submit', function() {
     return false;
   }
 });
+
+$('.wrapper').append('<div class="mob-menu"></div>');
+$('.mob-menu').on('click', function () {
+  $('.wrapper-nav-list').toggle();
+});

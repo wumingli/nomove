@@ -2,6 +2,7 @@
 @import "footer";
 @import "banner";
 @import "swiper";
+@import "mob-common";
 
 @mixin bgColor($color:#fff) {
   background-color: $color;
@@ -785,6 +786,9 @@
   }
   .wrapper {
     width: 100%;
+    &.list-banner {
+      height: 100px;
+    }
   }
   .college-wrapper {
     width: 100%;

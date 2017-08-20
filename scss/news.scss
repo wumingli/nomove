@@ -3,6 +3,7 @@
 @import "banner";
 @import "swiper";
 @import "page";
+@import "mob-common";
 
 .wrapper {
   &.news-banner {
@@ -256,6 +257,77 @@
       .share {
         float: right;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .wrapper-logo {
+    padding-left: 10px;
+  }
+  .wrapper {
+    &.list-banner {
+      height: 120px;
+      .search {
+        left: 0;
+        width: auto;
+        margin-left: 0;
+      }
+    }
+  }
+  .news-wrapper {
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    width: 100%;
+    .news-focus {
+      width: 100%;
+      float: none;
+    }
+    .news-top5 {
+      float: none;
+      width: 100%;
+      margin-top: 15px;
+      height: auto;
+      padding-bottom: 15px;
+    }
+    .focus-news {
+      float: none;
+    }
+    .news-list{
+      margin-top: 15px;
+      float: none;
+      .tab li {
+        border-right: 1px solid #33a7d8;
+        width: 50%;
+      }
+    }
+    .news-item {
+      dt {
+        width: 100%;
+        height: 150px;
+        float: none;
+      }
+      dd {
+        margin-left: 0;
+        padding: 15px;
+      }
+      height: auto;
+      .share {
+        display: none;
+      }
+    }
+
+    .pagejump {
+      white-space: unset;
+      line-height: 3;
+      margin-top: 10px;
+    }
+  }
+  footer {
+    margin-top: 15px;
+    ul li {
+      margin-right: 10px;
     }
   }
 }

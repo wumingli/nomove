@@ -3,6 +3,7 @@ import '../libs/sideBar.js';
 import videojs from 'video.js';
 //const $ = require('../libs/jquery');
 //let Swipe = require('../libs/swipe');
+import './common';
 import 'swiper';
 import '../scss/common.scss';
 import '../scss/main.scss';
