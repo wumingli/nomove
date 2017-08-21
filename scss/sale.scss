@@ -67,6 +67,9 @@
         display: block;
       }
     }
+    li:before {
+      background: url('../images/icon');
+    }
     li.active {
       background: #3399cc;
       a {
