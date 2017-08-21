@@ -10,4 +10,4 @@ $('.college-tab').find('li').on('click', function() {
   var tabIndex = $(this).index();
   $('.college-content').children('section').addClass('none')
     .eq(tabIndex).removeClass('none');
-}).eq(0).trigger('click');
+}).eq(4).trigger('click');

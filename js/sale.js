@@ -25,7 +25,6 @@ var logic = {
       slidesPerView: 5,
       touchRatio: 0.2,
       slideToClickedSlide: true,
-
     });
     var houseGalleryTop = new Swiper('.house-gallery-top', {
       initialSlide :2,
