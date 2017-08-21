@@ -1,4 +1,5 @@
 import '../libs/jqselect';
+import '../libs/sideBar.js';
 import '../scss/college.scss';
 import './common';
 
