@@ -134,13 +134,11 @@ var Event = {
       }
 
       var data = {
-        data: {
-          target: model.houseData[0],
-          country: model.houseData[1],
-          city: model.houseData[2],
-          type: model.houseData[3],
-          category: model.houseData[4]
-        },
+        target: model.houseData[0],
+        country: model.houseData[1],
+        city: model.houseData[2],
+        type: model.houseData[3],
+        category: model.houseData[4]
         full_name: $userName.val(),
         contact: $userTel.val(),
       };
