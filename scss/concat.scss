@@ -64,12 +64,16 @@
   .wrapper {
     width: 100%;
     &.concat-banner {
-      height: 100px;
+      height: 120px;
       background-size: 100% 100%;
     }
   }
   .concat-wrapper {
     width: 100%;
+    margin-top: 40px;
+    .center-title {
+      margin-top: 40px;
+    }
     .info {
       height: auto;
       box-sizing: border-box;
