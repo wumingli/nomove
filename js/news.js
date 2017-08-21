@@ -3,6 +3,7 @@
  */
 import 'swiper';
 import './common';
+import '../libs/sideBar.js';
 import '../scss/news.scss';
 
 new Swiper('.news-focus', {

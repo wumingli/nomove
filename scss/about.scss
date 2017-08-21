@@ -5,7 +5,7 @@
 
 .wrapper {
   &.about-banner {
-    background-image: url("../images/team/team-banner.jpg");
+    background-image: url("../images/team-banner.jpg");
     height: 279px;
   }
 }
@@ -66,7 +66,7 @@
             bottom: 20px;
             width: 100%;
             background: url("../images/about-map-icon.png") no-repeat;
-            transform: scale(0);
+            transform: scale(0.8);
             transition: all .3s ease-in-out;
             transform-origin: 100% 100%;
             /*transform: rotate(-15deg);*/

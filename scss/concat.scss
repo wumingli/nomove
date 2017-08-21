@@ -5,7 +5,7 @@
 
 .wrapper {
   &.concat-banner {
-    background-image: url("../images/concat/concat-banner.jpg");
+    background-image: url("../images/concat-banner.jpg");
     height: 277px;
   }
 }
@@ -53,6 +53,7 @@
     .msg {
       li {
         line-height: 24px;
+        color: #333;
       }
     }
   }
@@ -64,12 +65,16 @@
   .wrapper {
     width: 100%;
     &.concat-banner {
-      height: 100px;
+      height: 120px;
       background-size: 100% 100%;
     }
   }
   .concat-wrapper {
     width: 100%;
+    margin-top: 40px;
+    .center-title {
+      margin-top: 40px;
+    }
     .info {
       height: auto;
       box-sizing: border-box;

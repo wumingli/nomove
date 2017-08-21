@@ -1,5 +1,6 @@
 import 'swiper';
 import '../libs/jqselect';
+import '../libs/sideBar.js';
 import '../scss/search.scss';
 import './common';
 

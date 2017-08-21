@@ -106,6 +106,10 @@ module.exports = {
       {
         from: 'libs/',
         to: 'libs/'
+      },
+      {
+        from: 'images/',
+        to: 'images/'
       }
     ]),
     new HtmlWebpackPlugin({

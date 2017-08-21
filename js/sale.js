@@ -46,7 +46,7 @@ var logic = {
     houseGalleryTop.params.control = houseGalleryThumbs;
     houseGalleryThumbs.params.control = houseGalleryTop;
   }
-}
+};
 var event = {
   init: function(){
     this.houseNavEvent();
@@ -57,7 +57,7 @@ var event = {
       $(this).addClass("active").siblings().removeClass("active");
     })
   }
-}
+};
 var init = function(){
   logic.init();
   event.init();
