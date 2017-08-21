@@ -1,4 +1,3 @@
-import $ from '../libs/jquery-3.2.1';
 import '../libs/sideBar.js';
 import videojs from 'video.js';
 //const $ = require('../libs/jquery');
@@ -38,25 +37,25 @@ var logic = {
   },
   //选择心仪房子的交互
   choiceHouse:function(index) {
-    var resultStr = `<li>当前所选：</li>`;
-    index = index >　5 ? 5 : index;
+    var resultStr = '<li>当前所选：</li>';
+    index = index > 5 ? 5 : index;
     index = index < 0 ? 0 : index;
-    if(index != 0){
-      for(let i = 0; i < model.houseData.length; i++){
-        if(model.houseData[i]){
-          resultStr += `<li>${model.houseData[i]}</li>`;
+    if (index != 0) {
+      for (var i = 0; i < model.houseData.length; i++) {
+        if (model.houseData[i]) {
+          resultStr += '<li>' + model.houseData[i] + '</li>';
         }
       }
       $('.prev-btn').show();
       $('.choice-house-result').html(resultStr);
-    }else{
+    } else {
       $('.prev-btn').hide();
       $('.choice-house-result').html();
     }
-    if(index == 5) {
+    if (index == 5) {
       $('.next-btn').hide();
       $('.submit-btn').show();
-    }else{
+    } else {
       $('.next-btn').show();
       $('.submit-btn').hide();
     }
@@ -74,7 +73,7 @@ var logic = {
 };
 //事件绑定
 var Event = {
-  init() {
+  init: function () {
     this.mouseAnimate();
     this.prevNextEvent();
     this.submitEvent();
