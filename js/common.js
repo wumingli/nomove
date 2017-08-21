@@ -3,10 +3,18 @@
  */
 
 $('.search form').on('submit', function() {
-  var $input = $(this).find('input');
-  if ($input.val() === '') {
-    alert($input.attr('placeholder'));
+  var $input = $(this).find('input'),
+    msg = '请输入房产关键字';
+  if ($input.val() === '' || $input.val() === msg) {
+    alert(msg);
+    $(this).find('input').focus();
     return false;
+  }
+}).find('input').on('focus', function () {
+  $(this).val('');
+}).on('blur', function () {
+  if ($(this).val() === '') {
+    $(this).val('请输入房产关键字');
   }
 });
 
