@@ -3,7 +3,7 @@
  */
 
 $('.search form').on('submit', function() {
-  const $input = $(this).find('input');
+  var $input = $(this).find('input');
   if ($input.val() === '') {
     alert($input.attr('placeholder'));
     return false;

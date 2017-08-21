@@ -40,6 +40,29 @@
         float: right;
       }
     }
+    .cus {
+      margin-top:15px;
+      .bshare-custom {
+        float: right;
+        clear: both;
+        .bshare-weixin,
+        .bshare-sinaminiblog,
+        .bshare-qqmb,
+        .bshare-qzone,
+        .bshare-renren {
+          display: inline-block;
+          width: 13px;
+          height: 28px;
+          background: url("http://www.movenomove.com/tpl/simplebootx/Public/images/share14_icon_v1.0.png") no-repeat 0px 0;
+        }
+        .bshare-sinaminiblog {
+          background-position: -40px 0;
+        }
+        .bshare-qqmb{background-position: -80px 0;}
+        .bshare-qzone{background-position: -120px 0;}
+        .bshare-renren{background-position: -160px 0;}
+      }
+    }
     p {
       text-indent: 2em;
       margin-bottom: 15px;
