@@ -17,24 +17,24 @@
       var tempNode = `<div style=${styles.sideBar}>
         <div style=${styles.customer}>
           <a href="javascript:void(0)">
-            <img style=${styles.img} src="../images/index/customer-service.png">
+            <img style=${styles.img} src="../images/customer-service.png">
           </a>
         </div>
         <div style="width:70px;height:70px;margin-right:auto;margin-left:auto;border-bottom:1px solid #fff"}>
           <a href="concat.html">
-            <img style=${styles.img} src="../images/index/call.jpg">
+            <img style=${styles.img} src="../images/call.jpg">
           </a>
         </div>
         <div class="wechat-box" style="width:70px;height:70px;margin-right:auto;margin-left:auto;border-bottom:1px solid #fff">
           <a href="#">
-            <img style=${styles.img} src="../images/index/wechat.jpg">
+            <img style=${styles.img} src="../images/wechat.jpg">
           </a>
           <div class="qr-code">
           </div>
         </div>
         <div style="width:70px;height:70px;margin-right:auto;margin-left:auto;border-bottom:1px solid #fff" id="goUp">
           <a title="返回顶部">
-            <img style=${styles.img} src="../images/index/to-up.jpg">
+            <img style=${styles.img} src="../images/to-up.jpg">
           </a>
         </div>
       </div>`;

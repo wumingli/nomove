@@ -138,7 +138,7 @@ var Event = {
         country: model.houseData[1],
         city: model.houseData[2],
         type: model.houseData[3],
-        category: model.houseData[4]
+        category: model.houseData[4],
         full_name: $userName.val(),
         contact: $userTel.val(),
       };
