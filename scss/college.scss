@@ -398,7 +398,7 @@
         &-img{
           float: left;
           overflow: hidden;
-          width: 219px;
+          width: 20%;
           img{
             width: 100%;
             display: inline-block;
@@ -406,14 +406,20 @@
         }
         &-desc{
           color:#666;
-          margin: 0 30px;
+          margin: 0;
           float: left;
-          width: 700px;
+          width: 80%;
+          box-sizing: border-box;
           p{
             text-indent: 2em
           }
         }
-        .desc-L{}
+        .desc-R{
+          padding-left: 30px;
+        }
+        .desc-L{
+          padding-right: 30px;
+        }
         .list-content{
           float: left;
           font-size: 16px;
@@ -637,7 +643,7 @@
       .section3-list-bottom{
         padding-left: 30px;
         li{
-          width: 408px;
+          width: 43%;
           background: #ffffff;
           padding: 0 30px;
           line-height: 40px;
@@ -678,6 +684,7 @@
       }
     }
     .college-section-d{
+      margin-top: 40px;
       .college-section-a-line{
         height: 642px;
         background: url("../images/line-mid-d.png") no-repeat center;
@@ -794,6 +801,7 @@
     }
     .college-section-h{
       padding: 0px;
+      margin-top: 30px;
       .section-UD-list{
         padding: 30px;
       }
