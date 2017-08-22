@@ -427,6 +427,13 @@
           }
           dd {
             float: none;
+            margin-left: 0;
+            .h-title {
+              overflow: unset;
+            }
+            .rmb, .dollar {
+              float: none!important;
+            }
           }
         }
       }
