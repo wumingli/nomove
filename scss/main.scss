@@ -984,6 +984,16 @@ body {
   .wrapper{
     width:100%;
   }
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+  .wrapper-scroll-banner-img {
+    height: auto;
+  }
+  .banner-text {
+    display: none;
+  }
   .choice-house-popup {
     display: none;
   }
@@ -1009,8 +1019,16 @@ body {
     }
     .college-list {
       width: 100%;
-      li {
-        margin: 10px auto;
+      ul {
+        li {
+          width: 50%;
+          margin: 10px 0px;
+          text-align: center;
+          dl {
+            margin: 0px auto;
+            width: 90px;
+          }
+        }
       }
     }
     .old-house-list {
@@ -1044,10 +1062,11 @@ body {
       }
     }
     .advantage-content {
-      width: 100%;
+      width: 90%;
+      padding:5%;
       height: auto;
       .advantage-seven {
-        width: 100%;
+        width: 90%;
         height: auto;
         .up-item {
           width: 100%;
@@ -1064,7 +1083,7 @@ body {
         }
         .down-item {
           width: 100%;
-          margin: 0;
+          margin: 10px auto;
           height: auto;
           img {
             width: 100%;
@@ -1096,8 +1115,17 @@ body {
     }
     .team-content {
       width: 100%;
+      height: auto;
       ul {
         width: 100%;
+        height: auto;
+        li {
+          margin: 10px auto;
+          float: none;
+        }
+        li.last {
+          margin-right: auto;
+        }
       }
     }
   }
@@ -1109,9 +1137,10 @@ body {
       height: auto;
       ul {
         li {
-          width: 50%;
+          width: 45%;
           float: none;
-          margin: 10px auto;
+          margin: 10px auto 0px auto;
+
         }
         li.last {
           margin-right: auto;
@@ -1133,21 +1162,6 @@ body {
         }
       }
     }
-    .team-content {
-      width: 100%;
-      height: auto;
-      ul {
-        width: 100%;
-        height: auto;
-        li {
-          float: none;
-          margin: 10px auto;
-        }
-        li.last {
-          margin-right: auto;
-        }
-      }
-    }
   }
 
   @media screen and (max-width:375px) {
@@ -1158,18 +1172,6 @@ body {
         ul {
           li {
             width: 100%;
-          }
-        }
-      }
-      .college-list {
-        height: auto;
-        ul {
-          li {
-            float: none;
-            margin: 10px auto;
-          }
-          li.last {
-            margin-right: auto;
           }
         }
       }
