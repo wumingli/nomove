@@ -15,4 +15,6 @@ new Swiper('.news-focus', {
 
 $('.news-list .tab li').on('click', function () {
   $(this).addClass('active').siblings().removeClass('active');
+  $('.news-list .news-tab-con').removeClass('active')
+    .eq($(this).index()).addClass('active');
 });

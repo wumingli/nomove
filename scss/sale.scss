@@ -63,8 +63,84 @@
       text-align: center;
       line-height: 38px;
       font-size: 16px;
+      position: relative;
       a {
         display: block;
+        line-height: 38px;
+      }
+      .icon {
+        display:inline-block;
+        width: 26px;
+        height: 30px;
+        position: absolute;
+        left: 25px;
+        top: 6px
+      }
+    }
+    li:hover{
+      a {
+        color: #fff;
+      }
+      background: #3399cc;
+    }
+    li:nth-child(1) {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -31px -117px no-repeat;
+      }
+    }
+    li:nth-child(1):hover {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -31px -19px no-repeat;
+      }
+    }
+    li:nth-child(2) {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -213px -117px no-repeat;
+      }
+    }
+    li:nth-child(2):hover {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -213px -19px no-repeat;
+      }
+    }
+    li:nth-child(3) {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -31px -117px no-repeat;
+      }
+    }
+    li:nth-child(3):hover {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -31px -19px no-repeat;
+      }
+    }
+    li:nth-child(4) {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -31px -117px no-repeat;
+      }
+    }
+    li:nth-child(4):hover {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -31px -19px no-repeat;
+      }
+    }
+    li:nth-child(5) {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -31px -117px no-repeat;
+      }
+    }
+    li:nth-child(5):hover {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -31px -19px no-repeat;
+      }
+    }
+    li:nth-child(6) {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -31px -117px no-repeat;
+      }
+    }
+    li:nth-child(6):hover {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png") -31px -19px no-repeat;
       }
     }
     li.active {

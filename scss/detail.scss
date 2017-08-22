@@ -20,10 +20,11 @@
       font-size: 24px;
       text-align: center;
       font-weight: normal;
+      color: #333;
     }
     .article-info {
       text-align: center;
-      padding: 20px 0;
+      padding: 10px 0;
       span {
         font-size: 14px;
         &.preview {
@@ -33,7 +34,7 @@
     }
     .share {
       border-bottom: 1px solid #ccc;
-      padding-bottom: 11px;
+      padding-bottom: 16px;
       height: 20px;
       margin-bottom: 23px;
       .bdsharebuttonbox {
@@ -42,6 +43,7 @@
     }
     .cus {
       margin-top:15px;
+      clear: both;
       .bshare-custom {
         float: right;
         clear: both;
@@ -53,7 +55,7 @@
           display: inline-block;
           width: 13px;
           height: 28px;
-          background: url("http://www.movenomove.com/tpl/simplebootx/Public/images/share14_icon_v1.0.png") no-repeat 0px 0;
+          background: url("http://www.movenomove.com/tpl/simplebootx/Public/images/share14_icon_v1.0.png") no-repeat 0 0;
         }
         .bshare-sinaminiblog {
           background-position: -40px 0;
@@ -68,6 +70,7 @@
       margin-bottom: 15px;
       line-height: 30px;
       font-size: 16px;
+      color: #333;
     }
     img {
       display: block;
@@ -87,7 +90,7 @@
         height: 45px;
         line-height: 45px;
         background-color: #33a7d8;
-        font-weight: 200;
+        font-weight: bold;
         font-size: 18px;
         color: #fff;
         &:before {
@@ -97,7 +100,7 @@
           height: 26px;
           vertical-align: -6px;
           background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAB8ElEQVRIib2WPWsVQRSGnyzRJCoI3hTBjwtWkZiACiFBE4mCNukitvY2dnb6JyxEUAQLiYX4C4QYv4IBQSIYYiNKBAtTK/HmPha7q8N65242V+4LB3YOM+97ZubsOdOjUoKTwBxwBjgMHAQEvmb2AngCrLRlUWM2o752+1hUp2J8rZx71fsVBEI01dtqf5nQoLq8Q5EQL9X9MaE96rv/IJJjSR3I+Xv8mwwPgCvZ90/gDfCrLFMK2A1MAH3Z+A5wNUyGi0EkDfWE8SQps3F1K+NqqtPhjpaB8SyKNeBY9n0UOFBhR++BTWAdOJT5FoEZ1FOFs10JontY8V7q2brPBf9YAsxWvIedYC4BLnRBaCoBRrogNJwAtS4I1ZIuiACQABtd0NnoBT4A05EJn4C3FQg3I/411BuFnP/YQVXIbb3AeRN1rOBsqBMdiJw1LT0hRvIStARMFo5gFWhk4y3gEWmR/JH59pEWzMukdw2wi/R36Q24FoDzeRTnYjVFnVeH2+xgVH0cWdtUJy30o3uRyXXLj6seWXsrnxNu8RowStpPQswC30uybbCFbwG4/mdUiKxm2hk7xTPbtPLcBtS7/ps520HT9Lj6irxlafq8gshTs4tvZeGbIYbjwCXgNHAEGCJ9QH4DvgCvSB+Qq+1IfgM52N8/ExqdAwAAAABJRU5ErkJggg==") 0 0 no-repeat;
-          margin: 0 17px 0 19px;
+          margin: 0 9px 0 19px;
         }
       }
       li {
@@ -147,6 +150,7 @@
           margin: 0 13px 0 0;
         }
         margin-bottom: 20px;
+        font-size: 16px;
       }
       .hot-house-list{
         a {

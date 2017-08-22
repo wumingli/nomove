@@ -600,21 +600,150 @@ body {
         margin-bottom: 25px;
         //align-self: center;
       }
+      .seven-icon {
+        display: inline-block;
+        width: 55px;
+        height: 54px;
+        margin:0px 10px 10px 0px;
+      }
+      .seven-icon-a {
+        background:url("../images/index-icon-666.png") -95px 0px no-repeat;
+      }
+      .seven-icon-b {
+        background:url("../images/index-icon-666.png") -98px -102px no-repeat;
+      }
+      .seven-icon-c {
+        background:url("../images/index-icon-666.png") -98px -209px no-repeat;
+      }
+      .seven-icon-d {
+        background:url("../images/index-icon-666.png") -98px -317px no-repeat;
+      }
+      .seven-icon-e {
+        background:url("../images/index-icon-666.png") -98px -423px no-repeat;
+      }
+      .seven-icon-f {
+        background:url("../images/index-icon-666.png") -98px -527px no-repeat;
+      }
+      .seven-icon-g {
+        background:url("../images/index-icon-666.png") -98px -634px no-repeat;
+      }
+      .up-child-item:hover {
+        background: #3399cc;
+        .child-content {
+          color:#fff;
+          li.first {
+            border-bottom: 2px solid #fff;
+          }
+        }
+        .seven-icon-a {
+          background:url("../images/index-icon-666.png") 6px 0px no-repeat;
+        }
+        .seven-icon-b {
+          background:url("../images/index-icon-666.png") 2px -102px no-repeat;
+        }
+        .seven-icon-c {
+          background:url("../images/index-icon-666.png") 2px -209px no-repeat;
+        }
+      }
+      .down-item:hover {
+        background: #3399cc;
+        .child-content {
+          color:#fff;
+          li.first {
+            border-bottom: 2px solid #fff;
+          }
+        }
+        .seven-icon-d {
+          background:url("../images/index-icon-666.png") 2px -317px no-repeat;
+        }
+        .seven-icon-e {
+          background:url("../images/index-icon-666.png") 2px -423px no-repeat;
+        }
+        .seven-icon-f {
+          background:url("../images/index-icon-666.png") 2px -527px no-repeat;
+        }
+        .seven-icon-g {
+          background:url("../images/index-icon-666.png") 2px -634px no-repeat;
+        }
+      }
       .up-child-item {
-        width: 330px;
-        height: 150px;
-        background: #829138;
+        width: 298px;
+        height: 108px;
         position: relative;
         float: left;
         margin-right: 22px;
+        border: 1px solid #3399cc;
+        padding: 15px 15px 25px 15px;
+        .child-content {
+          display: inline-block;
+          color: #999999;
+          width: 210px;
+          height: 100%;
+          overflow: hidden;
+          h4 {
+            font-size: 18px;
+            font-weight: bold;
+            display: inline;
+          }
+          .number {
+            font-size: 28px;
+            font-style: italic;
+            font-family: Arial;
+            font-weight: bold;
+            display: inline;
+          }
+          li.text{
+            font-size: 14px;
+            line-height: 21px;
+            width: 210px;
+          }
+          li.first {
+            display: inline-block;
+            border-bottom: 2px solid #999999;
+            margin-bottom: 5px;
+            line-height: auto;
+          }
+        }
       }
+
       .down-item {
         position: relative;
-        width: 255px;
-        height: 150px;
-        background: #882388;
+        width: 228px;
+        height: 108px;
         float: left;
         margin-right:26px;
+        border: 1px solid #3399cc;
+        padding: 15px 20px 25px 5px;
+        .child-content {
+          display: inline-block;
+          color: #999999;
+          width: 158px;
+          height: 100%;
+          overflow: hidden;
+          h4 {
+            font-size: 18px;
+            font-weight: bold;
+            display: inline;
+          }
+          .number {
+            font-size: 28px;
+            font-style: italic;
+            font-family: Arial;
+            font-weight: bold;
+            display: inline;
+          }
+          li.text{
+            width: 158px;
+            font-size: 14px;
+            line-height: 21px;
+          }
+          li.first {
+            display: inline-block;
+            border-bottom: 2px solid #999999;
+            margin-bottom: 5px;
+            line-height: auto;
+          }
+        }
       }
       .last {
         margin-right: 0;
@@ -795,13 +924,22 @@ body {
 .wrapper-scroll-banner-img {
   height: 600px;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background: #fff;
   border: 2px solid;
   border-color: rgba(255,255,255,0);
   opacity: 1;
+}
+.old-house-swiper-container {
+   .swiper-pagination-bullet  {
+     background: #ccc;
+   }
+   .swiper-pagination-bullet-active{
+     background: transparent;
+     border: 2px solid #ff9900;
+   }
 }
 .swiper-pagination-bullet-active{
   background: transparent;
@@ -893,7 +1031,7 @@ body {
           }
         }
         .down-item {
-          width: 50%;
+          width: 100%;
           margin: 0;
           height: auto;
           img {

@@ -142,6 +142,8 @@
         font-size: 18px;
         padding: 0 30px;
         cursor: pointer;
+        background-color: #fff;
+        font-weight: 600;
         &:last-child {
           border-right: 1px solid #33a7d8;
         }
@@ -236,7 +238,7 @@
       margin-left: 243px;
       h4 {
         font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         a {
           color: #313538;
         }
@@ -257,6 +259,12 @@
       .share {
         float: right;
       }
+    }
+  }
+  .news-tab-con {
+    display: none;
+    &.active {
+      display: block;
     }
   }
 }
