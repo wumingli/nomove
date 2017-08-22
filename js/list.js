@@ -4,8 +4,4 @@ import '../libs/sideBar.js';
 import './common';
 import '../scss/list.scss';
 
-$('body').css({
-  backgroundColor: '#f5f5f5'
-});
-
 //alert('test');

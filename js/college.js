@@ -10,4 +10,5 @@ $('.college-tab').find('li').on('click', function() {
   var tabIndex = $(this).index();
   $('.college-content').children('section').addClass('none')
     .eq(tabIndex).removeClass('none');
-}).eq(0).trigger('click');
+  location.hash = tabIndex;
+}).eq(location.hash.substring(1) / 1 || 0).trigger('click');

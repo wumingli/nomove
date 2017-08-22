@@ -20,7 +20,9 @@ module.exports = {
     team: './js/team',
     about: './js/about',
     sale: './js/sale',
-    indexSearch: './js/index-search'
+    indexSearch: './js/index-search',
+    join: './js/join',
+    map: './js/map',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -221,11 +223,33 @@ module.exports = {
        collapseWhitespace: true
        }*/
     }),
-    //热销新房
+    //首页-搜索
     new HtmlWebpackPlugin({
       filename: 'index-search.html',
       template: './index-search.html',
       chunks: ['indexSearch'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    //加入我们
+    new HtmlWebpackPlugin({
+      filename: 'join.html',
+      template: './join.html',
+      chunks: ['join'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    //网站地图
+    new HtmlWebpackPlugin({
+      filename: 'map.html',
+      template: './map.html',
+      chunks: ['map'],
       inject: ['body', 'head'],
       /*minify: {
        removeComments: true,
