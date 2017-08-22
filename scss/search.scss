@@ -237,13 +237,12 @@
           background-color: #fff;
         }
         dd {
-          width: 512px;
-          float: left;
+          margin-left: 209px;
         }
         dt {
           float: left;
-          width: 160px;
-          height: 120px;
+          width: 181px;
+          height: 137px;
           margin-right: 28px;
           background-position: 50% 50%;
           background-size: cover;
@@ -265,6 +264,7 @@
         font-weight: bold;
         .rmb {
           float: right;
+          font-size: 20px;
         }
         a {
           display: block;
@@ -276,6 +276,7 @@
           white-space: nowrap;
           word-wrap: normal;
           word-break: normal;
+          font-weight: bold;
           &:hover {
             text-decoration: underline;
           }
@@ -288,12 +289,12 @@
         font-size: 14px;
         .dollar {
           float: right;
+          font-weight: bold;
         }
       }
 
       .city {
-        width: 600px;
-        margin-top: 10px;
+        margin: 15px 0;
         overflow: hidden;
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
@@ -303,6 +304,7 @@
         i, span {
           display: block;
           float: left;
+          color: #333;
         }
         span {
           max-width: 95%;

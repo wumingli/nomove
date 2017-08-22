@@ -20,6 +20,7 @@ module.exports = {
     team: './js/team',
     about: './js/about',
     sale: './js/sale',
+    indexSearch: './js/index-search'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -214,6 +215,17 @@ module.exports = {
       filename: 'sale.html',
       template: './sale.html',
       chunks: ['sale'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    //热销新房
+    new HtmlWebpackPlugin({
+      filename: 'index-search.html',
+      template: './index-search.html',
+      chunks: ['indexSearch'],
       inject: ['body', 'head'],
       /*minify: {
        removeComments: true,
