@@ -13,6 +13,7 @@ module.exports = {
     main: './js/index',
     list: './js/list',
     search: './js/search',
+    searchDetail: './js/search-detail',
     news: './js/news',
     college: './js/college',
     detail: './js/detail',
@@ -136,6 +137,16 @@ module.exports = {
       filename: 'search.html',
       template: './search.html',
       chunks: ['search'],
+      inject: ['body', 'head'],
+      /*minify: {
+       removeComments: true,
+       collapseWhitespace: true
+       }*/
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'search-detail.html',
+      template: './search-detail.html',
+      chunks: ['searchDetail'],
       inject: ['body', 'head'],
       /*minify: {
        removeComments: true,
