@@ -91,6 +91,17 @@ body {
       vertical-align: middle;
     }
   }
+  //banner文字
+  .banner-text {
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    z-index: 12;
+    font-size: 48px;
+    font-family: serif;
+    color: #fff;
+    text-align: center;
+  }
   //搜索弹窗
   .float-content{
     width:1050px;
@@ -116,7 +127,6 @@ body {
       height: 85px;
       position: relative;
       font-size: 16px;
-      color: #666;
       input {
         width: 374px;
         height: 40px;
@@ -124,9 +134,19 @@ body {
         border: 0;
         margin: 22px 0 0 24px;
         background-color: rgba(255, 255, 255, 0.8);
-        background-image: url('../images/search-btn.png');
-        background-repeat: no-repeat;
-        background-position: 335px 10px;
+        color: #666;
+      }
+      button {
+        border: 0;
+        position: absolute;
+        right: 23px;
+        top: 22px;
+        width: 50px;
+        height: 38px;
+        text-indent: -999px;
+        overflow: hidden;
+        cursor: pointer;
+        background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAB9ElEQVQ4jaXUy2+NQRjH8c9bLY1LaKuSWmgs0NB0JWFVxAKRuCQkEiws3Lb+FzsSERsWQsRChCZ2IjYVl2BxFGWj1EmpHM5YzJxmvD3knPht5pm8837nuU5hvjqxHiMYwgAW4jMqGMcTfIIQwjxAUdoPYD+2Y0mTCxt6jut4GJpQc+g6nMaGtP+GN/iIGpZjLVal7zO4hhshhHo5VFiNswkshXgLr1FFHd3owyj2pkiO4Qdul6Fd2JcB7+EypkpR1dIFb8XcnsEyHCqK4mUI4VXjYEeC7cg8vNQEmOsXHuBqsldiV1EUC3LoCBbjO27iyz+Aue7jabKHxSLPQTcmuyLmsFVV8SjZPRjMoY1qfhAr3o7eIWARVuTQrmTXxBy1o5rYlkVizUGnk90rTk476k3rT7Emc9BKsgfR3yZ0OK0zmMyh48nuFxu7VQ1hS7Ir4vT9AX0h5mVPi+A+HBdHdxZ3QggzOXRKfByqWCpOygFxWsrqEEM+J/Z3Q935oSJbD+KoWKw6nuFxCquWvNuEzWJf5prGxRDCWA5teLEbh8XRyxVKZ2ebePgVF0IIY+X3lPhA70zh9YiNXYhtU02e303AE2Jec/D5ZtCG1wNYk37qFPtwEhNiC8E2nCyBJ/4GbUejOJWB3/83NISgKIqtOCJGdOU3lm9+Rlxfi3sAAAAASUVORK5CYII=") 50% 50% no-repeat;
       }
     }
     //二维码
@@ -316,11 +336,19 @@ body {
           width: 120px;
           height: 120px;
         }
+        img {
+          width: 120px;
+          height: 120px;
+        }
       }
       .three-item {
         width: 33.3333333%;
         height: 33.3333333%;
         .icon {
+          width: 110px;
+          height: 110px;
+        }
+        img {
           width: 110px;
           height: 110px;
         }
@@ -330,6 +358,10 @@ body {
         height: 25%;
         border-radius: 50%;
         .icon {
+          width: 100px;
+          height: 100px;
+        }
+        img {
           width: 100px;
           height: 100px;
         }
