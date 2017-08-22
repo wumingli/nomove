@@ -1,0 +1,145 @@
+@import "./common";
+@import "footer";
+@import "banner";
+@import "mob-common";
+
+.wrapper {
+  &.map-banner {
+    background-image: url("../images/team-banner.jpg");
+    height: 279px;
+  }
+}
+.map-wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  h1 {
+    font-size: 18px;
+    font-weight: normal;
+    width: 198px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #999;
+    text-align: center;
+    margin: 39px auto 0;
+    background: #33a7d8;
+    a {
+      color: #fff;
+      display: block;
+    }
+  }
+  .maps {
+    background: url("data:image/png;base64,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") left top no-repeat;
+    position: relative;
+    height: 520px;
+    dl {
+      position: absolute;
+      left: 0;
+      top: 48px;
+      dt, dd {
+        text-align: center;
+        font-weight: normal;
+        background-color: #5cb9e0;
+        a {
+          color: #fff;
+          display: block;
+        }
+      }
+      dt {
+        width: 130px;
+        height: 39px;
+        line-height: 39px;
+        font-size: 16px;
+        margin-bottom: 21px;
+      }
+      dd {
+        width: 120px;
+        height: 37px;
+        line-height: 37px;
+        font-size: 14px;
+        margin-bottom: 16px;
+        margin-left: 17px;
+      }
+      &.new-house {
+        left: 192px;
+        dt, dd {
+          background-color: #36b087;
+        }
+      }
+      &.second-house {
+        left: 384px;
+        dt, dd {
+          background-color: #72a73e;
+        }
+      }
+      &.college {
+        left: 577px;
+        dt, dd {
+          background-color: #d1ba20;
+        }
+      }
+      &.news {
+        left: 769px;
+        dt, dd {
+          background-color: #e39f35;
+        }
+      }
+      &.concat {
+        left: 960px;
+        dt, dd {
+          background-color: #ff9900;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1025px) {
+  .wrapper-logo {
+    padding-left: 10px;
+  }
+  .wrapper {
+    width: 100%;
+    &.map-banner {
+      height: 120px;
+    }
+  }
+  .map-wrapper {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    h1 {
+      width: 100%;
+    }
+    .maps {
+      background: none;
+      height: auto;
+      dl {
+        position: static;
+        padding: 20px 0;
+        border-bottom: 1px solid #999;
+        dt, dd {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        dt {
+          height: 50px;
+          line-height: 50px;
+        }
+        dd {
+          margin-left: 0;
+        }
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  footer {
+    margin-top: 10px;
+    ul {
+      li {
+        margin-right: 10px;
+      }
+    }
+  }
+}
