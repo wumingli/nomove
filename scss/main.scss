@@ -97,10 +97,8 @@ body {
     position: absolute;
     top: 130px;
     z-index: 12;
-    font-size: 48px;
-    font-family: serif;
-    color: #fff;
-    text-align: center;
+    height: 40px;
+    background: url("../images/banner-text.png") center center no-repeat;
   }
   //搜索弹窗
   .float-content{
@@ -262,6 +260,7 @@ body {
       text-align: center;
       line-height: 50px;
       font-size: 16px;
+      color: #666666;
     }
     .choice-house-nav {
       width: 708px;
@@ -277,6 +276,7 @@ body {
         border-right: 1px solid #33a7d8;
         text-align: center;
         line-height: 35px;
+        color: #333333;
       }
       li.active {
         background: #33a7d8;
@@ -301,6 +301,7 @@ body {
         text-align: center;
         line-height: 65px;
         font-size: 18px;
+        color: #333333;
       }
       .item-content {
         width: 100%;
@@ -309,6 +310,7 @@ body {
           text-align: center;
           overflow: hidden;
           margin-bottom: 10px;
+          color: #333333;
           .icon {
             display: table;
             border: 5px solid #cecdcc;
