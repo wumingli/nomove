@@ -4,13 +4,6 @@ import '../libs/sideBar.js';
 import '../scss/search-detail.scss';
 import './common';
 
-new Swiper('.recommend-house', {
-  pagination: '.swiper-pagination',
-  paginationClickable: true,
-  autoplay: 4000,
-  loop: true,
-});
-
 var logic = {
   init: function () {
     this.swiperSlide();
@@ -24,36 +17,53 @@ var logic = {
     });
   },
   //轮播图
-  swiperSlide: function () {
+  swiperSlide:function(){
     var galleryTop = new Swiper('.gallery-top', {
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
-      pagination: '.swiper-pagination',
+      pagination : '.swiper-pagination',
       paginationType: 'fraction',
-      initialSlide: 2,
+      slideToClickedSlide: false,
+      simulateTouch: false,
+      onSlideChangeStart: function(){
+        $(".gallery-thumbs .swiper-slide-hover").removeClass("swiper-slide-hover");
+        $(".gallery-thumbs .swiper-slide").eq(galleryTop.activeIndex).addClass("swiper-slide-hover");
+      }
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
-      initialSlide: 2,
       spaceBetween: 10,
-      centeredSlides: true,
       slidesPerView: 5,
       touchRatio: 0.2,
-      slideToClickedSlide: true,
+      slideToClickedSlide: false,
+      onClick: function() {
+        $(".gallery-thumbs .swiper-slide-hover").removeClass("swiper-slide-hover");
+        $(".gallery-thumbs .swiper-slide").eq(galleryThumbs.clickedIndex).addClass("swiper-slide-hover");
+        galleryTop.slideTo(galleryThumbs.clickedIndex,300);
+      }
     });
     var houseGalleryTop = new Swiper('.house-gallery-top', {
-      initialSlide: 2,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
-      pagination: '.swiper-pagination',
+      pagination : '.swiper-pagination',
       paginationType: 'fraction',
+      slideToClickedSlide: false,
+      simulateTouch: false,
+      onSlideChangeStart: function(){
+        $(".house-gallery-thumbs .swiper-slide-hover").removeClass("swiper-slide-hover");
+        $(".house-gallery-thumbs .swiper-slide").eq(houseGalleryTop.activeIndex).addClass("swiper-slide-hover");
+      }
     });
     var houseGalleryThumbs = new Swiper('.house-gallery-thumbs', {
-      initialSlide: 2,
       spaceBetween: 10,
-      centeredSlides: true,
       slidesPerView: 5,
       touchRatio: 0.2,
-      slideToClickedSlide: true,
+      slideToClickedSlide: false,
+      onClick: function() {
+        $(".house-gallery-thumbs .swiper-slide-hover").removeClass("swiper-slide-hover");
+        $(".house-gallery-thumbs .swiper-slide").eq(houseGalleryThumbs.clickedIndex).addClass("swiper-slide-hover");
+        houseGalleryTop.slideTo(houseGalleryThumbs.clickedIndex,300);
+      }
+
     });
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
