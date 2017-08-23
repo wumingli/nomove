@@ -18,29 +18,6 @@ var logic = {
   },
   //轮播图
   swiperSlide:function(){
-    var galleryTop = new Swiper('.gallery-top', {
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      pagination : '.swiper-pagination',
-      paginationType: 'fraction',
-      slideToClickedSlide: false,
-      simulateTouch: false,
-      onSlideChangeStart: function(){
-        $(".gallery-thumbs .swiper-slide-hover").removeClass("swiper-slide-hover");
-        $(".gallery-thumbs .swiper-slide").eq(galleryTop.activeIndex).addClass("swiper-slide-hover");
-      }
-    });
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 5,
-      touchRatio: 0.2,
-      slideToClickedSlide: false,
-      onClick: function() {
-        $(".gallery-thumbs .swiper-slide-hover").removeClass("swiper-slide-hover");
-        $(".gallery-thumbs .swiper-slide").eq(galleryThumbs.clickedIndex).addClass("swiper-slide-hover");
-        galleryTop.slideTo(galleryThumbs.clickedIndex,300);
-      }
-    });
     var houseGalleryTop = new Swiper('.house-gallery-top', {
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
@@ -55,8 +32,9 @@ var logic = {
     });
     var houseGalleryThumbs = new Swiper('.house-gallery-thumbs', {
       spaceBetween: 10,
-      slidesPerView: 5,
+      slidesPerView: 4,
       touchRatio: 0.2,
+      direction: 'vertical',
       slideToClickedSlide: false,
       onClick: function() {
         $(".house-gallery-thumbs .swiper-slide-hover").removeClass("swiper-slide-hover");
@@ -65,8 +43,6 @@ var logic = {
       }
 
     });
-    galleryTop.params.control = galleryThumbs;
-    galleryThumbs.params.control = galleryTop;
     houseGalleryTop.params.control = houseGalleryThumbs;
     houseGalleryThumbs.params.control = houseGalleryTop;
   },
@@ -198,7 +174,10 @@ var logic = {
   },
 };
 logic.init();
+<<<<<<< HEAD
+=======
 
 $('.article-tab li').on('click', function () {
   $(this).addClass('active').siblings('li').removeClass('active');
 });
+>>>>>>> a8cd9dbe163f2181c97eacb1b2b3564236888317
