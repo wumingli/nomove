@@ -617,12 +617,53 @@
     margin-left: -146px;
     display: none;
     .count-form dl dd {
-      width: 100%;
+      width: 160px;
     }
     .selectbox{
       width: 100%;
     }
   }
+  .calculator-box .count-form {
+    dl dt{
+      width: auto;
+    }
+    dl dd {
+      width: 169px;
+    }
+    dl dd.sum-have{
+      width: 178px;
+      input{
+        width: 100px;
+      }
+    }
+    dl dd.small{
+      width: 162px;
+      input{
+        width: 100px;
+      }
+    }
+    dl.count-btns dd button{
+      width: 127px;
+    }
+    dl .sum-cash.small{
+      width: 130px;
+      input{
+        width: 75px;
+      }
+    }
+  }
+  .selectbox-wrapper{
+    width: 179px;
+  }
+  .close{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 5px 10px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
 
 
 
