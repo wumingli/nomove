@@ -329,14 +329,14 @@
 .house-gallery-thumbs .swiper-slide {
   width: 25%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 0.8;
+  border: 1px solid #999;
+}
+.house-gallery-top {
   border: 1px solid #999;
 }
 .house-gallery-thumbs .swiper-slide-hover {
   opacity: 1;
-}
-.house-swiper,.house-slide {
-  border: 1px solid #999999;
 }
 .swiper-pagination  {
   color: #fff;
@@ -355,13 +355,48 @@
   background: url("../images/left-btn.png") 0 0 no-repeat;
 }
 @media screen and (max-width:1024px) {
-  .banner-title-content,.house-info-content,
+  .house-info-content,
    .city-info-content,.house-setting-content,
    .house-introduce,.about-dev-content,
    .about-back,.swiper-top-content{
     width: 100%;
   }
+  .banner-title-content {
+    display: none;
+  }
   .house-nav-content {
     display: none;
+  }
+  .city-info-content {
+    .city-info {
+      .text {
+        width: 100%;
+        float: none;
+      }
+      .city-map {
+        margin-top: 10px;
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+  .house-setting-content {
+    .house-setting {
+      ul {
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+  .swiper-top-content {
+    height: 300px;
+  }
+  .house-introduce {
+    .house-swiper-box {
+      height: 300px;
+    }
+    .house-swiper-content {
+      height: 300px;
+    }
   }
 }
