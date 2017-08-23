@@ -188,3 +188,7 @@ var logic = {
   },
 };
 logic.init();
+
+$('.article-tab li').on('click', function () {
+  $(this).addClass('active').siblings('li').removeClass('active');
+});
