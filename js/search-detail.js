@@ -121,7 +121,6 @@ var logic = {
       $('.jsq-container').hide();
     });
     $('.count-list li').on('click', function () {
-      debugger;
       var name = $(this)[0].id;
       $('.jsq-container').show();
       $('.jsq-container').find("div[data-jsq-type='"+name+"']").show();

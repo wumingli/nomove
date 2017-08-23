@@ -116,6 +116,77 @@
   @import "page";
 }
 
+//计算器开始
+.jsq-container {
+  @import "sidebox";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+  .jsq-con {
+    width: 292px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    margin-left: -146px;
+    display: none;
+    .count-form dl dd {
+      width: 160px;
+    }
+    .selectbox{
+      width: 100%;
+    }
+  }
+  .calculator-box .count-form {
+    dl dt{
+      width: auto;
+    }
+    dl dd {
+      width: 169px;
+    }
+    dl dd.sum-have{
+      width: 178px;
+      input{
+        width: 100px;
+      }
+    }
+    dl dd.small{
+      width: 162px;
+      input{
+        width: 100px;
+      }
+    }
+    dl.count-btns dd button{
+      width: 127px;
+    }
+    dl .sum-cash.small{
+      width: 130px;
+      input{
+        width: 75px;
+      }
+    }
+  }
+  .selectbox-wrapper{
+    width: 179px;
+  }
+  .close{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 5px 10px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+
+
+
+}
+
 
 @media screen and (max-width: 1025px) {
   .wrapper-logo {

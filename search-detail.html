@@ -295,10 +295,10 @@
                     <li class="c-title2 count1"
                         id="jsq-mbg"><i class="search-detail-icon icon05"></i><a>目标国汇率计算器</a></li>
                     <li class="c-title4 count2" id="jsq-gfnl"><i
-                            class="search-detail-icon icon06"></i><a>客户购房能力评估</a></li>
+                            class="search-detail-icon icon06"></i><a>海外房贷计算器</a></li>
                 </ul>
                 <div class="news-hot-house">
-                    <h3>海外热点房源<a href="" class="more">更多&gt;</a></h3>
+                    <h3>周边类似房源<a href="" class="more">更多&gt;</a></h3>
                     <div class="hot-house-list">
                         <a href="">
                             <dl>
@@ -358,7 +358,7 @@
                     </div>
                 </div>
                 <div class="news-hot-house">
-                    <h3>海外热点房源<a href="" class="more">更多&gt;</a></h3>
+                    <h3>英国同价位房源<a href="" class="more">更多&gt;</a></h3>
                     <div class="hot-house-list">
                         <a href="">
                             <dl>
@@ -423,130 +423,7 @@
     </div>
 </div>
 #include('./footer.html')
-<!--计算器开始-->
-<div class="jsq-container">
-    <!--目标国汇率计算器-->
-    <div class="calculator-box jsq-con" data-jsq-type="jsq-mbg">
-        <div class="calculator-title">
-            <i class="search-detail-icon icon05"></i>
-            <span>目标国汇率计算器</span>
-        </div>
-        <div class="count-form">
-            <dl>
-                <dt>持有货币：</dt>
-                <dd class="slide-down">
-                    <select id="i-have" title="">
-                        <option value="CNY">人民币</option>
-                        <option value="GBP">英镑</option>
-                        <option value="USD">美元</option>
-                        <option value="AUD">澳币</option>
-                        <option value="CAD">加元</option>
-                        <option value="NZD">纽币</option>
-                    </select>
-                </dd>
-            </dl>
-            <dl>
-                <dt>兑换货币：</dt>
-                <dd class="slide-down">
-                    <select id="i-want" title="">
-                        <option value="GBP">英镑</option>
-                        <option value="USD">美元</option>
-                        <option value="AUD">澳币</option>
-                        <option value="CAD">加元</option>
-                        <option value="NZD">纽币</option>
-                    </select>
-                </dd>
-            </dl>
-            <dl>
-                <dt>持有金额：</dt>
-                <dd class="sum-have">
-                    <input title="" type="number" value="100"/>
-                    <span class="sum-have-type">人民币</span>
-                </dd>
-            </dl>
-            <dl class="count-btns">
-                <dd>
-                    <button id="huilv-btn" class="submit">计算</button>
-                    <button id="huilv-reset" class="reset">重置</button>
-                </dd>
-            </dl>
-            <dl class="count-result">
-                <dt>兑换金额：</dt>
-                <dd class="sum-have sum-cash">
-                    <input title="" type="text" value="">
-                    <span class="sum-cash-type">美元</span>
-                </dd>
-            </dl>
-        </div>
-        <span class="close">X</span>
-    </div>
-    <!--客户购房能力评估-->
+#include('./jsq.html')
 
-    <div class="calculator-box jsq-con" data-jsq-type="jsq-gfnl">
-        <div class="calculator-title">
-            <i class="search-detail-icon icon06"></i>
-            <span>客户购房能力评估</span>
-        </div>
-        <div class="count-form">
-            <dl class="fd-row1">
-                <dt>现持有资金：</dt>
-                <dd class="sum-have small">
-                    <input title="" type="number" value="">
-                    <span>元</span>
-                </dd>
-            </dl>
-            <dl class="fd-row1">
-                <dt>家庭月收入：</dt>
-                <dd class="sum-have small">
-                    <input title="" type="number" value="">
-                    <span>元</span>
-                </dd>
-            </dl>
-            <dl class="fd-row1">
-                <dt>月固定支出：</dt>
-                <dd class="sum-have small">
-                    <input title="" type="number" value="">
-                    <span>元/月</span>
-                </dd>
-            </dl>
-            <dl class="fd-row1">
-                <dt>还款年限：</dt>
-                <dd class="slide-down">
-                    <select id="i-years">
-                        <option value="24" selected="selected">2年(24期)</option>
-                        <option value="36">3年(36期)</option>
-                        <option value="48">4年(48期)</option>
-                        <option value="60">5年(60期)</option>
-                        <option value="72">6年(72期)</option>
-                        <option value="84">7年(84期)</option>
-                        <option value="96">8年(96期)</option>
-                        <option value="108">9年(108期)</option>
-                        <option value="120">10年(120期)</option>
-                        <option value="180">15年(180期)</option>
-                        <option value="240">20年(240期)</option>
-                        <option value="300">25年(300期)</option>
-                        <option value="360">30年(360期)</option>
-                    </select></dd>
-            </dl><!-- <dl class="fd-row1"><dt>房屋面积：</dt><dd class="market house-area"><input id="mianji" type="text" class="market-ipt" value=""/>平方米
-            </dd></dl> -->
-            <dl class="count-btns">
-                <dd>
-                    <button id="nlstart-btn" class="submit">计算</button>
-                    <button id="nlstart-reset" class="reset">重置</button>
-                </dd>
-            </dl>
-            <dl class="fd-row1 fd-row-lang">
-                <dt>可购买房屋总价：</dt>
-                <dd class="sum-have sum-cash small">
-                    <input title="" type="text" value="">
-                    <span class="sum-cash-type">美元</span>
-                </dd>
-            </dl>
-            <!-- <dl class="fd-row1 fd-row-lang"><dt>可购买房屋单价：</dt><dd><span class="sum" id="danjia"></span><span>元</span></dd></dl> -->
-        </div>
-        <span class="close">X</span>
-    </div>
-</div>
-<!--计算器结束-->
 </body>
 </html>
