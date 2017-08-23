@@ -704,6 +704,8 @@
     }
     .search-left-col {
       width: 100%;
+      box-sizing: border-box;
+      padding: 0 10px;
       .search-title {
         .article-title {
           float: none;
@@ -733,8 +735,6 @@
       }
       .con-with-part4 {
         .content {
-          box-sizing: border-box;
-          padding: 15px;
           img {
             width: 100%;
           }
