@@ -1004,8 +1004,10 @@ body {
   }
   .wrapper-content {
     width: 100%;
+    padding-top: 20px;
     .content-title {
       width: 100%;
+      padding-bottom: 20px;
     }
     .new-house-list {
       width: 100%;
@@ -1024,7 +1026,7 @@ body {
       ul {
         li {
           width: 50%;
-          margin: 10px 0px;
+          margin: 0;
           text-align: center;
           dl {
             margin: 0px auto;
@@ -1059,13 +1061,14 @@ body {
           }
           .old-house-left {
             width: 100%;
+            height: 287px;
           }
         }
       }
     }
     .advantage-content {
       width: 90%;
-      padding:5%;
+      padding: 0;
       height: auto;
       .advantage-seven {
         width: 90%;
@@ -1073,7 +1076,7 @@ body {
         .up-item {
           width: 100%;
           padding: 0;
-          margin: 10px auto;
+          margin: 0 auto;
           .up-child-item {
             width: 100%;
             height: auto;
@@ -1086,7 +1089,7 @@ body {
         .down-item {
           width: 100%;
           margin: 10px auto;
-          height: auto;
+          height: 110px;
           img {
             width: 100%;
           }
@@ -1140,17 +1143,19 @@ body {
 @media screen and (max-width:750px) {
   .wrapper {
     .new-house-list {
-      width: 100%;
+      width: 94%;
+      margin: 0 auto;
+      box-sizing: border-box;
       height: auto;
       ul {
         li {
-          width: 45%;
+          width: 100%;
           float: none;
           margin: 10px auto 10px auto;
-
-        }
-        li.last {
-          margin-right: auto;
+          height: 220px;
+          &:last-child {
+            margin-right: auto;
+          }
         }
       }
     }
@@ -1162,7 +1167,8 @@ body {
         height: auto;
         li {
           float: none;
-          margin: 10px auto;
+          margin: 5px auto;
+          width: 94%;
         }
         li.last {
           margin-right: auto;
