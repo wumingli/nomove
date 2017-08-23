@@ -174,3 +174,10 @@ var logic = {
   },
 };
 logic.init();
+<<<<<<< HEAD
+=======
+
+$('.article-tab li').on('click', function () {
+  $(this).addClass('active').siblings('li').removeClass('active');
+});
+>>>>>>> a8cd9dbe163f2181c97eacb1b2b3564236888317
