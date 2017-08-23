@@ -1116,14 +1116,18 @@ body {
       }
     }
     .team-content {
-      width: 100%;
+      width: 90%;
       height: auto;
       ul {
         width: 100%;
         height: auto;
         li {
+          width: auto;
           margin: 10px auto;
           float: none;
+          dt {
+            margin: 10px auto;
+          }
         }
         li.last {
           margin-right: auto;
