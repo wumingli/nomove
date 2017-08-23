@@ -75,7 +75,7 @@ var logic = {
       return false;
     });
     $('.price-all li').on('click', function () {
-      debugger;
+      //debugger;
       var name = $(this).attr('name');
       $('.jsq-container').show();
       $('.jsq-container').find("div[data-jsq-type='"+name+"']").show();
