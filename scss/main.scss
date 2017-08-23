@@ -1107,6 +1107,7 @@ body {
         position: relative;
         width: 100%;
         height: auto;
+        top: 0px;
         img {
           width: 100%;
         }
@@ -1116,14 +1117,18 @@ body {
       }
     }
     .team-content {
-      width: 100%;
+      width: 90%;
       height: auto;
       ul {
         width: 100%;
         height: auto;
         li {
+          width: auto;
           margin: 10px auto;
           float: none;
+          dt {
+            margin: 10px auto;
+          }
         }
         li.last {
           margin-right: auto;
@@ -1141,7 +1146,7 @@ body {
         li {
           width: 45%;
           float: none;
-          margin: 10px auto 0px auto;
+          margin: 10px auto 10px auto;
 
         }
         li.last {
@@ -1173,7 +1178,7 @@ body {
         height: auto;
         ul {
           li {
-            width: 100%;
+            width: 90%;
           }
         }
       }
