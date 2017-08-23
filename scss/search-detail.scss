@@ -692,6 +692,10 @@
     width: 100%;
     &.search-banner {
       height: 120px;
+      background-size: 100% 100%;
+      .search {
+        display: none;
+      }
     }
   }
   .search-detail-wrapper {
