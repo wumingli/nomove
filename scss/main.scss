@@ -1107,6 +1107,7 @@ body {
         position: relative;
         width: 100%;
         height: auto;
+        top: 0px;
         img {
           width: 100%;
         }
@@ -1145,7 +1146,7 @@ body {
         li {
           width: 45%;
           float: none;
-          margin: 10px auto 0px auto;
+          margin: 10px auto 10px auto;
 
         }
         li.last {
@@ -1177,7 +1178,7 @@ body {
         height: auto;
         ul {
           li {
-            width: 100%;
+            width: 90%;
           }
         }
       }
