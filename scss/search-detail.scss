@@ -105,14 +105,14 @@
       background-position: 0 -376px;
     }
     &-icon.icon01 {
-      background-position: -11px -114px;
+      background-position: -11px -12px;
     }
     &-icon.icon02 {
-      background-position: -190px -14px;
+      background-position: -190px -12px;
 
     }
     &-icon.icon03 {
-      background-position: -379px -14px;
+      background-position: -379px -10px;
 
     }
     &-icon.icon04 {
@@ -129,6 +129,22 @@
     }
     &-icon.icon06 {
       background-position: -895px -14px;
+      position: absolute;
+      top: 6px;
+      left: 40px;
+      width: 30px;
+      height: 30px;
+    }
+    &-icon.icon07 {
+      background-position: -798px -112px;
+      position: absolute;
+      top: 6px;
+      left: 40px;
+      width: 30px;
+      height: 30px;
+    }
+    &-icon.icon08 {
+      background-position: -684px -11px;
       position: absolute;
       top: 6px;
       left: 40px;
@@ -285,6 +301,23 @@
         top: 5px;
         left: 20px;
       }
+      li.active {
+        i.icon01 {
+          background-position: -11px -110px;
+        }
+        i.icon02 {
+          background-position: -190px -110px;
+
+        }
+        i.icon03 {
+          background-position: -379px -110px;
+
+        }
+        i.icon04 {
+          background-position: -569px -110px;
+
+        }
+      }
 
       .nob {
         border: 1px solid #33a7d8;
@@ -374,7 +407,7 @@
     }
     .con-with-part-title {
       width: 100%;
-      height: 30px;
+      height: 32px;
       box-sizing: border-box;
       font-size: 16px;
       color: #666666;
@@ -390,8 +423,8 @@
 
       }
       .title {
-        line-height: 30px;
-        height: 30px;
+        line-height: 32px;
+        height: 32px;
         box-sizing: border-box;
         position: absolute;
         padding-right: 10px;
@@ -402,7 +435,7 @@
       i {
         position: absolute;
         width: 30px;
-        height: 30px;
+        height: 27px;
         top: 0px;
         left: 0px;
       }
@@ -429,13 +462,22 @@
           line-height: 40px;
           text-align: center;
           float: left;
-          border: #cccccc solid 1px;
           border-bottom: none;
           font-size: 16px;
           color: #666666;
         }
         li:last-child {
           border-left: none;
+        }
+        li.active{
+          background:#cccccc ;
+          color: #ffffff;
+          i.icon07{
+            background-position: -380px -112px;
+          }
+          i.icon08{
+            background-position: -684px -114px;
+          }
         }
         a {
           float: left;
@@ -625,7 +667,7 @@
   z-index: 999;
   display: none;
   .jsq-con {
-    width: 292px;
+    width: 350px;
     position: absolute;
     left: 50%;
     top: 15%;
@@ -638,17 +680,40 @@
       width: 100%;
     }
   }
+  .calculator-box .calculator-title{
+    position: relative;
+    &:before{
+      display: none;
+    }
+    i{
+      position: absolute;
+      top: 6px;
+      left: 70px;
+      width: 30px;
+      height: 30px;
+      background: url('../images/search-detail-icon.png') no-repeat;
+      background-size: 1000px 200px;
+    }
+    i.icon05{
+      background-position: -790px -14px;
+    }
+    i.icon06{
+      background-position: -895px -14px;
+    }
+
+  }
   .calculator-box .count-form {
     dl dt {
-      width: auto;
+      width: 80px;
+      float: left;
     }
     dl dd {
-      width: 169px;
+      width: 220px;
     }
     dl dd.sum-have {
-      width: 178px;
+      width: 230px;
       input {
-        width: 100px;
+        width: 160px;
       }
     }
     dl dd.small {
@@ -668,7 +733,7 @@
     }
   }
   .selectbox-wrapper {
-    width: 179px;
+    width: 230px;
   }
   .close {
     position: absolute;

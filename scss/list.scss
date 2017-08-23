@@ -129,7 +129,7 @@
   z-index: 999;
   display: none;
   .jsq-con {
-    width: 292px;
+    width: 350px;
     position: absolute;
     left: 50%;
     top: 15%;
@@ -138,54 +138,73 @@
     .count-form dl dd {
       width: 160px;
     }
-    .selectbox{
+    .selectbox {
       width: 100%;
     }
   }
+  .calculator-box .calculator-title{
+    position: relative;
+    &:before{
+      display: none;
+    }
+    i{
+      position: absolute;
+      top: 6px;
+      left: 70px;
+      width: 30px;
+      height: 30px;
+      background: url('../images/search-detail-icon.png') no-repeat;
+      background-size: 1000px 200px;
+    }
+    i.icon05{
+      background-position: -790px -14px;
+    }
+    i.icon06{
+      background-position: -895px -14px;
+    }
+
+  }
   .calculator-box .count-form {
-    dl dt{
-      width: auto;
+    dl dt {
+      width: 80px;
+      float: left;
     }
     dl dd {
-      width: 169px;
+      width: 220px;
     }
-    dl dd.sum-have{
-      width: 178px;
-      input{
-        width: 100px;
+    dl dd.sum-have {
+      width: 230px;
+      input {
+        width: 160px;
       }
     }
-    dl dd.small{
+    dl dd.small {
       width: 162px;
-      input{
+      input {
         width: 100px;
       }
     }
-    dl.count-btns dd button{
+    dl.count-btns dd button {
       width: 127px;
     }
-    dl .sum-cash.small{
+    dl .sum-cash.small {
       width: 130px;
-      input{
+      input {
         width: 75px;
       }
     }
   }
-  .selectbox-wrapper{
-    width: 179px;
+  .selectbox-wrapper {
+    width: 230px;
   }
-  .close{
+  .close {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     padding: 5px 10px;
     color: #ffffff;
     cursor: pointer;
   }
-
-
-
-
 }
 
 
