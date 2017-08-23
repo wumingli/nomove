@@ -95,31 +95,31 @@
   }
   @import 'search-condition';
 
-  .search-detail{
-    &-icon{
-      background:url("../images/search-detail-icon.png") no-repeat;
+  .search-detail {
+    &-icon {
+      background: url("../images/search-detail-icon.png") no-repeat;
       background-size: 1000px 200px;
     }
-    .icon00{
-      background:url("../images/old-icon.png") no-repeat;
+    .icon00 {
+      background: url("../images/old-icon.png") no-repeat;
       background-position: 0 -376px;
     }
-    &-icon.icon01{
+    &-icon.icon01 {
       background-position: -11px -114px;
     }
-    &-icon.icon02{
+    &-icon.icon02 {
       background-position: -190px -14px;
 
     }
-    &-icon.icon03{
+    &-icon.icon03 {
       background-position: -379px -14px;
 
     }
-    &-icon.icon04{
+    &-icon.icon04 {
       background-position: -569px -11px;
 
     }
-    &-icon.icon05{
+    &-icon.icon05 {
       background-position: -790px -14px;
       position: absolute;
       top: 6px;
@@ -127,7 +127,7 @@
       width: 30px;
       height: 30px;
     }
-    &-icon.icon06{
+    &-icon.icon06 {
       background-position: -895px -14px;
       position: absolute;
       top: 6px;
@@ -141,7 +141,7 @@
     width: 750px;
     /*float: left;*/
     display: inline-block;
-    .search-title{
+    .search-title {
       overflow: hidden;
       .article-title {
         font-size: 18px;
@@ -174,13 +174,13 @@
         margin: 0 10px;
       }
     }
-    .house-swiper-box{
+    .house-swiper-box {
       padding: 15px;
       box-sizing: border-box;
       background: #e6eaea;
       height: 460px;
     }
-    .house-swiper-content{
+    .house-swiper-content {
       width: 100%;
       height: 100%;
       overflow: hidden;
@@ -200,12 +200,12 @@
         background-size: cover;
         background-position: center;
       }
-      .gallery-top,.house-gallery-top {
+      .gallery-top, .house-gallery-top {
         height: 100%;
         width: 70%;
         float: left;
       }
-      .gallery-thumbs,.house-gallery-thumbs {
+      .gallery-thumbs, .house-gallery-thumbs {
         height: 100%;
         width: 25%;
         float: right;
@@ -230,7 +230,7 @@
       .house-gallery-thumbs .swiper-slide-hover {
         opacity: 1;
       }
-      .swiper-pagination  {
+      .swiper-pagination {
         color: #fff;
       }
       .house-gallery-top {
@@ -238,7 +238,7 @@
           background: #000;
           opacity: 0.5;
           bottom: 0px;
-          padding:3px 0px;
+          padding: 3px 0px;
         }
       }
       .house-gallery-thumbs {
@@ -249,36 +249,36 @@
         background-repeat: no-repeat;
       }
     }
-    .article-tab{
-        height: 37px;
-        margin-top: 20px;
-        font-size: 0;
-        border-bottom: 2px solid #33a7d8;
-       li {
+    .article-tab {
+      height: 37px;
+      margin-top: 20px;
+      font-size: 0;
+      border-bottom: 2px solid #33a7d8;
+      li {
         float: left;
         height: 37px;
-         width: 25%;
-         box-sizing: border-box;
-         font-size: 16px;
+        width: 25%;
+        box-sizing: border-box;
+        font-size: 16px;
         line-height: 37px;
         border: 1px solid #33a7d8;
-         border-right: none;
-         text-align: center;
+        border-right: none;
+        text-align: center;
         border-bottom: 0;
       }
 
-       li a {
-         position: relative;
-         float: left;
-         width: 100%;
-         height: 37px;
-         line-height: 37px;
-         box-sizing: border-box;
-         overflow: hidden;
-         color: #333;
+      li a {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 37px;
+        line-height: 37px;
+        box-sizing: border-box;
+        overflow: hidden;
+        color: #333;
       }
 
-       li i {
+      li i {
         position: absolute;
         width: 30px;
         height: 30px;
@@ -286,16 +286,17 @@
         left: 20px;
       }
 
-       .nob {
-         border: 1px solid #33a7d8;
+      .nob {
+        border: 1px solid #33a7d8;
+        border-bottom: 0;
       }
 
-       .active a {
+      .active a {
         background-color: #33a7d8;
         color: #fff;
       }
     }
-    .con-with-part1{
+    .con-with-part1 {
       .content {
         border: 1px solid #ccc;
         border-top: 0;
@@ -371,14 +372,14 @@
         }
       }
     }
-    .con-with-part-title{
+    .con-with-part-title {
       width: 100%;
       height: 30px;
       box-sizing: border-box;
       font-size: 16px;
       color: #666666;
       position: relative;
-      .line{
+      .line {
         border-bottom: #cccccc solid 1px;
         position: absolute;
         z-index: 1;
@@ -388,7 +389,7 @@
         width: 100%;
 
       }
-      .title{
+      .title {
         line-height: 30px;
         height: 30px;
         box-sizing: border-box;
@@ -398,7 +399,7 @@
         z-index: 2;
         border-bottom: #33a7d8 solid 1px;
       }
-      i{
+      i {
         position: absolute;
         width: 30px;
         height: 30px;
@@ -407,22 +408,22 @@
       }
 
     }
-    .con-with-part2{
+    .con-with-part2 {
       overflow: hidden;
-      margin: 20px 0 ;
+      margin: 20px 0;
       font-size: 16px;
       line-height: 28px;
       color: #666666;
-      .content{
+      .content {
         padding: 10px 30px;
       }
 
     }
-    .con-with-part3{
-      .map-tap{
+    .con-with-part3 {
+      .map-tap {
         padding-top: 20px;
         overflow: hidden;
-        li{
+        li {
           width: 136px;
           height: 40px;
           line-height: 40px;
@@ -433,15 +434,15 @@
           font-size: 16px;
           color: #666666;
         }
-        li:last-child{
+        li:last-child {
           border-left: none;
         }
-        a{
+        a {
           float: left;
           position: relative;
           width: 100%;
           height: 100%;
-          i{
+          i {
             position: absolute;
             width: 30px;
             height: 30px;
@@ -450,28 +451,28 @@
           }
         }
       }
-      .map-con{
+      .map-con {
         width: 100%;
         height: 500px;
         border: #cccccc solid 1px;
       }
     }
-    .con-with-part4{
+    .con-with-part4 {
       overflow: hidden;
-      margin: 20px 0 ;
+      margin: 20px 0;
       font-size: 16px;
       line-height: 28px;
       color: #666666;
-      .content{
+      .content {
         padding: 10px 0;
       }
-      img{
-        margin:10px auto 20px ;
+      img {
+        margin: 10px auto 20px;
       }
-      p{
+      p {
         text-indent: 2em;
       }
-      ul{
+      ul {
         padding: 0 30px;
       }
 
@@ -496,7 +497,7 @@
       color: #ffffff;
       text-align: center;
       line-height: 40px;
-      a{
+      a {
         float: left;
         width: 100%;
         height: 100%;
@@ -549,9 +550,9 @@
       li {
         margin: 16px 22px 0;
         padding-bottom: 5px;
-        background-image:url("../images/dashed.png");
-        background-repeat:repeat-x ;
-        background-position:bottom;
+        background-image: url("../images/dashed.png");
+        background-repeat: repeat-x;
+        background-position: bottom;
         &:last-child {
           background: none;
         }
@@ -577,7 +578,7 @@
           top: -4px;
         }
       }
-      .hot-house-list{
+      .hot-house-list {
         a {
           clear: both;
           overflow: hidden;
@@ -611,7 +612,6 @@
     }
   }
   @import "sidebox";
-
 }
 //计算器开始
 .jsq-container {
@@ -634,63 +634,133 @@
     .count-form dl dd {
       width: 160px;
     }
-    .selectbox{
+    .selectbox {
       width: 100%;
     }
   }
   .calculator-box .count-form {
-    dl dt{
+    dl dt {
       width: auto;
     }
     dl dd {
       width: 169px;
     }
-    dl dd.sum-have{
+    dl dd.sum-have {
       width: 178px;
-      input{
+      input {
         width: 100px;
       }
     }
-    dl dd.small{
+    dl dd.small {
       width: 162px;
-      input{
+      input {
         width: 100px;
       }
     }
-    dl.count-btns dd button{
+    dl.count-btns dd button {
       width: 127px;
     }
-    dl .sum-cash.small{
+    dl .sum-cash.small {
       width: 130px;
-      input{
+      input {
         width: 75px;
       }
     }
   }
-  .selectbox-wrapper{
+  .selectbox-wrapper {
     width: 179px;
   }
-  .close{
+  .close {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     padding: 5px 10px;
     color: #ffffff;
     cursor: pointer;
   }
-
-
-
-
 }
-  footer {
-    margin-top: 10px;
-    ul li {
-      margin-right: 10px;
-    }
-  }
 
 .mapinfo {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 1025px) {
+  .wrapper-logo {
+    padding-left: 10px;
+  }
+  .wrapper {
+    width: 100%;
+    &.search-banner {
+      height: 120px;
+    }
+  }
+  .search-detail-wrapper {
+    width: 100%;
+    .pos {
+      top: -45px;
+      right: auto;
+      left: 10px;
+    }
+    .search-left-col {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 10px;
+      .search-title {
+        .article-title {
+          float: none;
+          margin-bottom: 0;
+          text-align: center;
+        }
+        .price-info {
+          float: none;
+          text-align: center;
+          li {
+            display: inline-block;
+          }
+        }
+      }
+      .house-swiper-box {
+        height: 320px;
+        .house-swiper-content {
+          height: 285px;
+        }
+      }
+      .article-tab {
+        li {
+          i {
+            display: none;
+          }
+        }
+      }
+      .con-with-part4 {
+        .content {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .search-right-col {
+      width: 94%;
+      float: none;
+      clear: none;
+      margin: 0 auto;
+    }
+    .calculator-box-ask .consult-form {
+      input[type="text"], textarea {
+        width: 94%;
+      }
+      input[type="submit"] {
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    margin-top: 10px;
+    ul {
+      li {
+        margin-right: 10px;
+      }
+    }
+  }
 }
