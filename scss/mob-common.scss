@@ -37,3 +37,15 @@
     display: block!important;
   }
 }
+@media screen and (max-width: 1025px) {
+  .wrapper-top-nav {
+    .wrapper-nav-list{
+      li {
+        margin-right: 10px;
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

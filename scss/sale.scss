@@ -2,7 +2,13 @@
 @import "footer";
 @import "banner";
 @import "swiper";
+@import "mob-common";
 
+.wrapper {
+  &.list-banner {
+    background-size: 100% 100%;
+  }
+}
 //清除浮动
 .clearfix:after {
   content: "\0020";
@@ -28,7 +34,7 @@
   }
   .title-middle {
     position: absolute;
-    top: 0px;
+    top: 0;
     width: 630px;
     height: 38px;
     background: #fff;
@@ -178,7 +184,7 @@
     display: inline-block;
     height: 30px;
     color: #3399cc;
-    padding: 0px 10px;
+    padding: 0 10px;
     line-height: 30px;
     font-size: 16px;
     border-bottom: 2px solid #3399cc;
@@ -187,10 +193,10 @@
 //基本信息
 .house-info-content {
   width: 1100px;
-  margin: 0px auto;
+  margin: 0 auto;
   .house-info {
     //width: 100%;
-    padding: 25px 0px 30px 10px;
+    padding: 25px 0 30px 10px;
     li {
       width: 100%;
       line-height: 28px;
@@ -203,7 +209,7 @@
    width: 1100px;
    margin: 10px auto;
    .city-info {
-    padding: 25px 0px 30px 10px;
+    padding: 25px 0 30px 10px;
     .text {
       width: 45%;
       float: left;
@@ -225,9 +231,9 @@
  //配套设施
  .house-setting-content {
    width: 1100px;
-   margin: 0px auto;
+   margin: 0 auto;
   .house-setting {
-    padding: 25px 0px 30px 10px;
+    padding: 25px 0 30px 10px;
     ul {
       width: 50%;
       float: left;
@@ -250,9 +256,9 @@
 //房屋介绍
 .house-introduce {
   width: 1100px;
-  margin: 40px auto 0px auto;
+  margin: 40px auto 0 auto;
   .house-swiper-box{
-    padding: 30px 0px 50px 0px;
+    padding: 30px 0 50px 0;
     height: 685px;
   }
   .house-swiper-content{
@@ -263,9 +269,9 @@
 //开发商
 .about-dev-content {
   width: 1100px;
-  margin: 0px auto;
+  margin: 0 auto;
   .dev-text {
-    padding: 25px 0px 30px 10px;
+    padding: 25px 0 30px 10px;
     p {
       width: 100%;
       font-size: 16px;
@@ -294,7 +300,7 @@
 //轮播图样式
 .swiper-top-content {
   width: 1100px;
-  margin: 0px auto;
+  margin: 0 auto;
   height: 680px;
 }
 .swiper-container {
@@ -355,11 +361,22 @@
   background: url("../images/left-btn.png") 0 0 no-repeat;
 }
 @media screen and (max-width:1024px) {
+  .wrapper {
+    &.list-banner {
+      height: 120px;
+    }
+  }
+  .wrapper-logo {
+    padding-left: 10px;
+  }
   .house-info-content,
    .city-info-content,.house-setting-content,
    .house-introduce,.about-dev-content,
    .about-back,.swiper-top-content{
     width: 100%;
+  }
+  .swiper-top-content {
+    margin-top: 20px;
   }
   .banner-title-content {
     display: none;

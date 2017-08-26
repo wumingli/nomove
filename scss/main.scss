@@ -638,10 +638,10 @@ body {
         display: inline-block;
         width: 55px;
         height: 54px;
-        margin:0px 10px 10px 0px;
+        margin:0px 10px 10px 0;
       }
       .seven-icon-a {
-        background:url("../images/index-icon-666.png") -95px 0px no-repeat;
+        background:url("../images/index-icon-666.png") -95px 0 no-repeat;
       }
       .seven-icon-b {
         background:url("../images/index-icon-666.png") -98px -102px no-repeat;
@@ -670,7 +670,7 @@ body {
           }
         }
         .seven-icon-a {
-          background:url("../images/index-icon-666.png") 6px 0px no-repeat;
+          background:url("../images/index-icon-666.png") 6px 0 no-repeat;
         }
         .seven-icon-b {
           background:url("../images/index-icon-666.png") 2px -102px no-repeat;
@@ -1019,8 +1019,15 @@ body {
         border: 0;
         li {
           margin: 0;
+          width: 24%;
+          margin-left: 0.75%;
           &:last-child {
             margin-bottom: 0;
+          }
+          .house-introduce {
+            span {
+              overflow: hidden;
+            }
           }
         }
       }
@@ -1029,11 +1036,11 @@ body {
       width: 100%;
       ul {
         li {
-          width: 50%;
+          width: 25%;
           margin: 0;
           text-align: center;
           dl {
-            margin: 0px auto;
+            margin: 0 auto;
             width: 90px;
           }
         }
@@ -1075,7 +1082,7 @@ body {
       padding: 0;
       height: auto;
       .advantage-seven {
-        width: 90%;
+        width: 96%;
         height: auto;
         .up-item {
           width: 100%;
@@ -1085,6 +1092,7 @@ body {
             width: 100%;
             height: auto;
             margin: 10px auto;
+            float: none;
             img {
               width:100%;
             }
@@ -1110,17 +1118,26 @@ body {
     .after-sales-content {
       width: 100%;
       height: auto;
+      text-align: center;
       .after-sales-right {
         position: relative;
         width: 100%;
         height: auto;
-        top: 0px;
+        top: 0;
         img {
-          width: 100%;
+          width: 65%;
         }
       }
       .after-sales-left {
         width: 100%;
+        li {
+          width: 43%;
+          float: none;
+          text-align: left;
+          display: inline-block;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
       }
     }
     .team-content {
