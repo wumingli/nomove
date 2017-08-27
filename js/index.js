@@ -16,6 +16,11 @@ var logic = {
   init: function() {
     this.swiper();
     this.videoPlay();
+    if (window.localStorage) {
+      if (window.localStorage.getItem('has-written-info') !== '1') {
+        $('.choice-house-popup').show();
+      }
+    }
   },
   //轮播图
   swiper:function() {
@@ -147,6 +152,9 @@ var Event = {
         data: data,
         success: function (data) {
           //do something
+          if (window.localStorage) {
+            localStorage.setItem('has-written-info', '1');
+          }
         },
         error: function () {
           //do something

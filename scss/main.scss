@@ -207,6 +207,7 @@ body {
   }
   //固定弹窗
   .choice-house-popup {
+    display: none;
     width: 712px;
     padding: 0 28px 28px 28px;
     z-index: 10;
@@ -484,6 +485,10 @@ body {
         position: relative;
         overflow: hidden;
         float: left;
+        width: 237px;
+        height: 282px;
+        background-size: cover;
+        background-position: 50% 50%;
         .house-introduce {
           //height: 150px;
           height: 39px;
@@ -514,9 +519,9 @@ body {
         img{
           width: 100%;
         }
-      }
-      li.last{
-        margin-right:0px;
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -815,6 +820,7 @@ body {
           line-height: 38px;
           display: inline-block;
           color: #666666;
+          padding-left: 5px;
         }
         a {
           width: 23px;
