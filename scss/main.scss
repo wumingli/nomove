@@ -1003,6 +1003,9 @@ body {
 @media screen and (max-width:1024px){
   .wrapper{
     width:100%;
+    .wrapper-logo {
+      padding-left: 10px;
+    }
   }
   .swiper-container {
     width: 100%;
@@ -1014,7 +1017,7 @@ body {
   .banner-text {
     display: none;
   }
-  .choice-house-popup {
+  .choice-house {
     display: none;
   }
   .float-content {

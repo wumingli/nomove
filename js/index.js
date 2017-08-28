@@ -16,7 +16,7 @@ var logic = {
   init: function() {
     this.swiper();
     this.videoPlay();
-    if (window.localStorage) {
+    if (window.localStorage && window.innerWidth > 1124) {
       if (window.localStorage.getItem('has-written-info') !== '1') {
         $('.choice-house').show();
       }
