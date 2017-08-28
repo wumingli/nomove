@@ -93,7 +93,7 @@
     }
   }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .wrapper-logo {
     padding-left: 10px;
   }
@@ -101,6 +101,9 @@
     width: 100%;
     &.map-banner {
       height: 120px;
+      .search {
+        display: none;
+      }
     }
   }
   .map-wrapper {

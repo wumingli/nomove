@@ -116,7 +116,7 @@
       .college-section-a-line{
         position: absolute;
         top: 50px;
-        left: 50%;
+        left: 49%;
         width: 23px;
         overflow: hidden;
       }
@@ -126,7 +126,7 @@
       }
       .section-LR-title{
         position: relative;
-        width: 412px;
+        width: 429px;
         height: 48px;
         box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
         span{
@@ -141,7 +141,7 @@
         @include bgColor(#0179b5);
         color: #ffffff;
         line-height: 48px;
-        padding-left: 30px;
+        padding-left: 20px;
         box-sizing: border-box;
         font-size: 18px;
         .section-LR-number{

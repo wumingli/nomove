@@ -102,6 +102,56 @@ var logic = {
       });
       return false;
     });
+    //海外房贷计算器
+    var arrayusa = ["华美银行,4.2", "汇丰银行,3.8", "国泰银行,4", "富国银行,4"];
+    var arrayau = ["西太平洋银行,4.59", "国家银行,4.59", "联邦银行,4.59", "汇丰银行,4.59", "澳新银行,4.59"];
+    var arrayca = ["皇家银行,2.1"];
+    var arrayen = ["中国银行,3.89"];
+    var arrayja = ["中国银行,2.5"];
+    //海外房贷
+    $('#hwfd-country').selectbox({
+      change: function () {
+        var array_bank;
+        var country = $("#hwfd-country").val();
+        var $bank = $("#hwfd-bank");
+        $("#loadYearRate").val('');
+        switch (country) {
+          case "美国":
+            array_bank = arrayusa;
+            break;
+          case "澳洲":
+            array_bank = arrayau;
+            break;
+          case "加拿大":
+            array_bank = arrayca;
+            break;
+          case "英国":
+            array_bank = arrayen;
+            break;
+          case "新西兰":
+            array_bank = arrayja;
+            break;
+        }
+
+        $bank.html("<option>请选择银行</option>");
+        if (array_bank != null) {
+          $bank.selectbox('destory');
+          for (var i = 0; i < array_bank.length; i++) {
+            var _value = array_bank[i];
+            // alert(_value);
+            $bank.append("<option value='" + _value.split(',')[1] + "'>" + _value.split(',')[0] + "</option>");
+          }
+          $bank.selectbox({
+            change: function () {
+              var bank = $('#hwfd-bank').val();
+              $("#loadYearRate").val(bank.split(",")[0]);
+            }
+          });
+        }
+      }
+    });
+    $('#hwfd-bank').selectbox();
+
     $('.close').on('click', function () {
       $(this).parent().hide();
       $('.jsq-container').hide();

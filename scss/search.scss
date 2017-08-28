@@ -118,6 +118,7 @@
             position: relative;
             border: #c7c8dc 1px solid;
             margin-top: -3px;
+            margin-right: 10px;
             &:after {
               display: inline-block;
               position: absolute;
@@ -201,6 +202,7 @@
           font-size: 14px;
           padding: 3px 11px;
           cursor: pointer;
+          margin-left: 10px;
           &:after {
             content: '';
             display: inline-block;
@@ -360,6 +362,7 @@
     box-sizing: border-box;
   }
   @import "sidebox";
+
 }
 
 @media screen and (max-width: 1025px) {
@@ -445,6 +448,36 @@
     }
     .search-right-col {
       width: 100%;
+      .calculator-box-ask {
+        .consult-form {
+          input[type="text"], textarea {
+            width: 97%;
+          }
+          input[type="submit"] {
+            width: 100%;
+            &:hover {
+              background: #f60;
+            }
+          }
+        }
+      }
+    }
+    .selectbox-wrapper {
+      width: 100%;
+    }
+    .calculator-box .count-form dl dd {
+      &.slide-down, &.sum-have {
+        width: 85%;
+        .selectbox {
+          width: 100%;
+        }
+      }
+      &.sum-have {
+        width: 86.4%;
+        input {
+          width: 86%;
+        }
+      }
     }
   }
   footer {

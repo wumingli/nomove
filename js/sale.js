@@ -5,6 +5,8 @@ import $ from '../libs/jquery-3.2.1';
 import 'swiper';
 import '../libs/sideBar.js';
 import '../scss/sale.scss';
+import './common';
+
 var logic = {
   init:function(){
     this.swiperSlide();
