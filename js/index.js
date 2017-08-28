@@ -18,7 +18,7 @@ var logic = {
     this.videoPlay();
     if (window.localStorage) {
       if (window.localStorage.getItem('has-written-info') !== '1') {
-        $('.choice-house-popup').show();
+        $('.choice-house').show();
       }
     }
   },
@@ -41,7 +41,7 @@ var logic = {
    })
   },
   //选择心仪房子的交互
-  choiceHouse:function(index) {
+  choiceHouse: function(index) {
     var resultStr = '<li>当前所选：</li>';
     index = index > 5 ? 5 : index;
     index = index < 0 ? 0 : index;
@@ -107,6 +107,10 @@ var Event = {
       logic.choiceHouse(index);
     });
     $houseBtn.on('click', '.next-btn', function () {
+      if (index === 0 && model.houseData[0] === undefined) {
+        alert('请选择您买房的主要目的！');
+        return false;
+      }
       index++;
       index = index > 5 ? 5 : index;
       logic.choiceHouse(index);
@@ -120,6 +124,9 @@ var Event = {
       var type = $(this).data('type');
       $('.city-content').find('.item-content').eq(type--)
         .show().siblings('.item-content').hide();
+    });
+    $('.choice-house-content').on('click', 'li .icon a', function (e) {
+      e.preventDefault();
     });
   },
   //提交表单
@@ -162,7 +169,7 @@ var Event = {
             if (window.localStorage) {
               localStorage.setItem('has-written-info', '1');
             }
-            $('.choice-house-popup').hide();
+            $('.choice-house').hide();
           } else {
             alert('提交失败，请稍候尝试！');
           }
@@ -179,7 +186,7 @@ var Event = {
   //关闭
   closeEvent: function () {
     $('.close-popup-btn').on('click', function () {
-      $('.choice-house-popup').hide();
+      $('.choice-house').hide();
     });
     $('.close-btn, .cancel-btn').on('click', function () {
       $('.ask-float-content').hide();

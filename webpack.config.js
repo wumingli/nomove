@@ -68,9 +68,9 @@ module.exports = {
         test: /\.(html)$/i,
         loader: 'html-withimg-loader',
       },
-      { test: /\.gif$/, loader: "url-loader?mimetype=image/png" },
-      { test: /\.woff(2)?(\?v=[0-9].[0-9].[0-9])?$/, loader: "url-loader?mimetype=application/font-woff" },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/, loader: "file-loader?name=[name].[ext]" }
+      {test: /\.gif$/, loader: "url-loader?mimetype=image/png"},
+      {test: /\.woff(2)?(\?v=[0-9].[0-9].[0-9])?$/, loader: "url-loader?mimetype=application/font-woff"},
+      {test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/, loader: "file-loader?name=[name].[ext]"}
     ]
   },
   plugins: [
@@ -121,40 +121,40 @@ module.exports = {
       template: './index.html',
       inject: ['body', 'head'],
       chunks: ['main'],
-      /*minify: {
+      minify: {
         removeComments: true,
         collapseWhitespace: true
-      }*/
+      }
     }),
     new HtmlWebpackPlugin({
       filename: 'list.html',
       template: './list.html',
       chunks: ['list'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     new HtmlWebpackPlugin({
       filename: 'search.html',
       template: './search.html',
       chunks: ['search'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     new HtmlWebpackPlugin({
       filename: 'search-detail.html',
       template: './search-detail.html',
       chunks: ['searchDetail'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     new HtmlWebpackPlugin({
       filename: 'news.html',
@@ -174,10 +174,10 @@ module.exports = {
       template: './college.html',
       chunks: ['college'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     //新闻详情页
     new HtmlWebpackPlugin({
@@ -185,10 +185,10 @@ module.exports = {
       template: './detail.html',
       chunks: ['detail'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     //联系我们
     new HtmlWebpackPlugin({
@@ -196,10 +196,10 @@ module.exports = {
       template: './concat.html',
       chunks: ['concat'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     //专业团队
     new HtmlWebpackPlugin({
@@ -207,10 +207,10 @@ module.exports = {
       template: './team.html',
       chunks: ['team'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     //关于我们
     new HtmlWebpackPlugin({
@@ -218,10 +218,10 @@ module.exports = {
       template: './about.html',
       chunks: ['about'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     //热销新房
     new HtmlWebpackPlugin({
@@ -229,10 +229,10 @@ module.exports = {
       template: './sale.html',
       chunks: ['sale'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     //首页-搜索
     new HtmlWebpackPlugin({
@@ -240,10 +240,10 @@ module.exports = {
       template: './index-search.html',
       chunks: ['indexSearch'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     //加入我们
     new HtmlWebpackPlugin({
@@ -251,10 +251,10 @@ module.exports = {
       template: './join.html',
       chunks: ['join'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     //网站地图
     new HtmlWebpackPlugin({
@@ -262,10 +262,10 @@ module.exports = {
       template: './map.html',
       chunks: ['map'],
       inject: ['body', 'head'],
-      /*minify: {
-       removeComments: true,
-       collapseWhitespace: true
-       }*/
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
   ],
   devServer: {
