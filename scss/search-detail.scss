@@ -722,8 +722,15 @@
         width: 100px;
       }
     }
-    dl.count-btns dd button {
-      width: 127px;
+    dl.count-btns {
+      font-size: 0;
+      dd button {
+        font-size: 16px;
+        &.submit {
+          margin-right: 15px;
+        }
+      }
+      /*width: 127px;*/
     }
     dl .sum-cash.small {
       width: 130px;

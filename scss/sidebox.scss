@@ -113,14 +113,17 @@
           width: 100%;
           text-align: center;
           padding: 9px 0;
+          font-size: 0;
           button {
-            width: 131px;
+            width: 127px;
             height: 35px;
             color: #fff;
             background-color: #f90;
             border: 0;
             cursor: pointer;
+            font-size: 16px;
             &.submit {
+              margin-right: 10px;
               &:hover {
                 background-color: #f60;
               }

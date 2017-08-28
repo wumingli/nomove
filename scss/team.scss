@@ -47,7 +47,7 @@
       padding: 26px 36px 0 32px;
       ul {
         li {
-          line-height: 21px;
+          line-height: 26px;
           padding-left: 18px;
           position: relative;
           font-size: 16px;
@@ -61,17 +61,22 @@
             background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAYAAADjXQYbAAAAhElEQVQYlXXOIQoCURSF4W/G2ZGbMAgiWGwWg2WKRVdgsRgMBrPNIoLN4CZcySBjMT14PK43nv/+nFMNL+8dtoKrscH+H4Q1DqgiCC2O+UMOYYVTyksIS5wxaKIhWKCOTPjiHpk95riWsMcMN8jhB1M8UpA6O0xykMwOYzzL8gYjvKLJP+gaFQ4VpNgvAAAAAElFTkSuQmCC") 0 0 no-repeat;
             position: absolute;
             left: 0;
-            top: 3px;
+            top: 5px;
           }
           &.title {
             font-size: 18px;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             &:before {
               visibility: hidden;
             }
             &.important {
               margin-bottom: 20px;
             }
+          }
+        }
+        &.less-lineheight {
+          li {
+            line-height: 21px;
           }
         }
       }

@@ -17,7 +17,7 @@
     text-align: center;
     height: 0;
     clear: both;
-    margin: 71px auto 39px;
+    margin: 60px auto 39px;
     h1 {
       display: inline-block;
       border: 1px solid #999;
@@ -40,109 +40,208 @@
       margin-top: 30px;
     }
   }
-  .map-con {
-    .map {
-      height: 580px;
-      background: url("../images/usa-map.jpg") no-repeat;
-      position: relative;
-      ul {
-        li {
-          position: absolute;
-          text-align: center;
-          font-weight: bold;
-          left: 96px;
-          top: 40px;
-          width: 72px;
-          height: 73px;
-          cursor: pointer;
-          /*background-color: rgba(0,0,0,0.5);
-          transform: rotate(15deg);*/
-          span {
-            color: #fff;
-            line-height: 73px;
-            display: block;
-            position: absolute;
-            left: 20px;
-            bottom: 20px;
-            width: 100%;
-            background: url("../images/about-map-icon.png") no-repeat;
-            transform: scale(0.8);
-            transition: all .3s ease-in-out;
-            transform-origin: 100% 100%;
-            /*transform: rotate(-15deg);*/
-          }
-          &:hover {
-            span {
-              transform: scale(1);
-            }
-          }
-          &.jjs, &.lsj, &.xsd, &.mam, &.bsd {
-            span {
-              transform-origin: 0 100%;
-              background-image: url("../images/about-map-reverse-icon.png");
-            }
-          }
-          &.xyt {
-            span {
-              left: auto;
-              right: 20px;
-            }
-          }
-          &.jjs {
-            left: 40px;
-            top: 192px;
-          }
-          &.lsj {
-            left: 94px;
-            top: 282px;
-          }
-          &.dls {
-            left: 467px;
-            top: 358px;
-            span {
-              left: auto;
-              right: 20px;
-            }
-          }
-          &.xsd {
-            left: 521px;
-            top: 426px;
-          }
-          &.ald {
-            left: 760px;
-            top: 439px;
-            span {
-              left: auto;
-              right: 20px;
-            }
-          }
-          &.mam {
-            left: 815px;
-            top: 503px;
-          }
-          &.ny {
-            left: 869px;
-            top: 143px;
-            span {
-              left: auto;
-              right: 20px;
-            }
-          }
-          &.bsd {
-            left: 919px;
-            top: 94px;
-          }
-        }
-      }
-    }
-    p{
-      padding-top: 15px;
-      text-align: center;
-    }
-  }
   .seven-img {
     margin-top: -16px;
   }
+  .sale-img {
+    clear: both;
+    float: left;
+    margin-bottom: 40px;
+    ul {
+      li {
+        float: left;
+        width: 33.3%;
+        text-align: center;
+        dd {
+          padding: 12px 0 29px;
+          font-size: 16px;
+          color: #666;
+        }
+      }
+    }
+  }
+
+  //售前与售后
+  .after-sales-content {
+    width: 1100px;
+    height: 292px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 60px;
+    .after-sales-left {
+      width: 636px;
+      li {
+        width: 278px;
+        height: 38px;
+        border: 1px solid #33a7d8;
+        margin-right: 38px;
+        margin-bottom: 30px;
+        float: left;
+        background-color: #fff;
+        span {
+          font-size: 16px;
+          text-align: left;
+          line-height: 38px;
+          display: inline-block;
+          color: #666666;
+          padding-left: 8px;
+        }
+        a {
+          width: 23px;
+          height: 23px;
+          display: inline-block;
+          margin-left: 36px;
+          vertical-align: middle;
+        }
+      }
+      li:nth-child(1) a{
+        background: url("../images/icon-num.png") no-repeat;
+        background-position: 0 center;
+      }
+      li:nth-child(2) a{
+        background: url("../images/icon-num.png") no-repeat;
+        background-position: -92px center;
+      }
+      li:nth-child(3) a{
+        background: url("../images/icon-num.png") no-repeat;
+        background-position: -23px center;
+      }
+      li:nth-child(4) a{
+        background: url("../images/icon-num.png") no-repeat;
+        background-position: -115px center;
+      }
+      li:nth-child(5) a{
+        background: url("../images/icon-num.png") no-repeat;
+        background-position: -46px center;
+      }
+      li:nth-child(6) a{
+        background: url("../images/icon-num.png") no-repeat;
+        background-position: -138px center;
+      }
+      li:nth-child(7) a{
+        background: url("../images/icon-num.png") no-repeat;
+        background-position: -69px center;
+      }
+      li:nth-child(8) a{
+        background: url("../images/icon-num.png") no-repeat;
+        background-position: -161px center;
+      }
+    }
+    .after-sales-right {
+      width: 478px;
+      height: 330px;
+      position: absolute;
+      top: -26px;
+      right: 0;
+      //overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.map-con {
+  background-color: #cee5ef;
+  .map {
+    height: 580px;
+    background: url("../images/usa-map.jpg") no-repeat;
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    ul {
+      li {
+        position: absolute;
+        text-align: center;
+        font-weight: bold;
+        left: 96px;
+        top: 40px;
+        width: 72px;
+        height: 73px;
+        cursor: pointer;
+        /*background-color: rgba(0,0,0,0.5);
+        transform: rotate(15deg);*/
+        span {
+          color: #fff;
+          line-height: 73px;
+          display: block;
+          position: absolute;
+          left: 20px;
+          bottom: 20px;
+          width: 100%;
+          background: url("../images/about-map-icon.png") no-repeat;
+          transform: scale(0.95);
+          transition: all .3s ease-in-out;
+          transform-origin: 100% 100%;
+          /*transform: rotate(-15deg);*/
+        }
+        &:hover {
+          span {
+            transform: scale(1.2);
+          }
+        }
+        &.jjs, &.lsj, &.xsd, &.mam, &.bsd {
+          span {
+            transform-origin: 0 100%;
+            background-image: url("../images/about-map-reverse-icon.png");
+          }
+        }
+        &.xyt {
+          span {
+            left: auto;
+            right: 20px;
+          }
+        }
+        &.jjs {
+          left: 40px;
+          top: 192px;
+        }
+        &.lsj {
+          left: 94px;
+          top: 282px;
+        }
+        &.dls {
+          left: 467px;
+          top: 358px;
+          span {
+            left: auto;
+            right: 20px;
+          }
+        }
+        &.xsd {
+          left: 521px;
+          top: 426px;
+        }
+        &.ald {
+          left: 760px;
+          top: 439px;
+          span {
+            left: auto;
+            right: 20px;
+          }
+        }
+        &.mam {
+          left: 815px;
+          top: 503px;
+        }
+        &.ny {
+          left: 869px;
+          top: 143px;
+          span {
+            left: auto;
+            right: 20px;
+          }
+        }
+        &.bsd {
+          left: 919px;
+          top: 94px;
+        }
+      }
+    }
+  }
+}
+p.map-text {
+  padding-top: 15px;
+  text-align: center;
 }
 @media screen and (max-width: 1025px) {
   .wrapper-logo {
