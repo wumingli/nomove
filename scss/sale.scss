@@ -70,6 +70,7 @@
       line-height: 38px;
       font-size: 16px;
       position: relative;
+      text-indent: 30px;
       a {
         display: block;
         line-height: 38px;
@@ -79,7 +80,7 @@
         width: 26px;
         height: 30px;
         position: absolute;
-        left: 25px;
+        left: 35px;
         top: 6px
       }
     }
@@ -196,7 +197,7 @@
   margin: 0 auto;
   .house-info {
     //width: 100%;
-    padding: 25px 0 30px 10px;
+    padding: 20px 0 30px 10px;
     li {
       width: 100%;
       line-height: 28px;
@@ -209,7 +210,7 @@
    width: 1100px;
    margin: 10px auto;
    .city-info {
-    padding: 25px 0 30px 10px;
+    padding: 20px 0 30px 10px;
     .text {
       width: 45%;
       float: left;
@@ -233,7 +234,7 @@
    width: 1100px;
    margin: 0 auto;
   .house-setting {
-    padding: 25px 0 30px 10px;
+    padding: 20px 0 30px 10px;
     ul {
       width: 50%;
       float: left;
@@ -258,7 +259,7 @@
   width: 1100px;
   margin: 40px auto 0 auto;
   .house-swiper-box{
-    padding: 30px 0 50px 0;
+    padding: 20px 0 50px 0;
     height: 685px;
   }
   .house-swiper-content{
@@ -271,7 +272,7 @@
   width: 1100px;
   margin: 0 auto;
   .dev-text {
-    padding: 25px 0 30px 10px;
+    padding: 20px 0 30px 10px;
     p {
       width: 100%;
       font-size: 16px;
@@ -291,7 +292,7 @@
   margin: 40px auto;
   .back-img {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     img {
       width: 100%;
     }
