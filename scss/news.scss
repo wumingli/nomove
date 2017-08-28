@@ -144,12 +144,18 @@
         cursor: pointer;
         background-color: #fff;
         font-weight: 600;
+        a {
+
+        }
         &:last-child {
           border-right: 1px solid #33a7d8;
         }
         &.active {
           background-color: #33a7d8;
           color: #fff;
+          a {
+            color: #fff;
+          }
         }
         &:before {
           display: inline-block;

@@ -124,15 +124,19 @@ var Event = {
   },
   //提交表单
   submitEvent: function () {
+    var submitting = false;
     $('.submit-btn').on('click', function () {
+      if (submitting) {
+        return;
+      }
       var $userName = $('#userName'),
         $userTel = $('#userTel');
-      if ($userName.val() == '') {
+      if ($userName.val() === '') {
         alert('请填写你的用户名');
         return false;
       }
 
-      if ($userTel.val() == '') {
+      if ($userTel.val() === '') {
         alert('请填写你的联系方式');
         return false;
       }
@@ -146,17 +150,27 @@ var Event = {
         full_name: $userName.val(),
         contact: $userTel.val(),
       };
+      submitting = true;
       $.ajax({
         url: 'http://983056803.p131810.sqnet.cn/index.php?m=IntentionHouse',
         type: 'post',
         data: data,
         success: function (data) {
           //do something
-          if (window.localStorage) {
-            localStorage.setItem('has-written-info', '1');
+          if (data.status === 1 && data.message && data.message === 'success') {
+            alert('提交成功，我们会尽快与您联系！');
+            if (window.localStorage) {
+              localStorage.setItem('has-written-info', '1');
+            }
+            $('.choice-house-popup').hide();
+          } else {
+            alert('提交失败，请稍候尝试！');
           }
+          submitting = false;
         },
         error: function () {
+          alert('提交出错，请稍候尝试！');
+          submitting = false;
           //do something
         }
       })

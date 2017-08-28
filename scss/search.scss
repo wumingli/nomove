@@ -118,6 +118,7 @@
             position: relative;
             border: #c7c8dc 1px solid;
             margin-top: -3px;
+            margin-right: 10px;
             &:after {
               display: inline-block;
               position: absolute;
@@ -201,6 +202,7 @@
           font-size: 14px;
           padding: 3px 11px;
           cursor: pointer;
+          margin-left: 10px;
           &:after {
             content: '';
             display: inline-block;
