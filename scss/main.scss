@@ -1002,6 +1002,29 @@ body {
   background: #ebf5f9;
 }
 @media screen and (max-width:1024px){
+  footer {
+    text-align: center;
+    background-color: #333;
+    padding: 43px 0 99px;
+    margin-top: 120px;
+    clear: both;
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: #999;
+        }
+      }
+    }
+    p {
+      color: #999;
+      margin-top: 35px;
+    }
+  }
   .wrapper{
     width:100%;
     .choice-house {
