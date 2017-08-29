@@ -31,6 +31,9 @@
     .swiper-slide {
       position: relative;
       @include hw;
+      a {
+        color: #fff;
+      }
       section {
         position: absolute;
         bottom: 0;
