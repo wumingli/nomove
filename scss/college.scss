@@ -106,6 +106,9 @@
     overflow: hidden;
     padding: 40px;
     box-sizing: border-box;
+    .section-UD-list-img{
+      text-align: center;
+    }
   }
   .college-shadow{
     box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
@@ -883,18 +886,28 @@
       padding:0 10px;
       box-sizing: border-box;
     }
+    .college-section {
+      padding:10px;
+    }
     img {
       width: 100%;
       height: auto;
     }
     .college-tab{
-      display: -webkit-flex; /* Safari */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      justify-content: space-around;
+      -webkit-box-pack: space-between;
+      -ms-flex-pack: space-between;
+      -webkit-justify-content: space-between;
       li{
-        flex: 1;
-        width: 40px;
-        margin: 5px 0 ;
+        float: none;
+        margin-right: auto;
         .college-tab-icon{
           width: 40px;
           height: 40px;
@@ -1027,6 +1040,18 @@
       margin-bottom: 40px;
     }
   }
+  .college-wrapper .college-content .college-section-UD .section-UD-list-img {
+    width: 100%;
+  }
+  .college-wrapper .college-content .college-section-UD.college-section-c .UD-D-06 .section-UD-list {
+    padding: 41px 9px 20px;
+  }
+  .college-wrapper .college-content .college-section-UD.college-section-c .section3-list-bottom li {
+    padding: 0px;
+  }
+  .college-wrapper .college-content .college-section-UD.college-section-c .section3-list-bottom li .desc {
+    margin-left: 0px;
+  }
   .about-wrapper .map-con .map {
     background-size: cover;
     height: 200px;
@@ -1040,6 +1065,27 @@
     background-size: 100% 100%;
   }
   footer {
-    margin-top: 10px;
+    ul {
+      li {
+        margin-right: 10px;
+      }
+    }
   }
+}
+@media screen and (max-width: 375px) {
+  .college-wrapper {
+    .college-tab {
+      li {
+        margin-top: 10px;
+      }
+    }
+    .college-content .college-section-LR .college-section-aL{
+      width: 100%;
+    }
+    .college-content .college-section-LR .college-section-aR{
+      width: 100%;
+      padding-top: 0px;
+    }
+  }
+
 }

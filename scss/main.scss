@@ -1308,9 +1308,9 @@ body {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
         justify-content: space-around;
-        -webkit-box-pack: space-between;
-        -ms-flex-pack: space-between;
-        -webkit-justify-content: space-between;
+        -webkit-box-pack: space-around;
+        -ms-flex-pack: space-around;
+        -webkit-justify-content: space-around;
         li {
           width: 90%;
           float: none;
