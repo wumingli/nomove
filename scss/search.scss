@@ -572,3 +572,59 @@
     width: 23.5%;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .search-wrapper {
+    .recommend-house .swiper-slide ul li {
+      margin-right: 0;
+      width: 23%;
+      margin-left: 6px;
+      dl dd {
+        p{
+          font-size: 12px;
+          &.price {
+            font-size: 12px;
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .search-left-col .search-condition dl dd ul li {
+      padding-right: 0;
+      text-align: center;
+      a {
+        padding: 5px 10px;
+        &.active {
+          padding: 5px 10px;
+        }
+      }
+    }
+    .search-right-col {
+      .calculator-box .count-form dl dd {
+        width: auto;
+        &.slide-down, &.sum-have {
+          width: auto;
+          .selectbox {
+            width: 97%;
+          }
+        }
+        &.sum-have {
+          width: 185px;
+          input {
+            width: 120px;
+          }
+        }
+        span.sum {
+          width: 150px;
+        }
+      }
+      .calculator-box-ask .consult-form {
+        input[type="text"],textarea {
+          width: 93%;
+        }
+      }
+    }
+  }
+}

@@ -277,9 +277,15 @@ body {
 .old-house-silde {
   background: #ebf5f9;
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px) {
   .wrapper {
-    width:100%;
+    width: 100%;
+    .swiper-container {
+      height: 300px;
+    }
+  }
+  .wrapper-logo {
+    padding-left: 20px;
   }
   .choice-house-popup {
     display: none;
@@ -292,6 +298,21 @@ body {
     .content-title {
       width: 100%;
     }
+  }
+  .list-wrapper {
+    .pagejump {
+      white-space: unset;
+      line-height: 3;
+      margin-top: 10px;
+    }
+  }
+  .search-list{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+  footer {
+    margin-top: 15px;
   }
 }
 @media screen and (max-width:750px) {
