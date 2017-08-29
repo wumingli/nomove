@@ -653,6 +653,7 @@ body {
         width: 55px;
         height: 54px;
         margin:0px 10px 10px 0;
+        vertical-align: super;
       }
       .seven-icon-a {
         background:url("../images/index-icon-666.png") -95px 0 no-repeat;
@@ -1003,6 +1004,10 @@ body {
 @media screen and (max-width:1024px){
   .wrapper{
     width:100%;
+    .choice-house {
+      width: 0px;
+      display: none;
+    }
     .wrapper-logo {
       padding-left: 20px;
     }
@@ -1042,6 +1047,7 @@ body {
           margin: 0;
           width: 24%;
           margin-left: 0.75%;
+          height: 200px;
           &:last-child {
             margin-bottom: 0;
           }
@@ -1099,20 +1105,46 @@ body {
       }
     }
     .advantage-content {
-      width: 90%;
+      .clearfix:after {
+        display: none;
+      }
+      width: 100%;
       padding: 0;
       height: auto;
       .advantage-seven {
-        width: 96%;
+        width: 98%;
         height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+        -webkit-justify-content: space-between;
+        padding: 0 1%;
         .up-item {
           width: 100%;
           padding: 0;
           margin: 0 auto;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          display: flex;
+          -webkit-box-pack: space-between;
+          -ms-flex-pack: space-between;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          margin-bottom: 10px;
           .up-child-item {
-            width: 100%;
+            width: 28%;
             height: auto;
-            margin: 10px auto;
+            margin: 0px;
             float: none;
             img {
               width:100%;
@@ -1120,9 +1152,10 @@ body {
           }
         }
         .down-item {
-          width: 100%;
-          margin: 10px auto;
-          height: 110px;
+          width: 20%;
+          float: none;
+          margin: 0px;
+          height: auto;
           img {
             width: 100%;
           }
@@ -1159,24 +1192,46 @@ body {
           margin-right: 0;
           margin-bottom: 10px;
         }
+        li:nth-child(2n-1) {
+          margin-right: 25px;
+        }
       }
     }
     .team-content {
-      width: 90%;
+      width: 98%;
       height: auto;
+      .clearfix:after {
+        display: none;
+      }
       ul {
         width: 100%;
         height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+        -webkit-justify-content: space-between;
         li {
-          width: auto;
-          margin: 10px auto;
+          width: 30%;
           float: none;
+          height: auto;
+          margin: 10px 0px;
+          padding-bottom: 10px;
           dt {
             margin: 10px auto;
           }
         }
-        li.last {
-          margin-right: auto;
+        li:nth-child(1) {
+          width: 40%;
+        }
+        li:nth-child(2) {
+          width: 40%;
         }
       }
     }
@@ -1215,6 +1270,110 @@ body {
         }
         li.last {
           margin-right: auto;
+        }
+      }
+    }
+    .team-content {
+      width: 100%;
+      height: auto;
+      ul {
+        width: 90%;
+        padding: 0 5%;
+        height: auto;
+        display: block;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+        -webkit-justify-content: space-between;
+        li {
+          width: 90%;
+          float: none;
+          height: auto;
+          margin: 10px auto;
+          dt {
+            margin: 10px auto;
+          }
+        }
+        li:nth-child(1) {
+          width: 90%;
+        }
+        li:nth-child(2) {
+          width: 90%;
+        }
+      }
+    }
+    .after-sales-content {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      .after-sales-right {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        img {
+          width: 65%;
+        }
+      }
+      .after-sales-left {
+        width: 100%;
+        li {
+          width: 90%;
+          float: none;
+          text-align: left;
+          display: inline-block;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+        li:nth-child(2n-1) {
+          margin-right: 0px;
+        }
+      }
+    }
+    .advantage-content {
+      .clearfix:after {
+        display: block;
+      }
+      width: 100%;
+      padding: 0;
+      height: auto;
+      .advantage-seven {
+        width: 90%;
+        height: auto;
+        padding: 0% 5%;
+        .up-item {
+          width: 100%;
+          padding: 0;
+          margin: 0 auto;;
+          height: auto;
+          .up-child-item {
+            width: 100%;
+            height: auto;
+            margin: 10px auto;
+            float: none;
+            img {
+              width:100%;
+            }
+          }
+        }
+        .down-item {
+          width: 90%;
+          float: none;
+          height: auto;
+          margin: 10px auto;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .advantage-video {
+        width: 100%;
+        height: auto;
+        .video-style {
+          width: 100%;
         }
       }
     }
