@@ -383,6 +383,11 @@
   .banner-title-content {
     width: 100%;
     margin-top: 30px;
+    .title-middle {
+      font-size: 14px;
+      overflow: hidden;
+      width: auto;
+    }
     /*display: none;*/
   }
   .house-nav-content {
@@ -455,6 +460,8 @@
         float: none;
         width: 16.4%;
         text-indent: 0;
+        overflow: hidden;
+        font-size: 14px;
         span.icon {
           position: unset;
           vertical-align: middle;

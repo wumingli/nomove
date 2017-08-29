@@ -333,7 +333,7 @@
       }
       height: auto;
       .share {
-        display: none;
+        /*display: none;*/
       }
     }
 
@@ -347,6 +347,22 @@
     margin-top: 15px;
     ul li {
       margin-right: 10px;
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+  .news-wrapper {
+    .news-list {
+      .tab {
+        border-bottom-width: 1px;
+        li {
+          border-right: 1px solid #33a7d8;
+          width: 100%;
+        }
+      }
+    }
+    .news-item dd {
+      padding-bottom: 40px;
     }
   }
 }

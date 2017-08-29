@@ -333,3 +333,21 @@ p.map-text {
     }
   }
 }
+@media screen and (max-width: 414px) {
+  .about-wrapper {
+    .after-sales-content {
+      .after-sales-left {
+        li {
+          width: 100%;
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .map-con {
+    .map {
+      height: 198px;
+    }
+  }
+}
