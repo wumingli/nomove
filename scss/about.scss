@@ -243,9 +243,9 @@ p.map-text {
   padding-top: 15px;
   text-align: center;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .wrapper-logo {
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .wrapper {
     width: 100%;
@@ -262,17 +262,33 @@ p.map-text {
     .center-title {
       margin-top: 35px;
     }
-    .map-con {
-      .map {
-        ul {
-          display: none;
+    .after-sales-content {
+      width: 100%;
+      .after-sales-left {
+        li {
+          margin-right: 5px;
         }
       }
+      .after-sales-right {
+        width: 415px;
+        top: -10px;
+      }
+    }
+    .sale-img ul li {
+      width: 32.3%;
+      margin-left: 1%;
     }
   }
-  .about-wrapper .map-con .map {
-    background-size: cover;
-    height: 200px;
+  .map-con {
+    .map {
+      background-image: url("../images/usa-map-ipad.jpg");
+      background-size: 100%;
+      width: 100%;
+      height: 540px;
+      ul {
+        display: none;
+      }
+    }
   }
   .list-banner .search {
     display: none;
@@ -285,12 +301,35 @@ p.map-text {
   .wrapper-nav-list li {
     margin-right: 10px;
   }
+
   footer {
     margin-top: 10px;
     ul {
       li {
         margin-right: 10px;
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-wrapper {
+    .after-sales-content {
+      .after-sales-left {
+        width: 100%;
+        li {
+          width: 48%;
+          margin-right: 0;
+          margin-left: 1%;
+        }
+      }
+      .after-sales-right {
+        display: none;
+      }
+    }
+  }
+  .map-con {
+    .map {
+      height: 405px;
     }
   }
 }

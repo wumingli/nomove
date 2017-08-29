@@ -2,9 +2,9 @@
  * Created by wumingli on 12/08/2017.
  */
 var $form = $('.search form');
-var msg = $form.find('input').val();
+var msg = $form.find('input').eq(1).val();
 $form.on('submit', function() {
-  var $input = $(this).find('input');
+  var $input = $(this).find('input').eq(1);
   if ($input.val() === '' || $input.val() === msg) {
     alert(msg);
     $(this).find('input').focus();

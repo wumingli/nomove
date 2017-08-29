@@ -86,7 +86,7 @@
 }
 @media screen and (max-width: 1025px) {
   .wrapper-logo {
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .wrapper {
     width: 100%;
@@ -109,19 +109,35 @@
       box-sizing: border-box;
       padding: 10px;
       .left-col {
-        float: none;
-        width: auto;
+        width: 54%;
         margin: 0;
+        overflow: hidden;
+        /*float: none;
+        width: auto;
+        margin: 0;*/
       }
       .right-col {
-        float: none;
-        width: auto;
+        width: 44%;
         margin: 0;
+        overflow: hidden;
+        img {
+        }
+        height: 100%;
+        /*float: none;
+        width: auto;
+        margin: 0;*/
       }
       img {
         position: unset;
         max-width: 100%;
         margin: 10px auto;
+      }
+      .concat-wrapper .info .msg li {
+        line-height: 28px;
+        color: #333;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
     }
   }

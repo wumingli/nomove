@@ -162,6 +162,7 @@ var Event = {
         url: 'http://983056803.p131810.sqnet.cn/index.php?m=IntentionHouse',
         type: 'post',
         data: data,
+        dataType: 'json',
         success: function (data) {
           //do something
           if (data.status === 1 && data.message && data.message === 'success') {

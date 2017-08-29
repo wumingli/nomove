@@ -51,10 +51,11 @@ body {
   text-size-adjust: 100%!important;
   background-color: #f5f5f5;
 }
-input[type=text],textarea {
+input, textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline:none
 }
 
 .mob-menu {

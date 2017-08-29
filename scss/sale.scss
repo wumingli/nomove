@@ -361,6 +361,7 @@
   height: 87px;
   background: url("../images/left-btn.png") 0 0 no-repeat;
 }
+
 @media screen and (max-width:1024px) {
   .wrapper {
     &.list-banner {
@@ -368,7 +369,7 @@
     }
   }
   .wrapper-logo {
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .house-info-content,
    .city-info-content,.house-setting-content,
@@ -377,13 +378,16 @@
     width: 100%;
   }
   .swiper-top-content {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
   }
   .banner-title-content {
-    display: none;
+    width: 100%;
+    margin-top: 30px;
+    /*display: none;*/
   }
   .house-nav-content {
-    display: none;
+    width: 100%;
+    /*display: none;*/
   }
   .city-info-content {
     .city-info {
@@ -399,6 +403,8 @@
     }
   }
   .house-setting-content {
+    padding: 0 15px;
+    box-sizing: border-box;
     .house-setting {
       ul {
         width: 100%;
@@ -407,14 +413,70 @@
     }
   }
   .swiper-top-content {
-    height: 300px;
+    height: 400px;
   }
   .house-introduce {
     .house-swiper-box {
-      height: 300px;
+      height: 400px;
+      padding-bottom: 20px;
+      .gallery-top, .house-gallery-top {
+        height: 75%;
+      }
     }
     .house-swiper-content {
-      height: 300px;
+      height: 400px;
+      width: 98%;
+      margin: 0 auto;
     }
+  }
+  .gallery-thumbs, .house-gallery-thumbs {
+    height: 25%;
+    padding-bottom: 0;
+    &.swiper-container-horizontal {
+      height: 25%;
+    }
+  }
+  .city-info-content {
+    margin-top: 0;
+  }
+  .house-gallery-thumbs .swiper-slide {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .house-nav-content {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    ul {
+      border-left: 0;
+      li {
+        display: inline-block;
+        float: none;
+        width: 16.4%;
+        text-indent: 0;
+        span.icon {
+          position: unset;
+          vertical-align: middle;
+        }
+        a {
+          display: inline;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .house-info-content .house-info {
+    padding-bottom: 10px;
+  }
+  .about-dev-content {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .about-back{
+    margin: 15px auto 0;
+  }
+  footer {
+    margin-top: 30px;
   }
 }

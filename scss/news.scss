@@ -278,17 +278,15 @@
   }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .wrapper-logo {
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .wrapper {
     &.list-banner {
       height: 120px;
       .search {
-        left: 0;
-        width: auto;
-        margin-left: 0;
+        display: none;
       }
     }
   }
@@ -320,7 +318,7 @@
       float: none;
       .tab li {
         border-right: 1px solid #33a7d8;
-        width: 50%;
+        width: 25%;
       }
     }
     .news-item {
