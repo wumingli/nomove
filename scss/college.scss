@@ -96,7 +96,7 @@
       }
     }
     li:last-child{
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
   .college-section{
@@ -111,7 +111,7 @@
     }
   }
   .college-shadow{
-    box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: -7px 8px 0 rgba(0,0,0,0.1);
   }
   .college-content{
     .college-section-LR{
@@ -131,7 +131,7 @@
         position: relative;
         width: 429px;
         height: 48px;
-        box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+        box-shadow: -7px 8px 0 rgba(0,0,0,0.1);
         span{
           font-weight: bold;
           font-size: 16px;
@@ -165,7 +165,7 @@
         border: solid 1px #cccccc;
         width: 410px;
         height:auto;
-        box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+        box-shadow: -7px 8px 0 rgba(0,0,0,0.1);
         padding:20px 20px 20px 30px;
         box-sizing: border-box;
         font-size: 16px;
@@ -325,7 +325,7 @@
       background: none;
       position: relative;
       padding: 30px 0 30px 8px;
-      margin: 0px;
+      margin: 0;
       .college-section-c-content{
         width: 100%;
         display: block;
@@ -364,7 +364,7 @@
         border-radius: 10px 0 0 10px;
         width: inherit;
         height: 48px;
-        box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+        box-shadow: -7px 8px 0 rgba(0,0,0,0.1);
         @include bgColor(#118dc1);
         color: #ffffff;
         line-height: 48px;
@@ -407,7 +407,7 @@
         border: none;
         width:inherit;
         height:auto;
-        box-shadow: -7px 8px 0px rgba(0,0,0,0.1);
+        box-shadow: -7px 8px 0 rgba(0,0,0,0.1);
         padding:25px 30px;
         box-sizing: border-box;
         font-size: 16px;
@@ -825,7 +825,7 @@
       }
     }
     .college-section-h{
-      padding: 0px;
+      padding: 0;
       margin-top: 30px;
       .section-UD-list{
         padding: 30px;
@@ -838,7 +838,7 @@
           box-sizing: border-box;
           width: 100%;
           p{
-            text-indent: 0px;
+            text-indent: 0;
           }
           .section8-img{
             width: 100%;
@@ -873,11 +873,16 @@
   }
   .wrapper {
     width: 100%;
-    &.list-banner {
-      height: 100px;
+    &.list-banner.college-banner {
+      height: 120px;
     }
   }
   .college-wrapper {
+    .college-tab {
+      li {
+        width: 12.5%;
+      }
+    }
     width: 100%;
     padding: 0;
     box-sizing: border-box;
@@ -1009,7 +1014,7 @@
       padding: 0;
       li{
         width: 100%;
-        margin: 0px;
+        margin: 0;
         margin-bottom: 10px;
         height: auto;
       }
@@ -1019,8 +1024,8 @@
     }
     .college-content .college-section-f-erweima{
       position: relative;
-      right: 0px;
-      bottom: 0px;
+      right: 0;
+      bottom: 0;
     }
     .college-content .college-section-h .UD-D-01{
       width: 100%;
@@ -1047,10 +1052,10 @@
     padding: 41px 9px 20px;
   }
   .college-wrapper .college-content .college-section-UD.college-section-c .section3-list-bottom li {
-    padding: 0px;
+    padding: 0;
   }
   .college-wrapper .college-content .college-section-UD.college-section-c .section3-list-bottom li .desc {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .about-wrapper .map-con .map {
     background-size: cover;
@@ -1065,6 +1070,7 @@
     background-size: 100% 100%;
   }
   footer {
+    margin-top: 0;
     ul {
       li {
         margin-right: 10px;
@@ -1072,20 +1078,34 @@
     }
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .college-wrapper {
     .college-tab {
       li {
+        width: 25%;
         margin-top: 10px;
       }
     }
-    .college-content .college-section-LR .college-section-aL{
-      width: 100%;
-    }
-    .college-content .college-section-LR .college-section-aR{
-      width: 100%;
-      padding-top: 0px;
+    .college-content {
+      .college-section-LR {
+        .college-section-aL{
+          width: 100%;
+        }
+        .college-section-aR{
+          width: 100%;
+          padding-top: 0;
+        }
+      }
+      .college-section-a {
+        .LR-R-07,
+        .LR-L-08,
+        .LR-L-10 {
+          margin-top: 0;
+        }
+      }
+      .college-section-d .section-box {
+        margin-bottom: 20px;
+      }
     }
   }
-
 }

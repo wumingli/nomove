@@ -75,14 +75,14 @@ module.exports = {
     ]
   },
   plugins: [
-    /*new webpack.optimize.UglifyJsPlugin({
+    new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,
       },
       output: {
         comments: false,
       },
-    }),*/
+    }),
     new CleanPlugin('./dist'),
     new webpack.DefinePlugin({
       'process.env': {

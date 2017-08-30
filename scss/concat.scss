@@ -151,3 +151,22 @@
     }
   }
 }
+@media screen and (max-width: 414px) {
+  .concat-wrapper {
+    .info {
+      height: auto;
+      box-sizing: border-box;
+      padding: 10px;
+      .left-col {
+        float: none;
+        width: auto;
+        margin: 0;
+      }
+      .right-col {
+        float: none;
+        width: auto;
+        margin: 0;
+      }
+    }
+  }
+}
