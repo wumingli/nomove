@@ -17,9 +17,9 @@
   .house-info {
     @include borderAndBg;
     margin-bottom: 30px;
-    height: 365px;
+    height: auto;
     box-sizing: border-box;
-    padding: 28px 20px 28px 22px;
+    padding: 25px 20px 25px 22px;
     dt {
       width: 430px;
       height: 310px;
@@ -50,12 +50,18 @@
           &.category {
             width: 82px;
             font-weight: 700;
+            line-height: 23px;
             float: left;
           }
           &.detail {
             display: block;
+            line-height: 23px;
             margin-left: 82px;
             color: #666;
+          }
+          &.line2{
+            max-height: 50px;
+            overflow: hidden;
           }
         }
       }
