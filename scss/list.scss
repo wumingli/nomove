@@ -296,9 +296,9 @@
         height: auto;
         padding-top: 20px;
         .price-all {
-          position: unset;
+          position: initial;
           ul {
-            position: unset;
+            position: initial;
             li {
               &.icon1 {
                 margin-right: 25px;
@@ -323,7 +323,7 @@
     }
 
     .pagejump {
-      white-space: unset;
+      white-space: initial;
       line-height: 3;
       margin-bottom: 40px;
     }

@@ -301,7 +301,7 @@ body {
   }
   .list-wrapper {
     .pagejump {
-      white-space: unset;
+      white-space: initial;
       line-height: 3;
       margin-top: 10px;
     }
@@ -338,7 +338,7 @@ body {
         }
         dd {
           white-space: normal;
-          overflow: unset;
+          overflow: initial;
           line-height: 1.5;
           height: auto;
           padding-top: 15px;
