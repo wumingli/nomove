@@ -1097,20 +1097,6 @@ body {
         }
       }
     }
-    .college-list {
-      width: 100%;
-      ul {
-        li {
-          width: 25%;
-          margin: 0;
-          text-align: center;
-          dl {
-            margin: 0 auto;
-            width: 90px;
-          }
-        }
-      }
-    }
     .old-house-list {
       width: 100%;
       height: auto;
@@ -1127,17 +1113,32 @@ body {
         .old-house-item {
           height: auto;
           .old-house-right {
-            float: left;
-            width: 100%;
+            float: right;
+            width: 45%;
             height: auto;
             .old-house-right-item {
               margin: 0;
               width: 50%;
+              height: 150px;
             }
           }
           .old-house-left {
-            width: 100%;
-            height: 287px;
+            width: 50%;
+            height: 300px;
+          }
+        }
+      }
+    }
+    .college-list {
+      width: 100%;
+      ul {
+        li {
+          width: 25%;
+          margin: 0;
+          text-align: center;
+          dl {
+            margin: 0 auto;
+            width: 90px;
           }
         }
       }
@@ -1186,16 +1187,28 @@ body {
             float: none;
             img {
               width:100%;
+              li {
+                .text {
+                  width: 100%;
+                }
+              }
             }
           }
         }
         .down-item {
-          width: 20%;
           float: none;
           margin: 0px;
           height: auto;
+          padding: 15px 0px 25px 2px;
           img {
             width: 100%;
+          }
+          .child-content {
+            li {
+              .text {
+                width: 100%;
+              }
+            }
           }
         }
       }
@@ -1210,29 +1223,8 @@ body {
     .after-sales-content {
       width: 100%;
       height: auto;
-      text-align: center;
-      .after-sales-right {
-        position: relative;
-        width: 100%;
-        height: auto;
-        top: 0;
-        img {
-          width: 65%;
-        }
-      }
-      .after-sales-left {
-        width: 100%;
-        li {
-          width: 43%;
-          float: none;
-          text-align: left;
-          display: inline-block;
-          margin-right: 0;
-          margin-bottom: 10px;
-        }
-        li:nth-child(2n-1) {
-          margin-right: 25px;
-        }
+      .after-sales-right{
+        width: 410px;
       }
     }
     .team-content {
@@ -1256,26 +1248,22 @@ body {
         -ms-flex-pack: space-between;
         -webkit-justify-content: space-between;
         li {
-          width: 30%;
+          width: 17%;
           float: none;
           height: auto;
           margin: 10px 0px;
           padding-bottom: 10px;
           dt {
             margin: 10px auto;
+            width: 165px;
+            height: 215px;
           }
-        }
-        li:nth-child(1) {
-          width: 40%;
-        }
-        li:nth-child(2) {
-          width: 40%;
         }
       }
     }
   }
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:768px) {
   .wrapper {
     .new-house-list {
       width: 94%;
@@ -1295,16 +1283,63 @@ body {
         }
       }
     }
+    .old-house-list {
+      width: 100%;
+      height: auto;
+      .old-house-swiper-container {
+        width: 100%;
+        height: auto;
+        .old-house-swiper-wrapper {
+          width: 100%;
+          height: auto;
+        }
+        .old-house-silde {
+          height: auto;
+        }
+        .old-house-item {
+          height: auto;
+          .old-house-right {
+            float: left;
+            width: 100%;
+            height: auto;
+            .old-house-right-item {
+              margin: 0;
+              width: 50%;
+            }
+          }
+          .old-house-left {
+            width: 100%;
+            height: 287px;
+          }
+        }
+      }
+    }
     .after-sales-content {
       width: 100%;
       height: auto;
-      .after-sales-left {
+      text-align: center;
+      .after-sales-right {
+        position: relative;
         width: 100%;
         height: auto;
+        top: 0;
+        img {
+          width: 65%;
+        }
+      }
+      .after-sales-left {
+        width: 100%;
         li {
           float: none;
+          text-align: left;
+          display: inline-block;
+          margin-right: 0;
+          margin-bottom: 10px;
           margin: 5px auto;
           width: 94%;
+        }
+        li:nth-child(2n-1) {
+          margin-right: 25px;
         }
         li.last {
           margin-right: auto;
@@ -1333,13 +1368,12 @@ body {
           margin: 10px auto;
           dt {
             margin: 10px auto;
+            width: 190px;
+            height: 238px
           }
         }
-        li:nth-child(1) {
-          width: 90%;
-        }
-        li:nth-child(2) {
-          width: 90%;
+        li.last {
+          margin-right: auto;
         }
       }
     }
@@ -1398,7 +1432,7 @@ body {
           }
         }
         .down-item {
-          width: 90%;
+          width: 100%;
           float: none;
           height: auto;
           margin: 10px auto;
