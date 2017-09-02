@@ -49,8 +49,8 @@ module.exports = {
       {
         test: /\.(png)|(jpg)|(webp)$/,
         //loader: [`file-loader?limit=4192&name=${isDev ? '' : 'images/'}[md5:hash:base64:10].[ext]`]
-        //loader: [`file-loader?limit=4192&name=${isDev ? '' : 'images/'}[name].[ext]`]
-        loader: [`file-loader?limit=4192&name=http://983056803.p131810.sqnet.cn/tpl/simplebootx/Public/v2images/[name].[ext]`]
+        loader: [`file-loader?limit=4192&name=${isDev ? '' : 'images/'}[name].[ext]`]
+        //loader: [`file-loader?limit=4192&name=http://983056803.p131810.sqnet.cn/tpl/simplebootx/Public/v2images/[name].[ext]`]
       },
       {
         test: /\.js$/,
