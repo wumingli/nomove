@@ -102,11 +102,17 @@
             li {
               width: auto;
               white-space: nowrap;
-              padding-right: 23px;
+              a {
+                padding: 4px 20px;
+              }
             }
             &.price {
               li {
-                padding-right: 10px;
+                padding-right: 0;
+                a {
+                  padding: 4px 10px;
+                }
+                /*padding-right: 10px;*/
               }
             }
           }

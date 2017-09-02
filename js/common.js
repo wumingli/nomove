@@ -22,3 +22,17 @@ $('.wrapper').append('<div class="mob-menu"></div>');
 $('.mob-menu').on('click', function () {
   $('.wrapper-nav-list').toggle();
 });
+
+//菜单自动显示，点击后不再自动显示
+if (window.innerWidth <= 768) {
+  var $nav = $('.wrapper-nav-list');
+  if (!window.localStorage.getItem('auto_show_nav')) {
+    $nav.show();
+  } else {
+    $nav.hide();
+  }
+  $nav.find('li a').on('click', function () {
+    $nav.hide();
+    window.localStorage.setItem('auto_show_nav', '1')
+  });
+}
