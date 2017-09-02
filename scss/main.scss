@@ -73,6 +73,8 @@ body {
         display: block;
         font-size: 16px;
         font-weight: 100;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
       }
     }
     .nav-active {
@@ -685,6 +687,11 @@ body {
           li.first {
             border-bottom: 2px solid #fff;
           }
+          li.text {
+            a {
+              color: #fff;
+            }
+          }
         }
         .seven-icon-a {
           background:url("../images/index-icon-666.png") 6px 0 no-repeat;
@@ -702,6 +709,11 @@ body {
           color:#fff;
           li.first {
             border-bottom: 2px solid #fff;
+          }
+          li.text {
+            a {
+              color: #fff;
+            }
           }
         }
         .seven-icon-d {
@@ -748,6 +760,9 @@ body {
             font-size: 14px;
             line-height: 21px;
             width: 210px;
+            a {
+              color: #999;
+            }
           }
           li.first {
             display: inline-block;
@@ -789,6 +804,9 @@ body {
             width: 158px;
             font-size: 14px;
             line-height: 21px;
+            a {
+              color: #999;
+            }
           }
           li.first {
             display: inline-block;
