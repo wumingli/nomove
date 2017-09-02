@@ -498,7 +498,7 @@
             float: none;
             margin-left: 0;
             .h-title {
-              overflow: unset;
+              overflow: initial;
               a {
                 width: auto;
                 padding: 10px 0;
@@ -511,7 +511,7 @@
         }
       }
       .pagejump {
-        white-space: unset;
+        white-space: initial;
         line-height: 3;
         margin: 20px auto;
       }
