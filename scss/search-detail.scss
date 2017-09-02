@@ -782,6 +782,22 @@
     }
   }
   .search-detail-wrapper {
+    .search-left-col {
+      .house-swiper-content {
+        .house-gallery-top {
+          width: 820px;
+        }
+      }
+    }
+  }
+  .house-swiper-box {
+    .house-swiper-content {
+      .house-gallery-top {
+        width: 820px;
+      }
+    }
+  }
+  .search-detail-wrapper {
     width: 100%;
     .pos {
       top: -45px;
@@ -803,19 +819,6 @@
           text-align: center;
           li {
             display: inline-block;
-          }
-        }
-      }
-      .house-swiper-box {
-        height: 320px;
-        .house-swiper-content {
-          height: 285px;
-        }
-      }
-      .article-tab {
-        li {
-          i {
-            display: none;
           }
         }
       }
@@ -847,6 +850,30 @@
     ul {
       li {
         margin-right: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .house-swiper-box {
+    height: 320px;
+    .house-swiper-content {
+      height: 285px;
+    }
+  }
+  .search-detail-wrapper {
+    .search-left-col {
+      .house-swiper-content {
+        .house-gallery-top {
+          width: 568px;
+        }
+      }
+    }
+  }
+  .article-tab {
+    li {
+      i {
+        display: none;
       }
     }
   }
