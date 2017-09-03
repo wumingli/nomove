@@ -36,64 +36,9 @@ body {
   width: 100%;
   overflow: hidden;
   position: relative;
-  //顶部导航
-  &-top-nav {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 1200px;
-    height: 70px;
-    background: rgba(0, 0, 0, .5);
-  }
-  &-logo{
-    padding: 0 30px 0 60px;
-    width: 284px;
-    height: 70px;
-    float: left;
-    display: table;
-    span {
-      display: table-cell;
-      vertical-align: middle;
-    }
-  }
-  &-nav-list{
-    float: left;
-    height: 30px;
-    padding: 20px 0;
-    li {
-      height: 30px;
-      line-height: 30px;
-      margin-right: 30px;
-      float: left;
-      a {
-        color: #fff;
-        display: block;
-        font-size: 16px;
-        font-weight: 100;
-        border-top: 1px solid transparent;
-        border-bottom: 1px solid transparent;
-      }
-    }
-    .nav-active {
-      border-top: 1px solid #ff9900;
-      border-bottom: 1px solid #ff9900;
-      color: #ff9900;
-      box-sizing: border-box;
-    }
-  }
-  &-call-tel {
-    height: 70px;
-    display: table;
-    float: left;
-    span{
-      display: table-cell;
-      vertical-align: middle;
-    }
-  }
-  //banner文字
+
+  @import "nav";
+
   .banner-text {
     width: 100%;
     position: absolute;
@@ -1121,6 +1066,8 @@ body {
       .old-house-swiper-container {
         width: 100%;
         height: auto;
+        background-color: #ebf5f9;
+        padding-bottom: 35px;
         .old-house-swiper-wrapper {
           width: 100%;
           height: auto;
@@ -1132,12 +1079,14 @@ body {
           height: auto;
           .old-house-right {
             float: right;
-            width: 45%;
+            width: 48%;
             height: auto;
             .old-house-right-item {
               margin: 0;
-              width: 50%;
+              width: 49%;
               height: 150px;
+              margin-right: 1%;
+              margin-bottom: 1%;
             }
           }
           .old-house-left {
@@ -1307,6 +1256,8 @@ body {
       .old-house-swiper-container {
         width: 100%;
         height: auto;
+        background-color: #ebf5f9;
+        padding-bottom: 40px;
         .old-house-swiper-wrapper {
           width: 100%;
           height: auto;
@@ -1323,6 +1274,11 @@ body {
             .old-house-right-item {
               margin: 0;
               width: 50%;
+              margin-top: 10px;
+              &:nth-of-type(2n + 1) {
+                width: 49%;
+                margin-right: 1%;
+              }
             }
           }
           .old-house-left {

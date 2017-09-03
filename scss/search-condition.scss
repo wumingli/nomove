@@ -25,12 +25,12 @@
       ul {
         li {
           display: inline-block;
-          width: 128px;
+          /*width: 128px;*/
           a {
             &.active {
               background-color: #f90;
               color: #fff;
-              padding: 4px 10px;
+              /*padding: 4px 10px;*/
             }
           }
         }

@@ -25,24 +25,32 @@
   height: 40px;
   margin: 50px auto 30px auto;
   position: relative;
+  text-align: center;
   .title-line {
     width: 100%;
     height: 1px;
     background: #999999;
     margin-top: 19.5px;
     position: absolute;
+    z-index: -1;
   }
   .title-middle {
-    position: absolute;
+    /*position: absolute;
     top: 0;
-    width: 630px;
+    width: 630px;*/
     height: 38px;
     background: #fff;
     border: 1px solid #999999;
-    margin-left: 50%;
+    display: inline-block;
+    padding: 0 10px;
+    max-width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*margin-left: 50%;
     -webkit-transform: translate(-50%,0%);
        -ms-transform: translate(-50%,0%);
-           transform: translate(-50%,0%);
+           transform: translate(-50%,0%);*/
     text-align: center;
     line-height: 38px;
     font-size: 18px;

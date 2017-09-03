@@ -52,6 +52,9 @@
               padding: 10px 0 0 16px;
               .title {
                 font-size: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
               }
               .price {
                 font-size: 16px;
