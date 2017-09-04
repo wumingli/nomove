@@ -10,10 +10,10 @@ import '../scss/list.scss';
 
 var logic = {
   init: function () {
-    this.originCountry();
+    logic.originCountry();
     $("#fd-btn").click(function () {
-      if (this.checkVal()) {
-        this.extTotal();
+      if (logic.checkVal()) {
+        logic.extTotal();
       }
       return false;
     });

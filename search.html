@@ -593,6 +593,7 @@
             <span>目标国汇率计算器</span>
           </div>
           <div class="count-form">
+            <form action="">
             <dl>
               <dt>持有货币：</dt>
               <dd class="slide-down">
@@ -628,7 +629,7 @@
             <dl class="count-btns">
               <dd>
                 <button id="huilv-btn" class="submit">计算</button>
-                <button id="huilv-reset" class="reset">重置</button>
+                <button id="huilv-reset" type="reset" class="reset">重置</button>
               </dd>
             </dl>
             <dl class="count-result">
@@ -638,6 +639,7 @@
                 <span class="sum-cash-type">美元</span>
               </dd>
             </dl>
+            </form>
           </div>
         </div>
         <div class="calculator-box calculator-country-box">
@@ -645,66 +647,68 @@
             <span>海外房贷计算器</span>
           </div>
           <div class="count-form">
-            <dl>
-              <dt>贷款总额：</dt>
-              <dd class="sum-have">
-                <input id="loadMoney" placeholder="输入贷款总额" type="number" />
-                <span class="sum-have-type">万元</span>
-              </dd>
-            </dl>
-            <dl>
-              <dt>贷款期限：</dt>
-              <dd class="sum-have">
-                <input id="loadDate" placeholder="输入贷款期限" type="number" />
-                <span class="sum-have-type">月</span>
-              </dd>
-            </dl>
-            <dl>
-              <dt>国家：</dt>
-              <dd class="slide-down">
-                <select id="hwfd-country" title="">
-                  <option>请选择国家</option>
-                  <option value="英国">英国</option>
-                  <option value="美国">美国</option>
-                  <option value="加拿大">加拿大</option>
-                  <option value="澳洲">澳洲</option>
-                  <option value="新西兰">新西兰</option>
-                </select>
-              </dd>
-            </dl>
-            <dl>
-              <dt>银行：</dt>
-              <dd class="slide-down">
-                <select id="hwfd-bank" title="">
-                  <option>请选择银行</option>
-                </select>
-              </dd>
-            </dl>
-            <dl>
-              <dt>年利率：</dt>
-              <dd class="sum-have">
-                <input title="" id="loadYearRate" type="text" class="market-ipt" value=""/>
-                <span class="percent">%</span>
-              </dd>
-            </dl>
-            <dl class="count-btns">
-              <dd>
-                <button id="fd-btn" class="submit">计算</button>
-                <button id="fd-reset" class="reset">重置</button>
-              </dd>
-            </dl>
-            <dl>
-              <dt>月均还款：</dt>
-              <dd>
-                <span class="sum" id="monthPayMoney"></span><span>元</span>
-              </dd>
-            </dl>
-            <dl>
-              <dt>支付利息：</dt>
-              <dd>
-                <span class="sum" id="totalRateMoney"></span><span>元</span>
-              </dd>
-            </dl>
+            <form action="">
+              <dl>
+                <dt>贷款总额：</dt>
+                <dd class="sum-have">
+                  <input id="loadMoney" placeholder="输入贷款总额" type="number" />
+                  <span class="sum-have-type">万元</span>
+                </dd>
+              </dl>
+              <dl>
+                <dt>贷款期限：</dt>
+                <dd class="sum-have">
+                  <input id="loadDate" placeholder="输入贷款期限" type="number" />
+                  <span class="sum-have-type">月</span>
+                </dd>
+              </dl>
+              <dl>
+                <dt>国家：</dt>
+                <dd class="slide-down">
+                  <select id="hwfd-country" title="">
+                    <option>请选择国家</option>
+                    <option value="英国">英国</option>
+                    <option value="美国">美国</option>
+                    <option value="加拿大">加拿大</option>
+                    <option value="澳洲">澳洲</option>
+                    <option value="新西兰">新西兰</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>银行：</dt>
+                <dd class="slide-down">
+                  <select id="hwfd-bank" title="">
+                    <option>请选择银行</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>年利率：</dt>
+                <dd class="sum-have">
+                  <input title="" id="loadYearRate" type="text" class="market-ipt" value=""/>
+                  <span class="percent">%</span>
+                </dd>
+              </dl>
+              <dl class="count-btns">
+                <dd>
+                  <button id="fd-btn" class="submit">计算</button>
+                  <button id="fd-reset" class="reset" type="reset">重置</button>
+                </dd>
+              </dl>
+              <dl>
+                <dt>月均还款：</dt>
+                <dd>
+                  <span class="sum" id="monthPayMoney"></span><span>元</span>
+                </dd>
+              </dl>
+              <dl>
+                <dt>支付利息：</dt>
+                <dd>
+                  <span class="sum" id="totalRateMoney"></span><span>元</span>
+                </dd>
+              </dl>
+            </form>
           </div>
         </div>
         <div class="calculator-box calculator-box-ask">

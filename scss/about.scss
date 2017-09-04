@@ -200,6 +200,18 @@
           left: 94px;
           top: 282px;
         }
+        &.sdyg {
+          left: 105px;
+          top: 356px;
+          width: 85px;
+          height: 73px;
+          text-indent: .8em;
+          span {
+            transform-origin: 0 45%;
+            background-image: url("../images/about-map-sdyg.png");
+            font-size: 14px;
+          }
+        }
         &.dls {
           left: 467px;
           top: 358px;

@@ -7,51 +7,53 @@
       <span>目标国汇率计算器</span>
     </div>
     <div class="count-form">
-      <dl>
-        <dt>持有货币：</dt>
-        <dd class="slide-down">
-          <select id="i-have" title="">
-            <option value="CNY">人民币</option>
-            <option value="GBP">英镑</option>
-            <option value="USD">美元</option>
-            <option value="AUD">澳币</option>
-            <option value="CAD">加元</option>
-            <option value="NZD">纽币</option>
-          </select>
-        </dd>
-      </dl>
-      <dl>
-        <dt>兑换货币：</dt>
-        <dd class="slide-down">
-          <select id="i-want" title="">
-            <option value="GBP">英镑</option>
-            <option value="USD">美元</option>
-            <option value="AUD">澳币</option>
-            <option value="CAD">加元</option>
-            <option value="NZD">纽币</option>
-          </select>
-        </dd>
-      </dl>
-      <dl>
-        <dt>持有金额：</dt>
-        <dd class="sum-have">
-          <input title="" type="number" value="100"/>
-          <span class="sum-have-type">人民币</span>
-        </dd>
-      </dl>
-      <dl class="count-btns">
-        <dd>
-          <button id="huilv-btn" class="submit">计算</button>
-          <button id="huilv-reset" class="reset">重置</button>
-        </dd>
-      </dl>
-      <dl class="count-result">
-        <dt>兑换金额：</dt>
-        <dd class="sum-have sum-cash">
-          <input title="" type="text" value="">
-          <span class="sum-cash-type">美元</span>
-        </dd>
-      </dl>
+      <form action="">
+        <dl>
+          <dt>持有货币：</dt>
+          <dd class="slide-down">
+            <select id="i-have" title="">
+              <option value="CNY">人民币</option>
+              <option value="GBP">英镑</option>
+              <option value="USD">美元</option>
+              <option value="AUD">澳币</option>
+              <option value="CAD">加元</option>
+              <option value="NZD">纽币</option>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt>兑换货币：</dt>
+          <dd class="slide-down">
+            <select id="i-want" title="">
+              <option value="GBP">英镑</option>
+              <option value="USD">美元</option>
+              <option value="AUD">澳币</option>
+              <option value="CAD">加元</option>
+              <option value="NZD">纽币</option>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt>持有金额：</dt>
+          <dd class="sum-have">
+            <input title="" type="number" value="100"/>
+            <span class="sum-have-type">人民币</span>
+          </dd>
+        </dl>
+        <dl class="count-btns">
+          <dd>
+            <button id="huilv-btn" class="submit">计算</button>
+            <button id="huilv-reset" class="reset" type="reset">重置</button>
+          </dd>
+        </dl>
+        <dl class="count-result">
+          <dt>兑换金额：</dt>
+          <dd class="sum-have sum-cash">
+            <input title="" type="text" value="">
+            <span class="sum-cash-type">美元</span>
+          </dd>
+        </dl>
+      </form>
     </div>
     <span class="close">X</span>
   </div>
@@ -63,6 +65,7 @@
       <span>海外房贷计算器</span>
     </div>
     <div class="count-form">
+      <form action="#">
         <dl>
           <dt>贷款总额：</dt>
           <dd class="sum-have">
@@ -108,7 +111,7 @@
         <dl class="count-btns">
           <dd>
             <button id="fd-btn" class="submit">计算</button>
-            <button id="fd-reset" class="reset">重置</button>
+            <button id="fd-reset" class="reset" type="reset">重置</button>
           </dd>
         </dl>
         <dl>
@@ -123,7 +126,8 @@
             <span class="sum" id="totalRateMoney"></span><span>元</span>
           </dd>
         </dl>
-      </div>
+      </form>
+    </div>
     <span class="close">X</span>
   </div>
 </div>
