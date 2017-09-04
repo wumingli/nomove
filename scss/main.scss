@@ -298,6 +298,10 @@ body {
             width: 120px;
             height: 120px;
           }
+          &.only-one-item {
+            margin: 0 auto 10px;
+            float: none;
+          }
         }
         .three-item {
           width: 33.3333333%;

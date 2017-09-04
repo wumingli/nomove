@@ -134,6 +134,9 @@
           display: block;
           position: relative;
           top: -4px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -159,6 +162,9 @@
           clear: both;
           display: block;
           margin: 0 27px 20px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
         dl {
           dt {
