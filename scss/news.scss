@@ -124,6 +124,9 @@
         display: block;
         position: relative;
         top: -4px;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -250,6 +253,9 @@
         margin-bottom: 10px;
         a {
           color: #313538;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
       .summary {

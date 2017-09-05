@@ -10,8 +10,8 @@ var logic = {
     this.originCountry();
 
     $("#fd-btn").click(function () {
-      if (this.checkVal()) {
-        this.extTotal();
+      if (logic.checkVal()) {
+        logic.extTotal();
       }
       return false;
     });
@@ -215,7 +215,7 @@ var logic = {
     var lilv = $("#loadYearRate").val() / 100;
     var daikuan_total = $("#loadMoney").val() * 10000;
     //var daikuantotal = daikuan_total;
-    var month_money1 = this.getMonthMoney1(lilv, daikuan_total, month);
+    var month_money1 = logic.getMonthMoney1(lilv, daikuan_total, month);
     $("#monthPayMoney").text(Math.round(month_money1));
     var all_total1 = month_money1 * month;
     all_total1 = Math.round(all_total1);
