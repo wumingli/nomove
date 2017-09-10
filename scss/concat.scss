@@ -84,6 +84,80 @@
     }
   }
 }
+.team-wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  .center-title {
+    border-top: 1px solid #999;
+    text-align: center;
+    height: 0;
+    clear: both;
+    margin: 71px auto 39px;
+    h1 {
+      display: inline-block;
+      border: 1px solid #999;
+      background-color: #fff;
+      font-size: 18px;
+      padding: 9px 63px;
+      position: relative;
+      top: -24px;
+    }
+  }
+  .team-leader {
+    overflow: hidden;
+    margin-bottom: 31px;
+    dt {
+      float: left;
+      border: 1px solid #999;
+      width: 206px;
+      height: 254px;
+    }
+    dd {
+      float: right;
+      height: 254px;
+      width: 867px;
+      border: 1px solid #999;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding: 26px 36px 0 32px;
+      ul {
+        li {
+          line-height: 26px;
+          padding-left: 18px;
+          position: relative;
+          font-size: 16px;
+          margin-bottom: 5px;
+          color: #666;
+          &:before {
+            content: '';
+            display: block;
+            width: 7px;
+            height: 14px;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAYAAADjXQYbAAAAhElEQVQYlXXOIQoCURSF4W/G2ZGbMAgiWGwWg2WKRVdgsRgMBrPNIoLN4CZcySBjMT14PK43nv/+nFMNL+8dtoKrscH+H4Q1DqgiCC2O+UMOYYVTyksIS5wxaKIhWKCOTPjiHpk95riWsMcMN8jhB1M8UpA6O0xykMwOYzzL8gYjvKLJP+gaFQ4VpNgvAAAAAElFTkSuQmCC") 0 0 no-repeat;
+            position: absolute;
+            left: 0;
+            top: 5px;
+          }
+          &.title {
+            font-size: 18px;
+            margin-bottom: 8px;
+            &:before {
+              visibility: hidden;
+            }
+            &.important {
+              margin-bottom: 20px;
+            }
+          }
+        }
+        &.less-lineheight {
+          li {
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 1025px) {
   .wrapper-logo {
     padding-left: 20px;
@@ -142,6 +216,32 @@
     }
   }
 
+  .team-wrapper {
+    width: 100%;
+    margin-top: 10px;
+    .center-title {
+      margin-top: 40px;
+    }
+    .team-leader {
+      margin: 0 auto 20px;
+      width: 94%;
+      dt {
+        width: 100%;
+        box-sizing: border-box;
+        float: none;
+        text-align: center;
+        background-color: #fff;
+        overflow: hidden;
+        margin-bottom: -1px;
+      }
+      dd {
+        width: 100%;
+        float: none;
+        height: auto;
+        padding-bottom: 30px;
+      }
+    }
+  }
   footer {
     margin-top: 10px;
     ul {

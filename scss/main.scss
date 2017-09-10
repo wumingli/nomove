@@ -432,11 +432,25 @@ body {
   .new-house-list {
     width: 100%;
     background: #cee5ef;
+    /*overflow: hidden;*/
+    .new-house-list-slider-wrapper {
+      width: 1100px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding-bottom: 43px;
+      position: relative;
+      .swiper-wrapper {
+        .swiper-slide {
+          text-align: left;
+          background: transparent;
+          /*display: block;*/
+        }
+      }
+    }
     ul {
       margin: 0 auto;
       width: 1078px;
       border: 1px solid #999999;
-      //border-top: 1px solid #ebf5f9;
       height: auto;
       overflow: hidden;
       padding: 8px;

@@ -34,7 +34,7 @@
       display: block;
       font-size: 16px;
       font-weight: 100;
-      &.nav-active {
+      &.nav-active, &:hover {
         border-top: 1px solid #ff9900;
         border-bottom: 1px solid #ff9900;
         color: #ff9900;

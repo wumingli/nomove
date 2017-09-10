@@ -18,13 +18,15 @@ var logic = {
     this.videoPlay();
     if (window.localStorage && window.innerWidth > 1124) {
       if (window.localStorage.getItem('has-written-info') !== '1') {
-        $('.choice-house').show();
+        setTimeout(function () {
+          $('.choice-house').show();
+        }, 3000);
       }
     }
   },
   //轮播图
   swiper:function() {
-    var swiper = new Swiper('.swiper-container', {
+    new Swiper('.swiper-container', {
       pagination: '.swiper-pagination',
       paginationClickable: true,
       autoplayDisableOnInteraction: false,
@@ -32,13 +34,20 @@ var logic = {
       loop: true,
    });
    //二手房源轮播
-   var oldHouseSwiper = new Swiper('.old-house-swiper-container',{
+   new Swiper('.old-house-swiper-container',{
      pagination: '.swiper-pagination',
      paginationClickable: true,
      autoplayDisableOnInteraction: false,
      autoplay: 4000,
      loop: true,
-   })
+   });
+    new Swiper('.new-house-list-slider-wrapper',{
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      autoplayDisableOnInteraction: false,
+      autoplay: 4000,
+      loop: true,
+    });
   },
   //选择心仪房子的交互
   choiceHouse: function(index) {

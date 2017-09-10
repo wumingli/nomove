@@ -68,7 +68,7 @@
     height: 40px;
     border-left: 1px solid #3399cc;
     li{
-      width: 182px;
+      width: 14.18%;
       height: 38px;
       float: left;
       border-top: 1px solid #3399cc;
@@ -88,8 +88,8 @@
         width: 26px;
         height: 30px;
         position: absolute;
-        left: 35px;
-        top: 6px
+        left: 25px;
+        top: 6px;
       }
     }
     li:hover{
@@ -100,22 +100,22 @@
     }
     li:nth-child(1) {
       .icon {
-        background: url("../images/hot-sale-house-icon.png") -31px -117px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -31px -117px no-repeat;
       }
     }
     li:nth-child(1):hover {
       .icon {
-        background: url("../images/hot-sale-house-icon.png") -31px -19px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -31px -19px no-repeat;
       }
     }
     li:nth-child(2) {
       .icon {
-        background: url("../images/hot-sale-house-icon.png") -213px -117px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -213px -117px no-repeat;
       }
     }
     li:nth-child(2):hover {
       .icon {
-        background: url("../images/hot-sale-house-icon.png") -213px -19px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -213px -19px no-repeat;
       }
     }
     li:nth-child(3) {
@@ -130,32 +130,43 @@
     }
     li:nth-child(4) {
       .icon {
-        background: url("../images/hot-sale-house-icon.png") -582px -117px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -582px -117px no-repeat;
       }
     }
     li:nth-child(4):hover {
       .icon {
-        background: url("../images/hot-sale-house-icon.png") -582px -19px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -582px -19px no-repeat;
       }
     }
     li:nth-child(5) {
       .icon {
-        background: url("../images/hot-sale-house-icon.png") -757px -117px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -757px -117px no-repeat;
       }
     }
     li:nth-child(5):hover {
       .icon {
-        background: url("../images/hot-sale-house-icon.png") -757px -17px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -757px -17px no-repeat;
       }
     }
     li:nth-child(6) {
       .icon {
-        background: url("../images/hot-sale-house-icon.png") -947px -117px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -947px -117px no-repeat;
       }
     }
     li:nth-child(6):hover {
       .icon {
-        background: url("../images/hot-sale-house-icon.png") -947px -17px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -947px -17px no-repeat;
+      }
+    }
+    li:nth-child(7) {
+      .icon {
+        left: 40px;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -1153px -118px no-repeat;
+      }
+    }
+    li:nth-child(7):hover {
+      .icon {
+        background: url("../images/hot-sale-house-icon.png?v=0909") -1153px -19px no-repeat;
       }
     }
     li.active {
@@ -164,22 +175,25 @@
         color: #fff;
       }
       .icon01 {
-        background: url("../images/hot-sale-house-icon.png") -31px -19px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -31px -19px no-repeat;
       }
       .icon02 {
-        background: url("../images/hot-sale-house-icon.png") -213px -19px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -213px -19px no-repeat;
       }
       .icon03 {
         background: url("../images/icon.png") -121px -257px no-repeat;
       }
       .icon04 {
-        background: url("../images/hot-sale-house-icon.png") -582px -19px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -582px -19px no-repeat;
       }
       .icon05 {
-        background: url("../images/hot-sale-house-icon.png") -757px -17px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -757px -17px no-repeat;
       }
       .icon06 {
-        background: url("../images/hot-sale-house-icon.png") -947px -17px no-repeat;
+        background: url("../images/hot-sale-house-icon.png?v=0909") -947px -17px no-repeat;
+      }
+      .icon07 {
+        background: url("../images/hot-sale-house-icon.png?v=0909") -1153px -19px no-repeat;
       }
     }
   }
